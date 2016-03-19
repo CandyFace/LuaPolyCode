@@ -26,6 +26,11 @@ contexts:
         - match: $\n?
           pop: true
 
+  support-function-lua:
+    - match: (?:\.([\w\d\.]*))
+      captures:
+        1: support.function.lua
+
   lua-library:
     - match: (?<![^.]\.|:)\b(coroutine\.(create|resume|running|status|wrap|yield)|string\.(byte|char|dump|find|format|gmatch|gsub|len|lower|match|rep|reverse|sub|upper)|table\.(concat|insert|maxn|remove|sort)|math\.(abs|acos|asin|atan2?|ceil|cosh?|deg|exp|floor|fmod|frexp|ldexp|log|log10|max|min|modf|pow|rad|random|randomseed|sinh?|sqrt|tanh?)|io\.(close|flush|input|lines|open|output|popen|read|tmpfile|type|write)|os\.(clock|date|difftime|execute|exit|getenv|remove|rename|setlocale|time|tmpname)|package\.(cpath|loaded|loadlib|path|preload|seeall)|debug\.(debug|[gs]etfenv|[gs]ethook|getinfo|[gs]etlocal|[gs]etmetatable|getregistry|[gs]etupvalue|traceback))\b(?=[({])
       captures:
@@ -123,6 +128,7 @@ contexts:
   everything-else:
     - include: control-flow
     - include: lua-library
+    - include: support-function-lua
     # - include: lua-polycode
     - include: comment-line
     - include: function-call
@@ -246,7 +252,6 @@ contexts:
         3: entity.name.function.scope.lua
         4: entity.name.function.lua
         5: meta.function-call.lua
-        6: punctuation.definition.parameters.begin.lua
 
   import-export-directive:
     - match: '^\s*+(-)\s*+(import)\s*+(\()\s*+([a-z][a-zA-Z\d@_]*+)\s*+(,)'
