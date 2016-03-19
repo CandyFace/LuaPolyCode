@@ -6,14 +6,17 @@ Syntax highlight and code completion for [Polycode](http://Polycode.org) lua scr
 ![Snippit of syntax highlight](http://i.imgbox.com/fBsoGP0i.png)
 ![Snippet of code completion](https://zippy.gfycat.com/SplendidTepidHookersealion.gif)
 
-##Features:
+## Features:
 - Syntax Highlight
 - Code Completion
 
 TODO:
  - [x] barebone functionality 
- - [ ] Smarter code completion
  - [ ] Add coloring for relevant syntaxes
+ - [ ] Smarter code completion
+ - [x] 2D Physics related code completion
+ - [x] 3D Physics related code completion
+ - [ ] CORE functions related code completion
  - [ ] Cleanup syntax in sublime.syntax, because setup originally from Erlang template.
  
 ### How to install:
