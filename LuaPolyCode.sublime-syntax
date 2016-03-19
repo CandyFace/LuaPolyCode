@@ -1,0 +1,686 @@
+%YAML 1.2
+---
+# http://www.sublimetext.com/docs/3/syntax.html
+name: Lua (polycode)
+comment: The recognition of function definitions and compiler directives (such as module, record and macro definitions) requires that each of the aforementioned constructs must be the first string inside a line (except for whitespace).  Also, the function/module/record/macro names must be given unquoted.  -- desp
+file_extensions: [lua]
+scope: source.lua
+
+contexts:
+  main:
+    - include: module-directive
+    - include: import-export-directive
+    - include: record-directive
+    - include: define-directive
+    - include: macro-directive
+    - include: directive
+    - include: function
+    - include: everything-else
+
+  comment-line:
+    - match: (--)(?!\[\[).*$\n?
+      captures:
+        1: punctuation.definition.comment.lua
+      push:
+        - meta_scope: comment.line.double-dash.lua
+        - match: $\n?
+          pop: true
+
+  lua-library:
+    - match: (?<![^.]\.|:)\b(coroutine\.(create|resume|running|status|wrap|yield)|string\.(byte|char|dump|find|format|gmatch|gsub|len|lower|match|rep|reverse|sub|upper)|table\.(concat|insert|maxn|remove|sort)|math\.(abs|acos|asin|atan2?|ceil|cosh?|deg|exp|floor|fmod|frexp|ldexp|log|log10|max|min|modf|pow|rad|random|randomseed|sinh?|sqrt|tanh?)|io\.(close|flush|input|lines|open|output|popen|read|tmpfile|type|write)|os\.(clock|date|difftime|execute|exit|getenv|remove|rename|setlocale|time|tmpname)|package\.(cpath|loaded|loadlib|path|preload|seeall)|debug\.(debug|[gs]etfenv|[gs]ethook|getinfo|[gs]etlocal|[gs]etmetatable|getregistry|[gs]etupvalue|traceback))\b(?=[({])
+      captures:
+        1: support.function.library.lua
+
+  # lua-polycode:
+  #   - match: (?<![^.]\.|:)\b(\.(sound\.(newDecoder|newSoundData)|audio\.(setOrientation|play|getVolume|getVelocity|resume|newSource|getDopplerScale|getDistanceModel|setVelocity|getOrientation|stop|pause|getPosition|rewind|setDistanceModel|setPosition|setDopplerScale|getSourceCount|setVolume)|thread\.(newChannel|newThread|getChannel)|keyboard\.(getKeyFromScancode|setKeyRepeat|hasTextInput|getScancodeFromKey|isDown|setTextInput|hasKeyRepeat)|physics\.(newWheelJoint|newChainShape|setMeter|newGearJoint|newWeldJoint|newRectangleShape|newFrictionJoint|newPulleyJoint|newFixture|newEdgeShape|newWorld|newMouseJoint|newBody|newRevoluteJoint|getDistance|newPrismaticJoint|newPolygonShape|newRopeJoint|getMeter|newDistanceJoint|newCircleShape)|image\.(isCompressed|newCompressedData|newImageData)|filesystem\.(load|exists|getSize|isDirectory|append|getUserDirectory|unmount|getIdentity|write|read|init|setSource|getRealDirectory|newFileData|setIdentity|newFile|isSymlink|getLastModified|getSaveDirectory|mount|lines|remove|areSymlinksEnabled|setSymlinksEnabled|getDirectoryItems|getWorkingDirectory|getAppdataDirectory|createDirectory|isFile|isFused)|system\.(openURL|getPowerInfo|getProcessorCount|setClipboardText|getClipboardText|getOS)|timer\.(getDelta|getTime|step|sleep|getAverageDelta|getFPS)|window\.(getTitle|setFullscreen|hasFocus|setTitle|getWidth|fromPixels|getDisplayName|getDesktopDimensions|hasMouseFocus|getHeight|setIcon|showMessageBox|getMode|getFullscreenModes|getDimensions|getPixelScale|isCreated|setMode|toPixels|setPosition|getPosition|minimize|getIcon|isVisible|getDisplayCount|getFullscreen)|graphics\.(getPointStyle|origin|newShader|getShader|point|getMaxPointSize|getRendererInfo|printf|setCanvas|pop|getWidth|isWireframe|arc|setFont|newSpriteBatch|getBackgroundColor|setLineStyle|setWireframe|newCanvas|setLineWidth|setStencil|setShader|isSupported|newImageFont|scale|getPointSize|setDefaultFilter|translate|newMesh|getHeight|newQuad|newFont|setInvertedStencil|print|circle|setNewFont|newParticleSystem|rectangle|getScissor|draw|newScreenshot|getFont|setPointSize|getColor|setBackgroundColor|setColorMask|getDimensions|setBlendMode|getColorMask|getSystemLimit|getStats|setLineJoin|line|setScissor|present|polygon|reset|getDefaultFilter|rotate|setPointStyle|getLineJoin|getCanvasFormats|clear|getLineStyle|getCanvas|getLineWidth|getBlendMode|shear|push|newImage|setColor|getMaxImageSize|getCompressedImageFormats)|joystick\.(setGamepadMapping|getJoystickCount|loadGamepadMappings|getJoysticks|saveGamepadMappings)|font\.(newGlyphData|newRasterizer)|mouse\.(setX|setRelativeMode|setPosition|setGrabbed|getSystemCursor|newCursor|setY|getX|getY|isGrabbed|getCursor|isVisible|getRelativeMode|setVisible|isDown|getPosition|setCursor)|event\.(quit|clear|pump|push|poll|wait)|math\.(isConvex|noise|getRandomSeed|random|triangulate|linearToGamma|setRandomSeed|gammaToLinear|newRandomGenerator|randomNormal|newBezierCurve)))\b(?=[({])
+  #     captures:
+  #       1: support.function.library.lua.polycode
+
+  control-flow:
+    - match: \b(break|do|else|for|cast|safe_cast|and|require|true|false|class|self|not|or|repeat|local|if|elseif|return|then|repeat|while|until|end|function|local|in)\b
+      captures:
+        1: keyword.control.lua
+
+  character:
+    - match: '(\$)((\\)([bdefnrstv\\''"]|(\^)[@-_]|[0-7]{1,3}))'
+      scope: constant.character.lua
+      captures:
+        1: punctuation.definition.character.lua
+        2: constant.character.escape.lua
+        3: punctuation.definition.escape.lua
+        5: punctuation.definition.escape.lua
+    - match: \$\\\^?.?
+      scope: invalid.illegal.character.lua
+    - match: (\$)\S
+      scope: constant.character.lua
+      captures:
+        1: punctuation.definition.character.lua
+    - match: \$.?
+      scope: invalid.illegal.character.lua
+  define-directive:
+    - match: '^\s*+(-)\s*+(define)\s*+(\()\s*+([a-zA-Z\d@_]++)\s*+(,)'
+      captures:
+        1: punctuation.section.directive.begin.lua
+        2: keyword.control.directive.define.lua
+        3: punctuation.definition.parameters.begin.lua
+        4: entity.name.function.macro.definition.lua
+        5: punctuation.separator.parameters.lua
+      push:
+        - meta_scope: meta.directive.define.lua
+        - match: (\))\s*+(\.)
+          captures:
+            1: punctuation.definition.parameters.end.lua
+            2: punctuation.section.directive.end.lua
+          pop: true
+        - include: everything-else
+    - match: '(?=^\s*+-\s*+define\s*+\(\s*+[a-zA-Z\d@_]++\s*+\()'
+      push:
+        - meta_scope: meta.directive.define.lua
+        - match: (\))\s*+(\.)
+          captures:
+            1: punctuation.definition.parameters.end.lua
+            2: punctuation.section.directive.end.lua
+          pop: true
+        - match: '^\s*+(-)\s*+(define)\s*+(\()\s*+([a-zA-Z\d@_]++)\s*+(\()'
+          captures:
+            1: punctuation.section.directive.begin.lua
+            2: keyword.control.directive.define.lua
+            3: punctuation.definition.parameters.begin.lua
+            4: entity.name.function.macro.definition.lua
+            5: punctuation.definition.parameters.begin.lua
+          push:
+            - match: (\))\s*(,)
+              captures:
+                1: punctuation.definition.parameters.end.lua
+                2: punctuation.separator.parameters.lua
+              pop: true
+            - match: ","
+              scope: punctuation.separator.parameters.lua
+            - include: everything-else
+        - match: \|\||\||:|;|,|\.|->
+          scope: punctuation.separator.define.lua
+        - include: everything-else
+  directive:
+    - match: '^\s*+(-)\s*+([a-z][a-zA-Z\d@_]*+)\s*+(\()'
+      captures:
+        1: punctuation.section.directive.begin.lua
+        2: keyword.control.directive.lua
+        3: punctuation.definition.parameters.begin.lua
+      push:
+        - meta_scope: meta.directive.lua
+        - match: (\))\s*+(\.)
+          captures:
+            1: punctuation.definition.parameters.end.lua
+            2: punctuation.section.directive.end.lua
+          pop: true
+        - include: everything-else
+    - match: '^\s*+(-)\s*+([a-z][a-zA-Z\d@_]*+)\s*+(\.)'
+      scope: meta.directive.lua
+      captures:
+        1: punctuation.section.directive.begin.lua
+        2: keyword.control.directive.lua
+        3: punctuation.section.directive.end.lua
+  everything-else:
+    - include: control-flow
+    - include: lua-library
+    # - include: lua-polycode
+    - include: comment-line
+    - include: function-call
+    - include: record-usage
+    - include: macro-usage
+    - include: expression
+    - include: keyword
+    - include: tuple
+    - include: list
+    - include: parenthesized-expression
+    - include: character
+    - include: number
+    - include: string
+    - include: symbolic-operator
+    - include: variable
+  expression:
+    - match: \b(if)\b
+      captures:
+        1: keyword.control.if.lua
+      push:
+        - meta_scope: meta.expression.if.lua
+        - match: \b(end)\b
+          captures:
+            1: keyword.control.end.lua
+          pop: true
+        - include: internal-expression-punctuation
+        - include: everything-else
+    - match: \b(case)\b
+      captures:
+        1: keyword.control.case.lua
+      push:
+        - meta_scope: meta.expression.case.lua
+        - match: \b(end)\b
+          captures:
+            1: keyword.control.end.lua
+          pop: true
+        - include: internal-expression-punctuation
+        - include: everything-else
+    - match: \b(receive)\b
+      captures:
+        1: keyword.control.receive.lua
+      push:
+        - meta_scope: meta.expression.receive.lua
+        - match: \b(end)\b
+          captures:
+            1: keyword.control.end.lua
+          pop: true
+        - include: internal-expression-punctuation
+        - include: everything-else
+    - match: '\b(fun)\s*+(([a-z][a-zA-Z\d@_]*+)\s*+(:)\s*+)?([a-z][a-zA-Z\d@_]*+)\s*(/)'
+      captures:
+        1: keyword.control.fun.lua
+        3: entity.name.type.class.module.lua
+        4: punctuation.separator.module-function.lua
+        5: entity.name.function.lua
+        6: punctuation.separator.function-arity.lua
+    - match: \b(fun)\b
+      captures:
+        1: keyword.control.fun.lua
+      push:
+        - meta_scope: meta.expression.fun.lua
+        - match: \b(end)\b
+          captures:
+            1: keyword.control.end.lua
+          pop: true
+        - match: (?=\()
+          push:
+            - match: (;)|(?=\bend\b)
+              captures:
+                1: punctuation.separator.clauses.lua
+              pop: true
+            - include: internal-function-parts
+        - include: everything-else
+    - match: \b(try)\b
+      captures:
+        1: keyword.control.try.lua
+      push:
+        - meta_scope: meta.expression.try.lua
+        - match: \b(end)\b
+          captures:
+            1: keyword.control.end.lua
+          pop: true
+        - include: internal-expression-punctuation
+        - include: everything-else
+    - match: \b(begin)\b
+      captures:
+        1: keyword.control.begin.lua
+      push:
+        - meta_scope: meta.expression.begin.lua
+        - match: \b(end)\b
+          captures:
+            1: keyword.control.end.lua
+          pop: true
+        - include: internal-expression-punctuation
+        - include: everything-else
+    - match: \b(query)\b
+      captures:
+        1: keyword.control.query.lua
+      push:
+        - meta_scope: meta.expression.query.lua
+        - match: \b(end)\b
+          captures:
+            1: keyword.control.end.lua
+          pop: true
+        - include: everything-else
+  function:
+    - match: \b(function)\s+([a-zA-Z_.:]+[.:])?([a-zA-Z_]\w*)\s*(\()([^)]*)(\))
+      captures:
+        1: keyword.control.lua
+        2: entity.name.function.scope.lua
+        3: entity.name.function.lua
+        4: punctuation.definition.parameters.begin.lua
+        5: variable.parameter.function.lua
+        6: punctuation.definition.parameters.end.lua
+
+  function-call:
+    - match: (?:(\w[\w\d]*)(?:(?:\.(\w[\w\d\.]*))*)[\.:](\w[\w\d]*))\(|(?:(\w[\w\d]*)\()
+      captures:
+        1: meta.call.method.other.lua
+        2: meta.call.function.other.lua
+        3: entity.name.function.scope.lua
+        4: entity.name.function.lua
+        5: meta.function-call.lua
+        6: punctuation.definition.parameters.begin.lua
+
+  import-export-directive:
+    - match: '^\s*+(-)\s*+(import)\s*+(\()\s*+([a-z][a-zA-Z\d@_]*+)\s*+(,)'
+      captures:
+        1: punctuation.section.directive.begin.lua
+        2: keyword.control.directive.import.lua
+        3: punctuation.definition.parameters.begin.lua
+        4: entity.name.type.class.module.lua
+        5: punctuation.separator.parameters.lua
+      push:
+        - meta_scope: meta.directive.import.lua
+        - match: (\))\s*+(\.)
+          captures:
+            1: punctuation.definition.parameters.end.lua
+            2: punctuation.section.directive.end.lua
+          pop: true
+        - include: internal-function-list
+    - match: ^\s*+(-)\s*+(export)\s*+(\()
+      captures:
+        1: punctuation.section.directive.begin.lua
+        2: keyword.control.directive.export.lua
+        3: punctuation.definition.parameters.begin.lua
+      push:
+        - meta_scope: meta.directive.export.lua
+        - match: (\))\s*+(\.)
+          captures:
+            1: punctuation.definition.parameters.end.lua
+            2: punctuation.section.directive.end.lua
+          pop: true
+        - include: internal-function-list
+  internal-expression-punctuation:
+    - match: (->)|(;)|(,)
+      captures:
+        1: punctuation.separator.clause-head-body.lua
+        2: punctuation.separator.clauses.lua
+        3: punctuation.separator.expressions.lua
+  internal-function-list:
+    - match: '(\[)'
+      captures:
+        1: punctuation.definition.list.begin.lua
+      push:
+        - meta_scope: meta.structure.list.function.lua
+        - match: '(\])'
+          captures:
+            1: punctuation.definition.list.end.lua
+          pop: true
+        - match: '([a-z][a-zA-Z\d@_]*+)\s*+(/)'
+          captures:
+            1: entity.name.function.lua
+            2: punctuation.separator.function-arity.lua
+          push:
+            - match: '(,)|(?=\])'
+              captures:
+                1: punctuation.separator.list.lua
+              pop: true
+            - include: everything-else
+        - include: everything-else
+  internal-function-parts:
+    - match: (?=\()
+      push:
+        - match: (->)
+          captures:
+            1: punctuation.separator.clause-head-body.lua
+          pop: true
+        - match: (\()
+          captures:
+            1: punctuation.definition.parameters.begin.lua
+          push:
+            - match: (\))
+              captures:
+                1: punctuation.definition.parameters.end.lua
+              pop: true
+            - match: ","
+              scope: punctuation.separator.parameters.lua
+            - include: everything-else
+        - match: ",|;"
+          scope: punctuation.separator.guards.lua
+        - include: everything-else
+    - match: ","
+      scope: punctuation.separator.expressions.lua
+    - include: everything-else
+  internal-record-body:
+    - match: '(\{)'
+      captures:
+        1: punctuation.definition.class.record.begin.lua
+      push:
+        - meta_scope: meta.structure.record.lua
+        - match: '(?=\})'
+          pop: true
+        - match: '(([a-z][a-zA-Z\d@_]*+)|(_))\s*+(=)'
+          captures:
+            2: variable.other.field.lua
+            3: variable.language.omitted.field.lua
+            4: keyword.operator.assignment.lua
+          push:
+            - match: '(,)|(?=\})'
+              captures:
+                1: punctuation.separator.class.record.lua
+              pop: true
+            - include: everything-else
+        - match: '([a-z][a-zA-Z\d@_]*+)\s*+(,)?'
+          captures:
+            1: variable.other.field.lua
+            2: punctuation.separator.class.record.lua
+        - include: everything-else
+  internal-type-specifiers:
+    - match: (/)
+      captures:
+        1: punctuation.separator.value-type.lua
+      push:
+        - match: (?=,|:|>>)
+          pop: true
+        - match: (integer|float|binary)|(signed|unsigned)|(big|little|native)|(unit)|(-)
+          captures:
+            1: storage.type.lua
+            2: storage.modifier.signedness.lua
+            3: storage.modifier.endianness.lua
+            4: storage.modifier.unit.lua
+            5: punctuation.separator.type-specifiers.lua
+  keyword:
+    - match: \b(after|begin|case|catch|cond|end|fun|if|let|of|query|try|receive|when)\b
+      scope: keyword.control.lua
+  list:
+    - match: '(\[)'
+      captures:
+        1: punctuation.definition.list.begin.lua
+      push:
+        - meta_scope: meta.structure.list.lua
+        - match: '(\])'
+          captures:
+            1: punctuation.definition.list.end.lua
+          pop: true
+        - match: \||\|\||,
+          scope: punctuation.separator.list.lua
+        - include: everything-else
+  macro-directive:
+    - match: '^\s*+(-)\s*+(ifdef)\s*+(\()\s*+([a-zA-z\d@_]++)\s*+(\))\s*+(\.)'
+      scope: meta.directive.ifdef.lua
+      captures:
+        1: punctuation.section.directive.begin.lua
+        2: keyword.control.directive.ifdef.lua
+        3: punctuation.definition.parameters.begin.lua
+        4: entity.name.function.macro.lua
+        5: punctuation.definition.parameters.end.lua
+        6: punctuation.section.directive.end.lua
+    - match: '^\s*+(-)\s*+(ifndef)\s*+(\()\s*+([a-zA-z\d@_]++)\s*+(\))\s*+(\.)'
+      scope: meta.directive.ifndef.lua
+      captures:
+        1: punctuation.section.directive.begin.lua
+        2: keyword.control.directive.ifndef.lua
+        3: punctuation.definition.parameters.begin.lua
+        4: entity.name.function.macro.lua
+        5: punctuation.definition.parameters.end.lua
+        6: punctuation.section.directive.end.lua
+    - match: '^\s*+(-)\s*+(undef)\s*+(\()\s*+([a-zA-z\d@_]++)\s*+(\))\s*+(\.)'
+      scope: meta.directive.undef.lua
+      captures:
+        1: punctuation.section.directive.begin.lua
+        2: keyword.control.directive.undef.lua
+        3: punctuation.definition.parameters.begin.lua
+        4: entity.name.function.macro.lua
+        5: punctuation.definition.parameters.end.lua
+        6: punctuation.section.directive.end.lua
+  macro-usage:
+    - match: '(\?\??)\s*+([a-zA-Z\d@_]++)'
+      scope: meta.macro-usage.lua
+      captures:
+        1: keyword.operator.macro.lua
+        2: entity.name.function.macro.lua
+  module-directive:
+    - match: '^\s*+(-)\s*+(module)\s*+(\()\s*+([a-z][a-zA-Z\d@_]*+)\s*+(\))\s*+(\.)'
+      scope: meta.directive.module.lua
+      captures:
+        1: punctuation.section.directive.begin.lua
+        2: keyword.control.directive.module.lua
+        3: punctuation.definition.parameters.begin.lua
+        4: entity.name.type.class.module.definition.lua
+        5: punctuation.definition.parameters.end.lua
+        6: punctuation.section.directive.end.lua
+  number:
+    - match: (?=\d)
+      push:
+        - match: (?!\d)
+          pop: true
+        - match: '\d++(\.)\d++(([eE][\+\-])?\d++)?'
+          scope: constant.numeric.float.lua
+          captures:
+            1: punctuation.separator.integer-float.lua
+            3: punctuation.separator.float-exponent.lua
+        - match: "2(#)[0-1]++"
+          scope: constant.numeric.integer.binary.lua
+          captures:
+            1: punctuation.separator.base-integer.lua
+        - match: "3(#)[0-2]++"
+          scope: constant.numeric.integer.base-3.lua
+          captures:
+            1: punctuation.separator.base-integer.lua
+        - match: "4(#)[0-3]++"
+          scope: constant.numeric.integer.base-4.lua
+          captures:
+            1: punctuation.separator.base-integer.lua
+        - match: "5(#)[0-4]++"
+          scope: constant.numeric.integer.base-5.lua
+          captures:
+            1: punctuation.separator.base-integer.lua
+        - match: "6(#)[0-5]++"
+          scope: constant.numeric.integer.base-6.lua
+          captures:
+            1: punctuation.separator.base-integer.lua
+        - match: "7(#)[0-6]++"
+          scope: constant.numeric.integer.base-7.lua
+          captures:
+            1: punctuation.separator.base-integer.lua
+        - match: "8(#)[0-7]++"
+          scope: constant.numeric.integer.octal.lua
+          captures:
+            1: punctuation.separator.base-integer.lua
+        - match: "9(#)[0-8]++"
+          scope: constant.numeric.integer.base-9.lua
+          captures:
+            1: punctuation.separator.base-integer.lua
+        - match: '10(#)\d++'
+          scope: constant.numeric.integer.decimal.lua
+          captures:
+            1: punctuation.separator.base-integer.lua
+        - match: '11(#)[\daA]++'
+          scope: constant.numeric.integer.base-11.lua
+          captures:
+            1: punctuation.separator.base-integer.lua
+        - match: '12(#)[\da-bA-B]++'
+          scope: constant.numeric.integer.base-12.lua
+          captures:
+            1: punctuation.separator.base-integer.lua
+        - match: '13(#)[\da-cA-C]++'
+          scope: constant.numeric.integer.base-13.lua
+          captures:
+            1: punctuation.separator.base-integer.lua
+        - match: '14(#)[\da-dA-D]++'
+          scope: constant.numeric.integer.base-14.lua
+          captures:
+            1: punctuation.separator.base-integer.lua
+        - match: '15(#)[\da-eA-E]++'
+          scope: constant.numeric.integer.base-15.lua
+          captures:
+            1: punctuation.separator.base-integer.lua
+        - match: '16(#)\h++'
+          scope: constant.numeric.integer.hexadecimal.lua
+          captures:
+            1: punctuation.separator.base-integer.lua
+        - match: '17(#)[\da-gA-G]++'
+          scope: constant.numeric.integer.base-17.lua
+          captures:
+            1: punctuation.separator.base-integer.lua
+        - match: '18(#)[\da-hA-H]++'
+          scope: constant.numeric.integer.base-18.lua
+          captures:
+            1: punctuation.separator.base-integer.lua
+        - match: '19(#)[\da-iA-I]++'
+          scope: constant.numeric.integer.base-19.lua
+          captures:
+            1: punctuation.separator.base-integer.lua
+        - match: '20(#)[\da-jA-J]++'
+          scope: constant.numeric.integer.base-20.lua
+          captures:
+            1: punctuation.separator.base-integer.lua
+        - match: '21(#)[\da-kA-K]++'
+          scope: constant.numeric.integer.base-21.lua
+          captures:
+            1: punctuation.separator.base-integer.lua
+        - match: '22(#)[\da-lA-L]++'
+          scope: constant.numeric.integer.base-22.lua
+          captures:
+            1: punctuation.separator.base-integer.lua
+        - match: '23(#)[\da-mA-M]++'
+          scope: constant.numeric.integer.base-23.lua
+          captures:
+            1: punctuation.separator.base-integer.lua
+        - match: '24(#)[\da-nA-N]++'
+          scope: constant.numeric.integer.base-24.lua
+          captures:
+            1: punctuation.separator.base-integer.lua
+        - match: '25(#)[\da-oA-O]++'
+          scope: constant.numeric.integer.base-25.lua
+          captures:
+            1: punctuation.separator.base-integer.lua
+        - match: '26(#)[\da-pA-P]++'
+          scope: constant.numeric.integer.base-26.lua
+          captures:
+            1: punctuation.separator.base-integer.lua
+        - match: '27(#)[\da-qA-Q]++'
+          scope: constant.numeric.integer.base-27.lua
+          captures:
+            1: punctuation.separator.base-integer.lua
+        - match: '28(#)[\da-rA-R]++'
+          scope: constant.numeric.integer.base-28.lua
+          captures:
+            1: punctuation.separator.base-integer.lua
+        - match: '29(#)[\da-sA-S]++'
+          scope: constant.numeric.integer.base-29.lua
+          captures:
+            1: punctuation.separator.base-integer.lua
+        - match: '30(#)[\da-tA-T]++'
+          scope: constant.numeric.integer.base-30.lua
+          captures:
+            1: punctuation.separator.base-integer.lua
+        - match: '31(#)[\da-uA-U]++'
+          scope: constant.numeric.integer.base-31.lua
+          captures:
+            1: punctuation.separator.base-integer.lua
+        - match: '32(#)[\da-vA-V]++'
+          scope: constant.numeric.integer.base-32.lua
+          captures:
+            1: punctuation.separator.base-integer.lua
+        - match: '33(#)[\da-wA-W]++'
+          scope: constant.numeric.integer.base-33.lua
+          captures:
+            1: punctuation.separator.base-integer.lua
+        - match: '34(#)[\da-xA-X]++'
+          scope: constant.numeric.integer.base-34.lua
+          captures:
+            1: punctuation.separator.base-integer.lua
+        - match: '35(#)[\da-yA-Y]++'
+          scope: constant.numeric.integer.base-35.lua
+          captures:
+            1: punctuation.separator.base-integer.lua
+        - match: '36(#)[\da-zA-Z]++'
+          scope: constant.numeric.integer.base-36.lua
+          captures:
+            1: punctuation.separator.base-integer.lua
+        - match: '\d++#[\da-zA-Z]++'
+          scope: invalid.illegal.integer.lua
+        - match: \d++
+          scope: constant.numeric.integer.decimal.lua
+  parenthesized-expression:
+    - match: (\()
+      captures:
+        1: punctuation.section.expression.begin.lua
+      push:
+        - meta_scope: meta.expression.parenthesized
+        - match: (\))
+          captures:
+            1: punctuation.section.expression.end.lua
+          pop: true
+        - include: everything-else
+  record-directive:
+    - match: '^\s*+(-)\s*+(record)\s*+(\()\s*+([a-z][a-zA-Z\d@_]*+)\s*+(,)'
+      captures:
+        1: punctuation.section.directive.begin.lua
+        2: keyword.control.directive.import.lua
+        3: punctuation.definition.parameters.begin.lua
+        4: entity.name.type.class.record.definition.lua
+        5: punctuation.separator.parameters.lua
+      push:
+        - meta_scope: meta.directive.record.lua
+        - match: '((\}))\s*+(\))\s*+(\.)'
+          captures:
+            1: meta.structure.record.lua
+            2: punctuation.definition.class.record.end.lua
+            3: punctuation.definition.parameters.end.lua
+            4: punctuation.section.directive.end.lua
+          pop: true
+        - include: internal-record-body
+  record-usage:
+    - match: '(#)\s*+([a-z][a-zA-Z\d@_]*+)\s*+(\.)\s*+([a-z][a-zA-Z\d@_]*+)'
+      scope: meta.record-usage.lua
+      captures:
+        1: keyword.operator.record.lua
+        2: entity.name.type.class.record.lua
+        3: punctuation.separator.record-field.lua
+        4: variable.other.field.lua
+    - match: '(#)\s*+([a-z][a-zA-Z\d@_]*+)'
+      captures:
+        1: keyword.operator.record.lua
+        2: entity.name.type.class.record.lua
+      push:
+        - meta_scope: meta.record-usage.lua
+        - match: '((\}))'
+          captures:
+            1: meta.structure.record.lua
+            2: punctuation.definition.class.record.end.lua
+          pop: true
+        - include: internal-record-body
+  string:
+    - match: (")
+      captures:
+        1: punctuation.definition.string.begin.lua
+      push:
+        - meta_scope: string.quoted.double.lua
+        - match: (")
+          captures:
+            1: punctuation.definition.string.end.lua
+          pop: true
+        - match: '(\\)([bdefnrstv\\''"]|(\^)[@-_]|[0-7]{1,3})'
+          scope: constant.character.escape.lua
+          captures:
+            1: punctuation.definition.escape.lua
+            3: punctuation.definition.escape.lua
+        - match: \\\^?.?
+          scope: invalid.illegal.string.lua
+        - match: '(~)((\-)?\d++|(\*))?((\.)(\d++|(\*)))?((\.)((\*)|.))?[~cfegswpWPBX#bx\+ni]'
+          scope: constant.other.placeholder.lua
+          captures:
+            1: punctuation.definition.placeholder.lua
+            3: punctuation.separator.placeholder-parts.lua
+            4: punctuation.separator.placeholder-parts.lua
+            6: punctuation.separator.placeholder-parts.lua
+            8: punctuation.separator.placeholder-parts.lua
+            10: punctuation.separator.placeholder-parts.lua
+            12: punctuation.separator.placeholder-parts.lua
+        - match: '(~)(\*)?(\d++)?[~du\-#fsacl]'
+          scope: constant.other.placeholder.lua
+          captures:
+            1: punctuation.definition.placeholder.lua
+            2: punctuation.separator.placeholder-parts.lua
+        - match: ~.?
+          scope: invalid.illegal.string.lua
+  symbolic-operator:
+    - match: \+\+|\+|--|-|\*|/=|/|=/=|=:=|==|=<|=|<-|<|>=|>|!
+      scope: keyword.operator.symbolic.lua
+  tuple:
+    - match: '(\{)'
+      captures:
+        1: punctuation.definition.tuple.begin.lua
+      push:
+        - meta_scope: meta.structure.tuple.lua
+        - match: '(\})'
+          captures:
+            1: punctuation.definition.tuple.end.lua
+          pop: true
+        - match: ","
+          scope: punctuation.separator.tuple.lua
+        - include: everything-else
+  variable:
+    - match: '(_[a-zA-Z\d@_]++|[A-Z][a-zA-Z\d@_]*+)|(_)'
+      captures:
+        1: variable.other.lua
+        2: variable.language.omitted.lua

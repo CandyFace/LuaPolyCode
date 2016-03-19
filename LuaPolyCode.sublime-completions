@@ -1,0 +1,637 @@
+{
+   "scope": "source.lua",
+    "completions":
+    [
+    //2D Physics
+        {
+            "trigger": "PhysicsScreen\t2DPhysics",
+            "contents": "PhysicsScreen(${1:Number worldScale}, ${2:Number freq}, ${3:Integer velIterations}, ${4:Integer posIterations})"
+        },
+        {
+            "trigger": "Update\t2DPhysics",
+            "contents": "Update()"
+        },
+        {
+            "trigger": "addPhysicsChild\t2DPhysics",
+            "contents": "addPhysicsChild(${1:creenEntity newEntity},${2:Integer entType},${3:Boolean isStatic},${4:Number friction},${5:Number density},${6:Number restitution},${7:Boolean isSensor},${8:Boolean fixedRotation},${9:Integer groupIndex})"
+        },
+        {
+            "trigger": "addPhysicsChild\t2DPhysics",
+            "contents": "addPhysicsChild(${1:creenEntity newEntity},${2:Integer entType},${3:Boolean isStatic},${4:Number friction},${5:Number density},${6:Number restitution},${7:Boolean isSensor},${8:Boolean fixedRotation},${9:Integer groupIndex})"
+        },
+        {
+            "trigger": "trackPhysicsChild\t2DPhysics",
+            "contents": "trackPhysicsChild( ${1:ScreenEntity newEntity},${2: Integer entType}, ${3:Boolean isStatic},${4:Number friction},${5:Number density},${6: Number restitution},${7:Boolean isSensor},${8:Boolean fixedRotation},${9:Integer groupIndex})"
+        },
+        {
+            "trigger": "stopTrackingChild\t2DPhysics",
+            "contents": "stopTrackingChild(${1:ScreenEntity entity})"
+        },
+        {
+          "trigger": "removePhysicsChild\t2DPhysics",
+          "contents": "removePhysicsChild(${1:ScreenEntity entityToRemove})"
+        },
+        {
+            "trigger": "removeChild\t2DPhysics",
+            "contents": "removeChild(${1:ScreenEntity entityToRemove})"
+        },
+        {
+            "trigger": "addCollisionChild\t2DPhysics",
+            "contents": "addCollisionChild(${1:ScreenEntity newEntity}, ${2:Integer entType}, ${3:Integer groupIndex}, ${4:Boolean sensorOnly})"
+        },        
+        {
+            "trigger": "trackCollisionChild\t2DPhysics",
+            "contents": "trackCollisionChild(${1:ScreenEntity newEntity}, ${2:Integer entType}, ${3:Integer groupIndex})"
+        },        
+        {
+            "trigger": "destroyJoint\t2DPhysics",
+            "contents": "destroyJoint(${1:PhysicsJoInteger joint})"
+        },       
+        {
+            "trigger": "createDistanceJoint\t2DPhysics",
+            "contents": "createDistanceJoint(${1:ScreenEntity ent1}, ${2:ScreenEntity ent2}, ${3:Boolean collideConnected})"
+        },     
+        {
+            "trigger": "createPrismaticJoint\t2DPhysics",
+            "contents": "createPrismaticJoint(${1:ScreenEntity ent1}, ${2:ScreenEntity ent2}, ${3:Vector2 worldAxis}, ${4:Number ax }, ${5:Number ay}, ${6:Boolean collideConnected}, ${7:Number lowerTranslation}, ${8:Number upperTranslation}, ${9:Boolean enableLimit}, ${10:Number motorSpeed}, ${11:Number motorForce}, ${12:Boolean motorEnabled})"
+        },
+        {
+            "trigger": "createRevoluteJoint\t2DPhysics",
+            "contents": "createRevoluteJoint( ${1:ScreenEntity ent1}, ${2:ScreenEntity ent2}, ${3:Number ax}, ${4:Number ay}, ${5:Boolean collideConnected}, ${6:Boolean enableLimit}, ${7:Number lowerLimit}, ${8:Number upperLimit}, ${9:Boolean motorEnabled}, ${10:Number motorSpeed}, ${11:Number maxTorque})"
+        },
+        {
+            "trigger": "applyForce\t2DPhysics",
+            "contents": "applyForce(${1:ScreenEntity ent}, ${2:Number fx}, ${3:Number fy})"
+        },
+        {
+            "trigger": "applyImpulse\t2DPhysics",
+            "contents": "applyImpulse(${1:ScreenEntity ent}, ${2:Number fx}, ${3:Number fy})"
+        },
+        {
+            "trigger": "setGravity\t2DPhysics",
+            "contents": "setGravity(${1:Vector2 newGravity})"
+        },
+        {
+            "trigger": "setTransform\t2DPhysics",
+            "contents": "setTransform(${1:ScreenEntity ent}, ${2:Vector2 pos}, ${3:Number angle})"
+        },
+        {
+            "trigger": "getPhysicsEntityByShape\t2DPhysics",
+            "contents": "getPhysicsEntityByShape(${1:b2Shape shape})"
+        },
+        {
+            "trigger": "getPhysicsEntityByFixture\t2DPhysics",
+            "contents": "getPhysicsEntityByFixture(${1:b2Fixture fixture})"
+        },
+        {
+            "trigger": "setVelocity\t2DPhysics",
+            "contents": "setVelocity(${1:ScreenEntity ent}, ${2:Number fx}, ${3:}Number fy})"
+        },
+        {
+            "trigger": "setVelocityX\t2DPhysics",
+            "contents": "setVelocityX(${1:ScreenEntity ent}, ${2:Number fx})"
+        },
+        {
+            "trigger": "setVelocityY\t2DPhysics",
+            "contents": "setVelocityY(${1:ScreenEntity ent}, ${2:Number fy})"
+        },
+        {
+            "trigger": "setAngularVelocity\t2DPhysics",
+            "contents": "setAngularVelocity(${1:ScreenEntity ent}, ${2:Number spin})"
+        },
+        {
+            "trigger": "getVelocity\t2DPhysics",
+            "contents": "getVelocity(${1:ScreenEntity ent})"
+        },
+        {
+            "trigger": "BeginContact\t2DPhysics",
+            "contents": "BeginContact(${1:b2Contact contact})"
+        },
+        {
+            "trigger": "EndContact\t2DPhysics",
+            "contents": "EndContact(${1:b2Contact contact})"
+        },
+        {
+            "trigger": "PreSolve\t2DPhysics",
+            "contents": "PreSolve(${1:b2Contact contact}, ${2:b2Manifold oldManifold})"
+        },
+        {
+            "trigger": "PostSolve\t2DPhysics",
+            "contents": "PostSolve(${1:b2Contact contact}, ${2:b2ContactImpulse impulse})"
+        },
+        {
+            "trigger": "wakeUp\t2DPhysics",
+            "contents": "wakeUp(${1:ScreenEntity ent})"
+        },
+        {
+            "trigger": "getEntityAtPosition\t2DPhysics",
+            "contents": "getEntityAtPosition(${1:Number x}, ${2:Number y})"
+        },
+        {
+            "trigger": "testEntityAtPosition\t2DPhysics",
+            "contents": "testEntityAtPosition(${1:ScreenEntity ent}, ${2:Number x}, ${3:Number y})"
+        },
+        {
+            "trigger": "isEntityColliding\t2DPhysics",
+            "contents": "isEntityColliding(${1:ScreenEntity ent1})"
+        },
+        {
+            "trigger": "Shutdown\t2DPhysics",
+            "contents": "Shutdown()"
+        },       
+        {
+            "trigger": "getPhysicsByScreenEntity\t2DPhysics",
+            "contents": "getPhysicsByScreenEntity(${1:ScreenEntity ent})"
+        },
+        {
+            "trigger": "destroyMouseJoint\t2DPhysics",
+            "contents": "destroyMouseJoint(${1:b2MouseJoInteger mJoint})"
+        },
+        {
+            "trigger": "PhysicsJoint\t2DPhysics",
+            "contents": "PhysicsJoint()"
+        },
+        {
+            "trigger": "PhysicsScreenEvent\t2DPhysics",
+            "contents": "PhysicsScreenEvent()"
+        },
+        {
+            "trigger": "getFirstEntity\t2DPhysics",
+            "contents": "getFirstEntity()"
+        },
+        {
+            "trigger": "getSecondEntity\t2DPhysics",
+            "contents": "getSecondEntity()"
+        },
+        {
+            "trigger": "PhysicsScreenEntity\t2DPhysics",
+            "contents": "PhysicsScreenEntity()"
+        },
+        {
+            "trigger": "getScreenEntity\t2DPhysics",
+            "contents": "getScreenEntity()"
+        },
+        {
+            "trigger": "applyTorque\t2DPhysics",
+            "contents": "applyTorque(${1:Number torque})"
+        },
+        {
+            "trigger": "applyForce\t2DPhysics",
+            "contents": "applyForce(${1:Vector2 force})"
+        },
+        {
+            "trigger": "applyImpulse\t2DPhysics",
+            "contents": "applyImpulse(${1:Number fx}, ${2:Number fy})"
+        },
+        {
+            "trigger": "setTransform\t2DPhysics",
+            "contents": "setTransform(${1:Vector2 pos}, ${2:Number angle})"
+        },
+        {
+            "trigger": "setVelocity\t2DPhysics",
+            "contents": "setVelocity(${1:Number fx}, ${2:}Number fy})"
+        },
+        {
+            "trigger": "setVelocityX\t2DPhysics",
+            "contents": "setVelocityX(${1:Number fx})"
+        },
+        {
+            "trigger": "setVelocityY\t2DPhysics",
+            "contents": "setVelocityY(${1:Number fy})"
+        },
+        {
+            "trigger": "setLinearDamping\t2DPhysics",
+            "contents": "setLinearDamping(${1:Number damping})"
+        },
+        {
+            "trigger": "setAngularDamping\t2DPhysics",
+            "contents": "setAngularDamping(${1:Number damping})"
+        },
+        {
+            "trigger": "setFriction\t2DPhysics",
+            "contents": "setFriction(${1:Number friction})"
+        },
+        {
+            "trigger": "getLinearDamping\t2DPhysics",
+            "contents": "getLinearDamping()"
+        },
+        {
+            "trigger": "getAngularDamping\t2DPhysics",
+            "contents": "getAngularDamping()"
+        },
+        {
+            "trigger": "getFriction\t2DPhysics",
+            "contents": "getFriction()"
+        },
+        {
+            "trigger": "setDensity\t2DPhysics",
+            "contents": "setDensity(${1:Number density})"
+        },
+        {
+            "trigger": "getDensity\t2DPhysics",
+            "contents": "getDensity()"
+        },
+        {
+            "trigger": "setCollisionCategory\t2DPhysics",
+            "contents": "setCollisionCategory(${1:Integer categoryBits})"
+        },
+        {
+            "trigger": "setCollisionMask\t2DPhysics",
+            "contents": "setCollisionMask(${1:Integer maskBits})"
+        },
+        {
+            "trigger": "setCollisionGroupIndex\t2DPhysics",
+            "contents": "setCollisionGroupIndex(${1:Integer group})"
+        },
+        {
+            "trigger": "getFixture\t2DPhysics",
+            "contents": "getFixture(${1:Integer index})"
+        },
+        //End
+
+        //3D Physics
+
+        {
+            "trigger": "CollisionScene\t3DPhysics",
+            "contents": "CollisionScene(${1:Vector3 size}, ${2:Boolean virtualScene} ,${3:Boolean deferInitCollision})"
+        },
+        {
+            "trigger": "initCollisionScene\t3DPhysics",
+            "contents": "initCollisionScene (${1:Vector3 size})"
+        },
+        {
+            "trigger": "removeEntity\t3DPhysics",
+            "contents": "removeEntity(${1:SceneEntity entity})"
+        },
+        {
+            "trigger": "getCollisionEntityByObject\t3DPhysics",
+            "contents": "getCollisionEntityByObject (${1:btCollisionObject collisionObject})"
+        },
+        {
+            "trigger": "getFirstEntityInRay\t3DPhysics",
+            "contents": "getFirstEntityInRay(${1:Vector3 origin}, ${2:Vector3 dest})"
+        },
+        {
+            "trigger": "enableCollision\t3DPhysics",
+            "contents": "enableCollision(${1:SceneEntity entity}, ${2:Boolean val})"
+        },
+        {
+            "trigger": "getCollisionByScreenEntity\t3DPhysics",
+            "contents": "getCollisionByScreenEntity(${1:SceneEntity ent})"
+        },
+        {
+            "trigger": "testCollision\t3DPhysics",
+            "contents": "testCollision(${1:SceneEntity ent1}, ${2:SceneEntity ent2})"
+        },
+        {
+            "trigger": "testCollisionOnCollisionChild\t3DPhysics",
+            "contents": "testCollisionOnCollisionChild(${1:CollisionSceneEntity cEnt1}, ${2:CollisionSceneEntity cEnt2})"
+        },
+        {
+            "trigger": "testCollisionOnCollisionChild_Convex\t3DPhysics",
+            "contents": "testCollisionOnCollisionChild_Convex(${1:CollisionSceneEntity cEnt1}, ${2:CollisionSceneEntity cEnt2})"
+        },
+        {
+            "trigger": "addCollisionChild\t3DPhysics",
+            "contents": "addCollisionChild(${1:SceneEntity newEntity}, ${2:Integer type}, ${3:Integer group})"
+        },
+        {
+            "trigger": "trackCollision\t3DPhysics",
+            "contents": "trackCollision(${1:SceneEntity newEntity}, ${2:Integer type}, ${3:Integer group})"
+        },
+        {
+            "trigger": "removeCollision\t3DPhysics",
+            "contents": "removeCollision(${1:SceneEntity entity})"
+        },
+        {
+            "trigger": "adjustForCollision\t3DPhysics",
+            "contents": "adjustForCollision(${1:CollisionSceneEntity collisionEntity})"
+        },
+        {
+            "trigger": "CollisionSceneEntity\t3DPhysics",
+            "contents": "CollisionSceneEntity(${1:SceneEntity entity}, ${2:Integer type}, ${3:Boolean compoundChildren})"
+        },
+        {
+            "trigger": "getSceneEntity\t3DPhysics",
+            "contents": "getSceneEntity()"
+        },
+        {
+            "trigger": "getType\t3DPhysics",
+            "contents": "getType()"
+        },
+        {
+            "trigger": "Update\t3DPhysics",
+            "contents": "Update()" 
+        },
+        {
+            "trigger": "getConvexShape\t3DPhysics",
+            "contents": "getConvexShape()"
+        },   
+        {
+            "trigger": "createCollisionShape\t3DPhysics",
+            "contents": "createCollisionShape(${1:SceneEntity entity}, ${2:Integer type})"
+        },
+
+        {
+            "trigger": "PhysicsScene\t3DPhysics",
+            "contents": "PhysicsScene(${1:Integer maxSubSteps}, ${2:Vector3 size }, ${3:Boolean virtualScene })"
+        },
+        {
+            "trigger": "fixedUpdate\t3DPhysics",
+            "contents": "fixedUpdate()"
+        },
+        {
+            "trigger": "removeIdentity\t3DPhysics",
+            "contents": "removeIdentity(${1:Entity entity})"
+        },
+        {
+            "trigger": "processWorldCollisions\t3DPhysics",
+            "contents": "processWorldCollisions ()"
+        },
+        {
+            "trigger": "getPhysicsEntityByCollisionObject\t3DPhysics",
+            "contents": "getPhysicsEntityByCollisionObject(${1:btCollisionObject object})"
+        },
+        {
+            "trigger": "removePhysicsChild\t3DPhysics",
+            "contents": "removePhysicsChild(${1:Entity entity})"
+        },
+        {
+            "trigger": "getPhysicsEntityByEntity\t3DPhysics",
+            "contents": "getPhysicsEntityByEntity (${1:Entity entity})"
+        },
+        {
+            "trigger": "addPhysicsChild\t3DPhysics",
+            "contents": "addPhysicsChild (${1:Entity newEntity}, ${2:Integer type}, ${3:Number mass}, ${4:Number friction}, ${5:Number restitution}, ${6:Integer group}, ${7:Boolean compoundChildren})"
+        },
+        {
+            "trigger": "trackPhysicsChild\t3DPhysics",
+            "contents": "trackPhysicsChild (${1:Entity newEntity}, ${2:Integer type}, ${3:Number mass}, ${4:Number friction}, ${5:Number restitution}, ${6:Integer group}, ${7:Boolean compoundChildren})"
+        },
+        {
+            "trigger": "addCharacterChild\t3DPhysics",
+            "contents": "addCharacterChild (${1:Entity newEntity}, ${1:Number mass}, ${3:Number friction}, ${4:Number stepSize}, ${5:Integer group})"
+        },
+        {
+            "trigger": "trackCharacterChild\t3DPhysics",
+            "contents": "trackCharacterChild (${1:Entity newEntity}, ${1:Number mass}, ${3:Number friction}, ${4:Number stepSize}, ${5:Integer group})"
+        },
+        {
+            "trigger": "removeCharacterChild\t3DPhysics",
+            "contents": "removeCharacterChild (${1:PhysicsCharacter character})"
+        },
+        {
+            "trigger": "createPointToPointConstraint\t3DPhysics",
+            "contents": "createPointToPointConstraint (${1:Entity entity1}, ${2:Entity entity2}, ${3:Vector3 pivot1}, ${4:Vector3 pivot2})"
+        },
+        {
+            "trigger": "createHingeConstraint\t3DPhysics",
+            "contents": "createHingeConstraint (${1:Entity entity} , ${2:Vector3 pivot} , ${3:Vector3 axis} , ${4:Number minLimit} , ${5:Number maxLimit} )"
+        },
+        {
+            "trigger": "createHingeJoint\t3DPhysics",
+            "contents": "createHingeJoint (${1:entity1} , ${2:entity2} , ${3:pivot1} , ${4:axis1} , ${5:pivot2} , ${6:axis2} , ${7:minLimit} , ${8:maxLimit} )"
+        },
+        {
+            "trigger": "createGenericConstraint\t3DPhysics",
+            "contents": "createGenericConstraint (${1:Entity entity})"
+        },
+        {
+            "trigger": "setVelocity\t3DPhysics",
+            "contents": "setVelocity (${1:Entity entity}, ${2:Vector3 velocity})"
+        },        
+        {
+            "trigger": "setSpin\t3DPhysics",
+            "contents": "setSpin (${1:Entity entity}, ${2:Vector3 spin} )"
+        },        
+        {
+            "trigger": "warpEntity\t3DPhysics",
+            "contents": "warpEntity (${1:Entity entity}, ${2:Vector3 position}, ${3:Boolean resetRotation} )"
+        },
+        {
+            "trigger": "removeConstraint\t3DPhysics",
+            "contents": "removeConstraint(${1:PhysicsConstraInteger constraint})"
+        },
+        {
+            "trigger": "applyImpulse\t3DPhysics",
+            "contents": "applyImpulse (${1:Entity entity}, ${2:Vector3 force}, ${3:Vector3 point} )"
+        },
+        {
+            "trigger": "trackVehicleChild\t3DPhysics",
+            "contents": "trackVehicleChild (${1:Entity newEntity}, ${2:Number mass}, ${3:Number friction} , ${4:Integer group} )"
+        },
+        {
+            "trigger": "setGravity\t3DPhysics",
+            "contents": "setGravity (${1:Vector3 gravity})"
+        },
+        {
+            "trigger": "wakeUp\t3DPhysics",
+            "contents": "wakeUp(${1:Entity entity})"
+        },
+
+        {
+            "trigger": "setLimits\t3DPhysics",
+            "contents": "setLimits (${1:Number minLimit} , ${2:Number maxLimit} )"
+        },
+        {
+            "trigger": "getAngle\t3DPhysics",
+            "contents": "getAngle ()"
+        },
+        {
+            "trigger": "PhysicsSceneEvent\t3DPhysics",
+            "contents": "PhysicsSceneEvent ()"
+        },
+        {
+            "trigger": "setLinearLowerLimit\t3DPhysics",
+            "contents": "setLinearLowerLimit (${1:Vector3 limit} )"
+        },
+        {
+            "trigger": "setLinearUpperLimit\t3DPhysics",
+            "contents": "setLinearUpperLimit(${1:Vector3 limit})"
+        },
+        {
+            "trigger": "setAngularLowerLimit\t3DPhysics",
+            "contents": "setAngularLowerLimit(${1:Vector3 limit})"
+        },
+        {
+            "trigger": "setAngularUpperLimit\t3DPhysics",
+            "contents": "setAngularUpperLimit(${1:Vector3 limit})"
+        },
+        {
+            "trigger": "PhysicsVehicle\t3DPhysics",
+            "contents": "PhysicsVehicle (${1:Entity entity} , ${2:Number mass} , ${3:Number friction} , ${4:btDefaultVehicleRaycaster rayCaster} )"
+        },
+        {
+            "trigger": "addWheel\t3DPhysics",
+            "contents": "addWheel (${1:Entity entity} , ${2: Vector3 connection} , ${3:Vector3 direction} , ${4:Vector3 axle} , ${5:Number suspentionRestLength} , ${6:Number wheelRadius} , ${7:Boolean isFrontWheel} , ${8:Number suspensionStiffness} , ${9:Number suspensionDamping} , ${10:Number suspensionCompression} , ${11:Number wheelFriction} , ${12:Number rollInfluence} )"
+        },
+        {
+            "trigger": "applyEngineForce\t3DPhysics",
+            "contents": "applyEngineForce (${1:Number force} , ${2:Integer wheelIndex} )"
+        },
+        {
+            "trigger": "setSteeringValue\t3DPhysics",
+            "contents": "setSteeringValue (${1:Number value} , ${2:Integer wheelIndex} )"
+        },
+        {
+            "trigger": "setBrake\t3DPhysics",
+            "contents": "setBrake (${1:Number value} , ${2:Integer wheelIndex} )"
+        },
+        {
+            "trigger": "warpVehicle\t3DPhysics",
+            "contents": "warpVehicle (${1:Vector3 position} )"
+        },
+        {
+            "trigger": "PhysicsCharacter\t3DPhysics",
+            "contents": "PhysicsCharacter (${1:Entity entity} , ${2:Number mass} , ${3:Number friction} , ${4:Number stepSize} )"
+        },
+        {
+            "trigger": "setWalkDirection\t3DPhysics",
+            "contents": "setWalkDirection (${1:Vector3 direction})"
+        },
+        {
+            "trigger": "jump\t3DPhysics",
+            "contents": "jump()"
+        },
+        {
+            "trigger": "warpCharacter\t3DPhysics",
+            "contents": "warpCharacter(${1:Vector3 position} )"
+        },
+        {
+            "trigger": "setJumpSpeed\t3DPhysics",
+            "contents": "setJumpSpeed (${1:Number jumpSpeed} )"
+        },
+        {
+            "trigger": "setFallSpeed\t3DPhysics",
+            "contents": "setFallSpeed (${1:Number fallSpeed} )"
+        },
+        {
+            "trigger": "setMaxJumpHeight\t3DPhysics",
+            "contents": "setMaxJumpHeight (${1:Number setMaxJumpHeight} )"
+        },
+        {
+            "trigger": "onGround\t3DPhysics",
+            "contents": "onGround ()"
+        },
+        {
+            "trigger": "PhysicsEntity\t3DPhysics",
+            "contents": "PhysicsEntity (${1:Entity entity} , ${2:Integer type} , ${3:Number mass} , ${4:Number friction} , ${5:Number restitution} , ${6:Boolean compoundChildren} )"
+        },
+        {
+            "trigger": "setFriction (return nil)\t3DPhysics",
+            "contents": "setFriction (${1:Number friction} )"
+        },
+        {
+            "trigger": "getType (return integer)\t3DPhysics",
+            "contents": "getType ()"
+        },
+        {
+            "trigger": "setSpin (return nil)\t3DPhysics",
+            "contents": "setSpin (${1:Vector3 Spin} )"
+        },
+        {
+            "trigger": "setMass (return nil)\t3DPhysics",
+            "contents": "setMass (${1:Number mass} )"
+        },
+        {
+            "trigger": "getVelocity (return Vector3)\t3DPhysics",
+            "contents": "getVelocity ()"
+        },
+        {
+            "trigger": "getSpin (return Vector3)\t3DPhysics",
+            "contents": "getSpin ()"
+        },
+        {
+            "trigger": "setRotation (return nil)\t3DPhysics",
+            "contents": "setFriction (${1:Quaternion quat} )"
+        },
+        {
+            "trigger": "setVelocity (return nil)\t3DPhysics",
+            "contents": "setFriction (${1:Vector3 velocity} )"
+        },
+        {
+            "trigger": "warpTo (return nil)\t3DPhysics",
+            "contents": "warpTo (${1:Vector3 position} , ${2:Boolean resetRotation} )"
+        },
+        {
+            "trigger": "applyImpulse (return nil)\t3DPhysics",
+            "contents": "applyImpulse (${1:Vector3 direction}, ${2:Vector3 point})"
+        },
+        //END
+
+        //PolyCode Core
+        {
+            "trigger": "bezierCuve (return nil)\tPolyCode",
+            "contents": "bezierCurve ()"
+        },
+        {
+            "trigger": "getControlPoint(return BezierPointeger)\tPolyCode",
+            "contents": "getControlPoint (${1:Integer index})"
+        },
+        {
+            "trigger": "getNumControlPoints (return Integer)\tPolyCode",
+            "contents": "getNumControlPoints()"
+        },
+        {
+            "trigger": "addControlPoint(return nil)\tPolyCode",
+            "contents": "addControlPoint (${1:Number p1x , ${2:Number p1y} , ${3:Number p1z} , ${4:Number p2x} , ${5:Number p2y} , ${6:Number p2z} , ${7:Number p3x} , ${8:Number p3y} , ${9:Number p3z} )"
+        },
+        {
+            "trigger": "addControlPoint3dWithHandles(return nil)\tPolyCode",
+            "contents": "addControlPoint3dWithHandles (${1:Number p1x , ${2:Number p1y} , ${3:Number p1z} , ${4:Number p2x} , ${5:Number p2y} , ${6:Number p2z} , ${7:Number p3x} , ${8:Number p3y} , ${9:Number p3z} )"
+        },
+        {
+            "trigger": "addControlPoint3d (return nil)\tPolyCode",
+            "contents": "addControlPoint3d (${1:Number x}, ${2:Number y}, ${3:Number z})"
+        },
+        {
+            "trigger": "addControlPoint2dWithHandles (return nil)\tPolyCode",
+            "contents": "addControlPoint2dWithHandles (${1:Number p1x}, ${2:Number p1y}, ${3:Number p2x}, ${4:Number p2y}, ${5:Number p3x}, ${6:Number p3y})"
+        },
+        {
+            "trigger": "addControlPoint2d (return nil)\tPolyCode",
+            "contents": "addControlPoint2d (${1:Number x}, ${2:Number y})"
+        },
+        {
+            "trigger": "getPointAt (return Vector3)\tPolyCode",
+            "contents": "getPointAt (${1:Number a})"
+        },
+        {
+            "trigger": "getPointBetween (return Vector3)\tPolyCode",
+            "contents": "getPointBetween (${1:Number a}, ${2:BezierPointeger bp1}, ${3:BezierPointeger bp2})"
+        },
+        {
+            "trigger": "clearControlPoints (return nil)\tPolyCode",
+            "contents": "clearControlPoints ()"
+        },
+        {
+            "trigger": "getYValueAtX (return Number)\tPolyCode",
+            "contents": "getYValueAtX (${1:Number x})"
+        },
+        {
+            "trigger": "getTValueAtX (return Number)\tPolyCode",
+            "contents": "getTValueAtX (${1:Number x})"
+        },
+        {
+            "trigger": "removePoint (return nil)\tPolyCode",
+            "contents": "removePoint (${1:BezierPointeger point})"
+        },
+        {
+            "trigger": "setHeightCacheResolution (return nil)\tPolyCode",
+            "contents": "setHeightCacheResolution (${1:Number resolution})"
+        },
+        {
+            "trigger": "rebuildHeightCache (return nil)\tPolyCode",
+            "contents": "rebuildHeightCache ()"
+        },
+        {
+            "trigger": "recalculateDistance (return Number)\tPolyCode",
+            "contents": "recalculateDistance ()"
+        },
+
+        //TODO BezierPoint
+
+
+
+    ]
+}
