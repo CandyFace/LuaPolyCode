@@ -30,10 +30,10 @@ Download and unzip this package into that directory, or:
 `git clone https://github.com/CandyFace/LuaPolyCode.git "LuaPolyCode"`
 
 ### How to build and run (Presumably only works for OSX)
-#### Setup your PATH 
+#### Setup polybuild for PATH 
 First you have to add `polybuild to your PATH`, else sublime won't build.
 
-There are mutiple ways to setup PATH, I used `cp` and send `polybuild` to `/usr/bin`
+There are mutiple ways to setup polybuild for PATH, I used `cp` to make a copy of `polybuild` and moved it to `/usr/bin`, relying on the standard PATH variables. 
 
 polybuild is located in /Polycode/Release/Darwin/Standalone/Bin
 
