@@ -2,12 +2,28 @@
 ---
 # http://www.sublimetext.com/docs/3/syntax.html
 name: Lua (polycode)
-comment: The recognition of function definitions and compiler directives (such as module, record and macro definitions) requires that each of the aforementioned constructs must be the first string inside a line (except for whitespace).  Also, the function/module/record/macro names must be given unquoted.  -- desp
+comment: Lua syntax for PolyCode V. 0.4
 file_extensions: [lua]
 scope: source.lua
 
 contexts:
   main:
+    - match: '--\[(=*)\['
+      captures:
+        0: punctuation.definition.comment.lua
+      push:
+        - meta_scope: comment.block.lua
+        - match: '\]\1\]'
+          captures:
+            0: punctuation.definition.comment.lua
+          pop: true
+    - match: '(--)(?!\[\[).*$\n?'
+      scope: comment.line.double-dash.lua
+      captures:
+        1: punctuation.definition.comment.lua
+    - match: '\+|-|%|#|\*|\/|\^|==?|~=|<=?|>=?|(?<!\.)\.{2}(?!\.)'
+      scope: keyword.operator.lua
+
     - include: module-directive
     - include: import-export-directive
     - include: record-directive
@@ -16,15 +32,6 @@ contexts:
     - include: directive
     - include: function
     - include: everything-else
-
-  comment-line:
-    - match: (--)(?!\[\[).*$\n?
-      captures:
-        1: punctuation.definition.comment.lua
-      push:
-        - meta_scope: comment.line.double-dash.lua
-        - match: $\n?
-          pop: true
 
   support-function-lua:
     - match: (?:\.([\w\d\.]*))
@@ -130,19 +137,16 @@ contexts:
     - include: lua-library
     - include: support-function-lua
     # - include: lua-polycode
-    - include: comment-line
     - include: function-call
     - include: record-usage
     - include: macro-usage
     - include: expression
     - include: keyword
-    - include: tuple
     - include: list
     - include: parenthesized-expression
     - include: character
     - include: number
     - include: string
-    - include: symbolic-operator
     - include: variable
   expression:
     - match: \b(if)\b
@@ -235,7 +239,8 @@ contexts:
           pop: true
         - include: everything-else
   function:
-    - match: \b(function)\s+([a-zA-Z_.:]+[.:])?([a-zA-Z_]\w*)\s*(\()([^)]*)(\))
+    - match: (function)?\:(\w*)\w*
+  # - match: \b(function)\s+([a-zA-Z_.:]+[.:])?([a-zA-Z_]\w*)\s*(\()([^)]*)(\))
       captures:
         1: keyword.control.lua
         2: entity.name.function.scope.lua
@@ -668,22 +673,6 @@ contexts:
             2: punctuation.separator.placeholder-parts.lua
         - match: ~.?
           scope: invalid.illegal.string.lua
-  symbolic-operator:
-    - match: \+\+|\+|--|-|\*|/=|/|=/=|=:=|==|=<|=|<-|<|>=|>|!
-      scope: keyword.operator.symbolic.lua
-  tuple:
-    - match: '(\{)'
-      captures:
-        1: punctuation.definition.tuple.begin.lua
-      push:
-        - meta_scope: meta.structure.tuple.lua
-        - match: '(\})'
-          captures:
-            1: punctuation.definition.tuple.end.lua
-          pop: true
-        - match: ","
-          scope: punctuation.separator.tuple.lua
-        - include: everything-else
   variable:
     - match: '(_[a-zA-Z\d@_]++|[A-Z][a-zA-Z\d@_]*+)|(_)'
       captures:
