@@ -6,8 +6,9 @@
     "variants":
 	[
     	{
+            "shell": true,
         	"name": "Run",
-        	"cmd": ["open", "${project_path}/${project_base_name}.polyapp"]
+        	"cmd": [ "polybuild --config=${project_path}/${project_base_name}.polyproject --out=${project_path}/${project_base_name}.polyapp && open ${project_path}/${project_base_name}.polyapp" ]
     	}
 	]
 }
