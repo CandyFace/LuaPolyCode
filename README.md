@@ -33,7 +33,7 @@ Download and unzip this package into that directory, or:
 #### Setup polybuild for PATH 
 First you have to add `polybuild to your PATH`, else sublime won't build.
 
-There are mutiple ways to setup polybuild for PATH, I used `cp` to make a copy of `polybuild` and moved it to `/usr/bin`, relying on the standard PATH variables. 
+There are mutiple ways to this, I used `cp` to make a copy of `polybuild` and moved it to `/usr/bin`, relying on the standard PATH variables. 
 
 polybuild is located in /Polycode/Release/Darwin/Standalone/Bin
 
