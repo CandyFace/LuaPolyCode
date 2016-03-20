@@ -1,0 +1,13 @@
+{
+    "cmd": ["polybuild", "--config=${project_path}/${project_base_name}.polyproject", "--out=${project_path}/${project_base_name}.polyapp"],  
+    "file_regex": "^(?:polyproject:)?[\t ](...*?):([0-9]*):?([0-9]*)",
+    "selector": "source.polyproject",
+
+    "variants":
+	[
+    	{
+        	"name": "Run",
+        	"cmd": ["open", "${project_path}/${project_base_name}.polyapp"]
+    	}
+	]
+}
