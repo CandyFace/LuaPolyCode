@@ -1,0 +1,14 @@
+<snippet>
+    <content>
+    	<![CDATA[<?xml version="1.0" ?>
+			<PolycodeProject defaultWidth="640" defaultHeight="480" antiAliasingLevel="0" entryPoint="Scripts/Main.lua" textureFiltering="linear" vSync="false" anisotropyLevel="0" frameRate="60">
+    			<backgroundColor red="0.250000" green="0.250000" blue="0.250000" />
+    			<packedItems>
+        			<item type="folder" path="Scripts" />
+    			</packedItems>
+			</PolycodeProject>)]]>
+	</content>
+    <tabTrigger>polyproject</tabTrigger>
+    <scope></scope>
+    <description>Polycode project generator</description>
+</snippet>
