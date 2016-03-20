@@ -13,7 +13,6 @@ Syntax highlight and code completion for [Polycode](http://Polycode.org) lua scr
 ![Snippit of build and run](https://zippy.gfycat.com/ReadyEarnestAmericancreamdraft.gif)
 
 TODO:
- - [x] barebone functionality 
  - [x] Syntax highlighing
  - [x] Build/run System
  - [ ] Smarter code completion
