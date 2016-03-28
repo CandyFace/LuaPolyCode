@@ -9,6 +9,7 @@
     	{
             "shell": true,
         	"name": "Run",
+            "file_regex": "^(?:polyproject:)?[\t ](...*?):([0-9]*):?([0-9]*)",
         	"cmd": ["cd .. && polybuild --config=${project_path}/${project_base_name}.polyproject --out=${project_path}/${project_base_name}.polyapp && open ${project_path}/${project_base_name}.polyapp" ]
     	}
 	]
