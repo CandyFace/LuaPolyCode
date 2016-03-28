@@ -1,5 +1,6 @@
 {
-    "cmd": ["polybuild", "--config=${project_path}/${project_base_name}.polyproject", "--out=${project_path}/${project_base_name}.polyapp"],  
+    "shell": true,
+    "cmd": ["cd .. && polybuild --config=${project_path}/${project_base_name}.polyproject --out=${project_path}/${project_base_name}.polyapp"],  
     "file_regex": "^(?:polyproject:)?[\t ](...*?):([0-9]*):?([0-9]*)",
     "selector": "source.polyproject",
 
@@ -8,7 +9,7 @@
     	{
             "shell": true,
         	"name": "Run",
-        	"cmd": [ "polybuild --config=${project_path}/${project_base_name}.polyproject --out=${project_path}/${project_base_name}.polyapp && open ${project_path}/${project_base_name}.polyapp" ]
+        	"cmd": ["cd .. && polybuild --config=${project_path}/${project_base_name}.polyproject --out=${project_path}/${project_base_name}.polyapp && open ${project_path}/${project_base_name}.polyapp" ]
     	}
 	]
 }
