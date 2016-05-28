@@ -85,7 +85,7 @@
         },
         {
             "trigger": "setVelocity\t2DPhysics",
-            "contents": "setVelocity(${1:ScreenEntity ent}, ${2:Number fx}, ${3:}Number fy})"
+            "contents": "setVelocity(${1:ScreenEntity ent}, ${2:Number fx}, ${3:Number fy})"
         },
         {
             "trigger": "setVelocityX\t2DPhysics",
@@ -94,6 +94,18 @@
         {
             "trigger": "setVelocityY\t2DPhysics",
             "contents": "setVelocityY(${1:ScreenEntity ent}, ${2:Number fy})"
+        },
+        {
+            "trigger": "setVelocity\t2DPhysics",
+            "contents": "setVelocity(${1:Number fx}, ${2:Number fy})"
+        },
+        {
+            "trigger": "setVelocityX\t2DPhysics",
+            "contents": "setVelocityX(${1:Number fx})"
+        },
+        {
+            "trigger": "setVelocityY\t2DPhysics",
+            "contents": "setVelocityY(${1:Number fy})"
         },
         {
             "trigger": "setAngularVelocity\t2DPhysics",
@@ -186,18 +198,6 @@
         {
             "trigger": "setTransform\t2DPhysics",
             "contents": "setTransform(${1:Vector2 pos}, ${2:Number angle})"
-        },
-        {
-            "trigger": "setVelocity\t2DPhysics",
-            "contents": "setVelocity(${1:Number fx}, ${2:}Number fy})"
-        },
-        {
-            "trigger": "setVelocityX\t2DPhysics",
-            "contents": "setVelocityX(${1:Number fx})"
-        },
-        {
-            "trigger": "setVelocityY\t2DPhysics",
-            "contents": "setVelocityY(${1:Number fy})"
         },
         {
             "trigger": "setLinearDamping\t2DPhysics",
@@ -629,7 +629,95 @@
             "contents": "recalculateDistance ()"
         },
 
-        //TODO BezierPoint
+        {
+            "trigger": "BezierPoint (return nil)\tPolyCode",
+            "contents": "BezierPoint(${1: Number p1x}, ${2: Number p1y}, ${3: Number p1z}, ${4: Number p2x}, ${5: Number p2y}, ${6: Number p2z}, ${7: Number p3x}, ${8: Number p3y}, ${9: Number p3z}"
+        },
+
+        //TODO: Bone
+
+        {
+            "trigger": "Bone (return nil)\tPolyCode",
+            "contents": "Bone(${1: String bone}"
+        },
+        {
+            "trigger": "getName (return String)\tPolyCode",
+            "contents": "getName()"
+        },
+        {
+            "trigger": "setParentBone (return nil)\tPolyCode",
+            "contents": "setParentBone(${1: Bone bone}"
+        },
+        {
+            "trigger": "addChildBone (return nil)\tPolyCode",
+            "contents": "addChildBone(${1: Bone bone}, 
+        },
+        {
+            "trigger": "getParentBone (return Bone)\tPolyCode",
+            "contents": "getParentBone()"
+        },
+        {
+            "trigger": "getNumChildBones (Integer)\tPolyCode",
+            "contents": "getNumChildBones()"
+        },
+        {
+            "trigger": "getChildBone (return index)\tPolyCode",
+            "contents": "getChildBone(${1: Integer index}"
+        },
+        {
+            "trigger": "getBoneMatrix (return Matrix4)\tPolyCode",
+            "contents": "getBoneMatrix()"
+        },
+        {
+            "trigger": "setBoneMatrix (return nil)\tPolyCode",
+            "contents": "setBoneMatrix(${1: Matrix4 matrix}"
+        },
+        {
+            "trigger": "getRestMatrix (return Matrix4)\tPolyCode",
+            "contents": "getRestMatrix()"
+        },
+        {
+            "trigger": "getFullRestMatrix (return Matrix4)\tPolyCode",
+            "contents": "getFullRestMatrix()"
+        },
+        {
+            "trigger": "getParentRestMatrix (return Matrix4)\tPolyCode",
+            "contents": "getParentRestMatrix()"
+        },
+        {
+            "trigger": "getFinalMatrix (return Matrix4)\tPolyCode",
+            "contents": "getFinalMatrix()"
+        },
+        {
+            "trigger": "setRestMatrix (return nil)\tPolyCode",
+            "contents": "setRestMatrix(${1: Matrix4 matrix})"
+        },
+        {
+            "trigger": "setBaseMatrix (return nil)\tPolyCode",
+            "contents": "setBaseMatrix(${1: Matrix4 matrix})"
+        },
+        {
+            "trigger": "getBaseMatrix (return Matrix4)\tPolyCode",
+            "contents": "getBaseMatrix()"
+        },
+        {
+            "trigger": "getFullBaseMatrix (return Matrix4)\tPolyCode",
+            "contents": "getFullBaseMatrix()"
+        },
+        {
+            "trigger": "rebuildFinalMatrix (return nil)\tPolyCode",
+            "contents": "rebuildFinalMatrix()"
+        },
+        {
+            "trigger": "buildFinalMatrix (return Matrix4)\tPolyCode",
+            "contents": "buildFinalMatrix()"
+        },
+        {
+            "trigger": "intializeBone (return nil)\tPolyCode",
+            "contents": "intializeBone(${1: Vector3 basePosition}, ${2: Vector3 baseScale}, ${3: Quaternion baseRotation}, ${4: Vector3 restPosition}, ${5: Vector3 restScale}, ${6: Quaternion restRotation})"
+        }
+
+        //TODO Camera
 
 
 
