@@ -16,9 +16,10 @@ TODO:
  - [x] Syntax highlighing
  - [x] Build/run System
  - [ ] Smarter code completion
- - [x] 2D Physics related code completion
- - [x] 3D Physics related code completion
+ - [x] 2D Physics functions code completion
+ - [x] 3D Physics functions code completion
  - [x] Project generation snippet
+ - [ ] Code completion for static functions, properties etc...
  - [ ] CORE functions related code completion
  - [ ] Cleanup syntax in sublime.syntax, because setup originally from Erlang template.
  
