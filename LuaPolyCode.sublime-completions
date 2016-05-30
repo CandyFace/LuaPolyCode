@@ -749,9 +749,484 @@
         {
             "trigger": "intializeBone (Vector3 basePosition, Vector3 baseScale, Quaternion baseRotation, Vector3 restPosition, Vector3 restScale, Quaternion restRotation)\tPolyCode",
             "contents": "intializeBone(${1: basePosition}, ${2: baseScale}, ${3: baseRotation}, ${4: restPosition}, ${5: restScale}, ${6: restRotation})"
+        },
+        {
+            "trigger": "Camera (Scene parentScene)\tPolyCode",
+            "contents": "Camera(${1: parentScene})"
+        },
+        {
+            "trigger": "buildFrustumPlanes ()\tPolyCode",
+            "contents": "buildFrustumPlanes()"
+        },
+        {
+            "trigger": "isSphereInFrustum (Vector3 pos, Number fRadius)\tPolyCode",
+            "contents": "isSphereInFrustum (${1: pos}, ${2: fRadius})"
+        },
+        {
+            "trigger": "isAABBInFrustum (AABB aabb)\tPolyCode",
+            "contents": "isAABBInFrustum (${1:aabb})"
+        },
+        {
+            "trigger": "setOrthoMode (Boolean mode)\tPolyCode",
+            "contents": "setOrthoMode (${1: mode})"
+        },
+        {
+            "trigger": "setOrthoSize (Number orthoSizeX, Number orthoSizeY)\tPolyCode",
+            "contents": "setOrthoSize(${1: orthoSizeX}, ${2: orthoSizeY})"
+        },
+        {
+            "trigger": "setFrustumMode (Number left, Number right, Number bottom, Number top, Number front, Number back)\tPolyCode",
+            "contents": "setFrustumMode (${1: left}, ${2: right}, ${3: bottom}, ${4: top}, ${5: front}, ${6: back})"
+        },
+        {
+            "trigger": "getOrthoMode ()\tPolyCode",
+            "contents": "getOrthoMode ()"
+        },
+        {
+            "trigger": "getOrthoSizeX ()\tPolyCode",
+            "contents": "getOrthoSizeX ()"
+        },
+        {
+            "trigger": "getOrthoSizeY ()\tPolyCode",
+            "contents": "getOrthoSizeY ()"
+        },
+        {
+            "trigger": "setFov (Number fov)\tPolyCode",
+            "contents": "getOrthoSizeY (${1: fov})"
+        },
+        {
+            "trigger": "getFov ()\tPolyCode",
+            "contents": "getFov ()"
+        },
+        {
+            "trigger": "setClippingPlanes (Number nearClipPlane, Number farClipPlane)\tPolyCode",
+            "contents": "setClippingPlanes (${1: nearClipPlane, ${2: farClipPlane})"
+        },
+        {
+            "trigger": "getNearClippingPlane ()\tPolyCode",
+            "contents": "getNearClippingPlane ()"
+        },
+        {
+            "trigger": "getFarClippingPlane ()\tPolyCode",
+            "contents": "getFarClippingPlane ()"
+        },
+        {
+            "trigger": "setParentScene (Scene parentScene)\tPolyCode",
+            "contents": "setParentScene (${1: parentScene})"
+        },
+        {
+            "trigger": "getParentScene ()\tPolyCode",
+            "contents": "getParentScene ()"
+        },
+        {
+            "trigger": "doCameraTransform ()\tPolyCode",
+            "contents": "doCameraTransform ()"
+        },
+        {
+            "trigger": "hasFilterShader ()\tPolyCode",
+            "contents": "hasFilterShader ()"
+        },
+        {
+            "trigger": "drawFilter (Texture targetTexture, Number targetTextureWidth, Number targetTextureHeight, Texture targetColorTexture, Texture targetZTexture)\tPolyCode",
+            "contents": "drawFilter (${1: targetTexture}, ${2: targetTextureWidth}, ${3: targetTextureHeight}, ${4: targetColorTexture}, ${5: targetZTexture})"
+        },
+        {
+            "trigger": "setExposureLevel (Number level)\tPolyCode",
+            "contents": "setExposureLevel (${1: level})"
+        },
+        {
+            "trigger": "getExposureLevel ()\tPolyCode",
+            "contents": "getExposureLevel ()"
+        },
+        {
+            "trigger": "setPostFilter (Material shaderMat)\tPolyCode",
+            "contents": "setPostFilter (${1: shaderMat})"
+        },
+        {
+            "trigger": "setPostFilterByName (String shaderName)\tPolyCode",
+            "contents": "setPostFilterByName (${1: shaderName})"
+        },
+        {
+            "trigger": "removePostFilter ()\tPolyCode",
+            "contents": "removePostFilter ()"
+        },
+        {
+            "trigger": "getLocalShaderOptions ()\tPolyCode",
+            "contents": "getLocalShaderOptions ()"
+        },
+        {
+            "trigger": "getNumLocalShaderOptions ()\tPolyCode",
+            "contents": "getNumLocalShaderOptions ()"
+        },
+        {
+            "trigger": "getLocalShaderOption (Integer index)\tPolyCode",
+            "contents": "getLocalShaderOption (${1: index})"
+        },
+        {
+            "trigger": "getScreenShaderMaterial ()\tPolyCode",
+            "contents": "getScreenShaderMaterial ()"
+        },
+        {
+            "trigger": "Clone (Boolean deepClone, Boolean ignoreEditorOnly)\tPolyCode",
+            "contents": "Clone (${1: deepClone}, ${2: ignoreEditorOnly})"
+        },
+        {
+            "trigger": "applyClone (Entity clone, Boolean deepClone, Boolean ignoreEditorOnly)\tPolyCode",
+            "contents": "applyClone (${1: clone}, ${2: deepClone}, ${3: ignoreEditorOnly})"
+        },
+        {
+            "trigger": "getProjectionMatrix ()\tPolyCode",
+            "contents": "getProjectionMatrix ()"
+        },
+        {
+            "trigger": "setProjectionMatrix (Matrix4 matrix)\tPolyCode",
+            "contents": "setProjectionMatrix (${1: matrix})"
+        },
+        {
+            "trigger": "getViewport ()\tPolyCode",
+            "contents": "getViewport ()"
+        },
+        {
+            "trigger": "setOrthoSizeMode (Integer orthoSizeMode)\tPolyCode",
+            "contents": "setOrthoSizeMode (${1: orthoSizeMode})"
+        },
+        {
+            "trigger": "getOrthoSizeMode ()\tPolyCode",
+            "contents": "getOrthoSizeMode ()"
+        },
+        {
+            "trigger": "setProjectionMode (Integer mode)\tPolyCode",
+            "contents": "setProjectionMode (${1: mode})"
+        },
+        {
+            "trigger": "getProjectionMode ()\tPolyCode",
+            "contents": "getProjectionMode ()"
+        },
+        {
+            "trigger": "setUseGlobalFramebuffer (Boolean val)\tPolyCode",
+            "contents": "setUseGlobalFramebuffer (${1: val})"
+        },
+        {
+            "trigger": "getUseGlobalFramebuffer ()\tPolyCode",
+            "contents": "getUseGlobalFramebuffer ()"
+        },
+        {
+            "trigger": "Color (Number r, Number g, Number b, Number a)\tPolyCode",
+            "contents": "Color (${1: r}, ${2: g}, ${3: b}, ${4: a})"
+        },
+        {
+            "trigger": "setColorHex (Integer hex)\tPolyCode",
+            "contents": "setColorHex (${1: hex})"
+        },
+        {
+            "trigger": "setColorHexRGB (Integer hex)\tPolyCode",
+            "contents": "setColorHexRGB (${1: hex})"
+        },
+        {
+            "trigger": "setColorHexFromString (String hex)\tPolyCode",
+            "contents": "setColorHexFromString (${1: hex})"
+        },
+        {
+            "trigger": "setColorHSV (Number h, Number s, Number v)\tPolyCode",
+            "contents": "setColorHSV (${1: h},${2: s}, ${3: v})"
+        },
+        {
+            "trigger": "setColorRGBA (Integer r, Integer g, Integer b, Integer a)\tPolyCode",
+            "contents": "setColorRGBA ( ${1: r},  ${2: g},  ${3: b}, ${4: a})"
+        },
+        {
+            "trigger": "setColorRGB (Integer r, Integer g, Integer b)\tPolyCode",
+            "contents": "setColorRGB (${1: r}, ${2: g}, ${3: b})"
+        },
+        {   
+             "trigger": "setColor (Number r, Number g, Number b, Number a)\tPolyCode",
+            "contents": "setColor (${1: r}, ${2: g}, ${3: b}, ${4: a})"
+        },
+        {
+            "trigger": "blendColor (Color c1, Integer mode, Number amount, Color c2)\tPolyCode",
+            "contents": "blendColor (${1: c1}, ${2: mode}, ${3: amount}, ${4: c2})"
+        },
+        {
+            "trigger": "Random ()\tPolyCode",
+            "contents": "Random ()"
+        },
+        {
+            "trigger": "getBrightness ()\tPolyCode",
+            "contents": "getBrightness ()"
+        },
+        {
+            "trigger": "getHue ()\tPolyCode",
+            "contents": "getHue ()"
+        },
+        {
+            "trigger": "getSaturation ()\tPolyCode",
+            "contents": "getSaturation ()"
+        },
+        {
+            "trigger": "getValue ()\tPolyCode",
+            "contents": "getValue ()"
+        },
+        {
+            "trigger": "getUint ()\tPolyCode",
+            "contents": "getUint ()"
+        },
+        {
+            "trigger": "Config ()\tPolyCode",
+            "contents": "Config ()"
+        },
+        {
+            "trigger": "loadConfig (String cNameSpace, String fileName)\tPolyCode",
+            "contents": "loadConfig (${1: cNameSpace}, ${2: fileName})"
+        },
+        {
+            "trigger": "saveConfig (String cNameSpace, String fileName)\tPolyCode",
+            "contents": "saveConfig (${1: cNameSpace}, ${2: fileName})"
+        },
+        {
+            "trigger": "getEntry (String cNameSpace, String key)\tPolyCode",
+            "contents": "getEntry (${1: cNameSpace}, ${2: key})"
+        },
+        {
+            "trigger": "setStringValue (String cNameSpace, String key, String value )\tPolyCode",
+            "contents": "setStringValue (${1: cNameSpace}, ${2: key}, ${3: value})"
+        },
+        {
+            "trigger": "setNumericValue (String cNameSpace, String key, String value)\tPolyCode",
+            "contents": "setNumericValue (${1: cNameSpace}, ${2: key}, ${3: value})"
+        },
+        {
+            "trigger": "getNumericValue (String cNameSpace, key)\tPolyCode",
+            "contents": "getNumericValue (${1: cNameSpace}, ${2: key})"
+        },
+        {
+            "trigger": "getStringValue (String cNameSpace, key)\tPolyCode",
+            "contents": "getStringValue (${1: cNameSpace}, ${2: key})"
+        },
+        {
+            "trigger": "setBoolValue (String cNameSpace, String key, Boolean value)\tPolyCode",
+            "contents": "setBoolValue (${1: cNameSpace}, ${2: key}, ${3: value})"
+        },
+        {
+            "trigger": "getBoolValue (String cNameSpace, String key)\tPolyCode",
+            "contents": "getBoolValue (${1: cNameSpace}, ${2: key})"
+        },
+        {
+            "trigger": "PolycodeViewBase ()\tPolyCode",
+            "contents": "PolycodeViewBase ()"
+        },
+        {
+            "trigger": "TimeInfo ()\tPolyCode",
+            "contents": "TimeInfo ()"
+        },
+        {
+            "trigger": "CoreFileExtension ()\tPolyCode",
+            "contents": "CoreFileExtension ()"
+        },
+        {
+            "trigger": "Render ()\tPolyCode",
+            "contents": "Render ()"
+        },
+        {
+            "trigger": "systemUpdate ()\tPolyCode",
+            "contents": "systemUpdate ()"
+        },
+        {
+            "trigger": "updateAndRender ()\tPolyCode",
+            "contents": "updateAndRender ()"
+        },
+        {
+            "trigger": "enableMouse (Boolean newVal)\tPolyCode",
+            "contents": "enableMouse (${1: newVal})"
+        },
+        {
+            "trigger": "captureMouse (Boolean newVal)\tPolyCode",
+            "contents": "captureMouse (${1: newVal})"
+        },
+        {
+            "trigger": "setCursor (Integer cursorType)\tPolyCode",
+            "contents": "setCursor (${1: cursorType})"
+        },
+        {
+            "trigger": "warpCursor (Integer x, Integer y)\tPolyCode",
+            "contents": "warpCursor (${1: x}, ${2: y})"
+        },
+        {
+            "trigger": "createThread (Threaded target)\tPolyCode",
+            "contents": "createThread (${1: target})"
+        },
+        {
+            "trigger": "lockMutex (CoreMutex mutex)\tPolyCode",
+            "contents": "lockMutex (${1: mutex})"
+        },
+        {
+            "trigger": "unlockMutex (CoreMutex mutex)\tPolyCode",
+            "contents": "unlockMutex (${1: mutex})"
+        },
+        {
+            "trigger": "createMutex ()\tPolyCode",
+            "contents": "createMutex ()"
+        },
+        {
+            "trigger": "copyStringToClipboard (String str)\tPolyCode",
+            "contents": "copyStringToClipboard (${1: str})"
+        },
+        {
+            "trigger": "getClipboardString ()\tPolyCode",
+            "contents": "getClipboardString ()"
+        },
+        {
+            "trigger": "getServices ()\tPolyCode",
+            "contents": "getServices ()"
+        },
+        {
+            "trigger": "getFPS ()\tPolyCode",
+            "contents": "getFPS ()"
+        },
+        {
+            "trigger": "Shutdown ()\tPolyCode",
+            "contents": "Shutdown ()"
+        },
+        {
+            "trigger": "isFullscreen ()\tPolyCode",
+            "contents": "isFullscreen ()"
+        },
+        {
+            "trigger": "getAALevel ()\tPolyCode",
+            "contents": "getAALevel ()"
+        },
+        {
+            "trigger": "getInput ()\tPolyCode",
+            "contents": "getInput ()"
+        },
+        {
+            "trigger": "getXRes ()\tPolyCode",
+            "contents": "getXRes ()"
+        },
+        {
+            "trigger": "getYRes ()\tPolyCode",
+            "contents": "getYRes ()"
+        },
+        {
+            "trigger": "getBackingXRes ()\tPolyCode",
+            "contents": "getBackingXRes ()"
+        },
+        {
+            "trigger": "getBackingYRes ()\tPolyCode",
+            "contents": "getBackingYRes ()"
+        },
+        {
+            "trigger": "getScreenWidth ()\tPolyCode",
+            "contents": "getScreenWidth ()"
+        },
+        {
+            "trigger": "getScreenHeight ()\tPolyCode",
+            "contents": "getScreenHeight ()"
+        },
+        {
+            "trigger": "createFolder (String path)\tPolyCode",
+            "contents": "createFolder (${1: path})"
+        },
+        {
+            "trigger": "copyDiskItem (String itemPath, String destItemPath)\tPolyCode",
+            "contents": "copyDiskItem (${1: itemPath}, ${2: destItemPath})"
+        },
+        {
+            "trigger": "moveDiskItem (String itemPath, String destItemPath)\tPolyCode",
+            "contents": "moveDiskItem (${1: itemPath}, ${2: destItemPath})"
+        },
+        {
+            "trigger": "removeDiskItem (String itemPath)\tPolyCode",
+            "contents": "removeDiskItem (${1: itemPath})"
+        },
+        {
+            "trigger": "openFolderPicker ()\tPolyCode",
+            "contents": "openFolderPicker ()"
+        },
+        {
+            "trigger": "setFramerate (Integer frameRate, Integer maxFixedCycles)\tPolyCode",
+            "contents": "setFramerate (${1: frameRate}, ${2: maxFixedCycles})"
+        },
+        {
+            "trigger": "openFilePicker (CoreFileExtension ext, Boolean allowMultiple)\tPolyCode",
+            "contents": "openFilePicker (${1: ext}, ${2: allowMultiple})"
+        },
+        {
+            "trigger": "saveFilePicker (CoreFileExtension ext)\tPolyCode",
+            "contents": "saveFilePicker (${1: ext})"
+        },
+        {
+            "trigger": "setVideoMode (Integer xRes, Integer yRes, Boolean fullScreen, Boolean vSync, Integer aaLevel, Integer anisotropyLevel, Boolean retinaSupport)\tPolyCode",
+            "contents": "setVideoMode (${1: xRes}, ${2: yRes}, ${3: fullScreen}, ${4: vSync}, ${5: aaLevel}, ${6: anisotropyLevel}, ${7: retinaSupport})"
+        },
+        {
+            "trigger": "resizeTo (Integer xRes, Integer yRes)\tPolyCode",
+            "contents": "resizeTo (${1: xRes}, ${2: yRes})"
+        },
+        {
+            "trigger": "doSleep ()\tPolyCode",
+            "contents": "doSleep ()"
+        },
+        {
+            "trigger": "openURL (String url)\tPolyCode",
+            "contents": "openURL (${1: url})"
+        },
+        {
+            "trigger": "getElapsed ()\tPolyCode",
+            "contents": "getElapsed ()"
+        },
+        {
+            "trigger": "getTicks ()\tPolyCode",
+            "contents": "getTicks ()"
+        },
+        {
+            "trigger": "getRefreshIntervalMs ()\tPolyCode",
+            "contents": "getRefreshIntervalMs ()"
+        },
+        {
+            "trigger": "getTimeSleptMs ()\tPolyCode",
+            "contents": "getTimeSleptMs ()"
+        },
+        {
+            "trigger": "getFixedTimestep ()\tPolyCode",
+            "contents": "getFixedTimestep ()"
+        },
+        {
+            "trigger": "getTicksFloat ()\tPolyCode",
+            "contents": "getTicksFloat ()"
+        },
+        {
+            "trigger": "setUserPointer (nil ptr)\tPolyCode",
+            "contents": "setUserPointer (${1: ptr})"
+        },
+        {
+            "trigger": "getUserPointer ()\tPolyCode",
+            "contents": "getUserPointer ()"
+        },
+        {
+            "trigger": "executeExternalCommand (String command, String args, String inDirectory)\tPolyCode",
+            "contents": "executeExternalCommand (${1: command}, ${2: args}, ${3: inDirectory})"
+        },
+        {
+            "trigger": "getDefaultWorkingDirectory ()\tPolyCode",
+            "contents": "getDefaultWorkingDirectory ()"
+        },
+        {
+            "trigger": "getUserHomeDirectory ()\tPolyCode",
+            "contents": "getUserHomeDirectory ()"
+        },
+        {
+            "trigger": "makeApplicationMain ()\tPolyCode",
+            "contents": "makeApplicationMain ()"
+        },
+        {
+            "trigger": "getEventMutex ()\tPolyCode",
+            "contents": "getEventMutex ()"
+        },
+        {
+            "trigger": "removeThread (Threaded thread)\tPolyCode",
+            "contents": "removeThread (${1: thread})"
         }
 
-        //TODO Camera
-
+        //TODO: CoreInput
     ]
 }
