@@ -2483,27 +2483,27 @@
             "contents": "determinant ()"
         },
         {
-            "trigger": "Mesh (Integer meshType)\tPolyCode",
+            "trigger": "Mesh (Integer Mesh.QUAD_MESH)\tPolyCode",
             "contents": "Mesh (${1: Mesh.QUAD_MESH})"
         },
         {
-            "trigger": "Mesh (Integer meshType)\tPolyCode",
+            "trigger": "Mesh (Integer Mesh.TRI_MESH)\tPolyCode",
             "contents": "Mesh (${1: Mesh.TRI_MESH})"
         },
         {
-            "trigger": "Mesh (Integer meshType)\tPolyCode",
+            "trigger": "Mesh (Integer Mesh.TRIFAN_MESH)\tPolyCode",
             "contents": "Mesh (${1: Mesh.TRIFAN_MESH})"
         },
         {
-            "trigger": "Mesh (Integer meshType)\tPolyCode",
+            "trigger": "Mesh (Integer Mesh.TRISTRIP_MESH)\tPolyCode",
             "contents": "Mesh (${1: Mesh.TRISTRIP_MESH})"
         },
         {
-            "trigger": "Mesh (Integer meshType)\tPolyCode",
+            "trigger": "Mesh (Integer Mesh.LINE_MESH)\tPolyCode",
             "contents": "Mesh (${1: Mesh.LINE_MESH})"
         },
         {
-            "trigger": "Mesh (Integer meshType)\tPolyCode",
+            "trigger": "Mesh (Integer Mesh.POINT_MESH)\tPolyCode",
             "contents": "Mesh (${1: Mesh.POINT_MESH})"
         },
         {
@@ -2659,27 +2659,27 @@
             "contents": "getMeshType ()"
         },
         {
-            "trigger": "setMeshType (Integer meshType)\tPolyCode",
+            "trigger": "setMeshType (Integer Mesh.QUAD_MESH)\tPolyCode",
             "contents": "setMeshType (${1: Mesh.QUAD_MESH})"
         },
         {
-            "trigger": "setMeshType (Integer meshType)\tPolyCode",
+            "trigger": "setMeshType (Integer Mesh.TRI_MESH)\tPolyCode",
             "contents": "setMeshType (${1: Mesh.TRI_MESH})"
         },
         {
-            "trigger": "setMeshType (Integer meshType)\tPolyCode",
+            "trigger": "setMeshType (Integer Mesh.TRIFAN_MESH)\tPolyCode",
             "contents": "setMeshType (${1: Mesh.TRIFAN_MESH})"
         },
         {
-            "trigger": "setMeshType (Integer meshType)\tPolyCode",
+            "trigger": "setMeshType (Integer Mesh.TRISTRIP_MESH)\tPolyCode",
             "contents": "setMeshType (${1: Mesh.TRISTRIP_MESH})"
         },
         {
-            "trigger": "setMeshType (Integer meshType)\tPolyCode",
+            "trigger": "setMeshType (Integer Mesh.LINE_MESH)\tPolyCode",
             "contents": "setMeshType (${1: Mesh.LINE_MESH})"
         },
         {
-            "trigger": "setMeshType (Integer meshType)\tPolyCode",
+            "trigger": "setMeshType (Integer Mesh.POINT_MESH)\tPolyCode",
             "contents": "setMeshType (${1: Mesh.POINT_MESH})"
         },
         {
