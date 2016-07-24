@@ -3086,8 +3086,553 @@
         {
             "trigger": "generatePointsFromCurves(BezierCurve wCurve, BezierCurve xCurve, BezierCurve yCurve, BezierCurve zCurve)\tPolyCode",
             "contents": "generatePointsFromCurves(${1: wCurve}, ${2: xCurve}, ${3: yCurve}, ${4: zCurve})"
+        },
+        {
+            "trigger": "Ray()\tPolyCode",
+            "contents": "Ray()"
+        },
+        {
+            "trigger": "boxIntersect(Vector3 box, Matrix4 transformMatrix, Number near, Number far)\tPolyCode",
+            "contents": "boxIntersect(${1: box}, ${2: transformMatrix}, ${3: near}, ${4: far})"
+        },
+        {
+            "trigger": "planeIntersectPoint(Vector3 planeNormal, Number planeDistance)\tPolyCode",
+            "contents": "planeIntersectPoint(${1: planeNormal}, ${2: planeDistance})"
+        },
+        {
+            "trigger": "tranformByMatrix(Matrix4 matrix)\tPolyCode",
+            "contents": "tranformByMatrix(${1: matrix})"
+        },
+        {
+            "trigger": "closestPointOnRay(Vector3 point)\tPolyCode",
+            "contents": "closestPointOnRay(${1: point})"
+        },
+        {
+            "trigger": "closestPointsBetween(Ray ray2, Vector3 point1, Vector3 point2)\tPolyCode",
+            "contents": "closestPointsBetween(${1: ray$}, ${2: point1}, ${3: point2})"
+        },
+        {
+            "trigger": "polygonIntersect(Vector3 v1, Vector3 v2, Vector3 v3)\tPolyCode",
+            "contents": "polygonIntersect(${1: v1}, ${2: v2}, ${3: v3})"
+        },
+        {
+            "trigger": "Rectangle()\tPolyCode",
+            "contents": "Rectangle()"
+        },
+        {
+            "trigger": "setRect(Number x, Number y, Number w, Number h)\tPolyCode",
+            "contents": "setRect(${1: x}, ${2: y}, ${3: w}, ${4: h})"
+        },
+        {
+            "trigger": "Clipped(Rectangle rect)\tPolyCode",
+            "contents": "Clipped(${1: rect})"
+        },
+        {
+            "trigger": "minX()\tPolyCode",
+            "contents": "minX()"
+        },
+        {
+            "trigger": "maxX()\tPolyCode",
+            "contents": "maxX()"
+        },
+        {
+            "trigger": "minY()\tPolyCode",
+            "contents": "minY()"
+        },
+        {
+            "trigger": "maxY()\tPolyCode",
+            "contents": "maxY()"
+        },
+        {
+            "trigger": "RenderDataArray(Number type)\tPolyCode",
+            "contents": "RenderDataArray(${1: type})"
+        },
+        {
+            "trigger": "getArrayData()\tPolyCode",
+            "contents": "getArrayData()"
+        },
+        {
+            "trigger": "getDataSize()\tPolyCode",
+            "contents": "getDataSize()"
+        },
+        {
+            "trigger": "VertexDataArray(Number type)\tPolyCode",
+            "contents": "VertexDataArray(${1: type})"
+        },
+        {
+            "trigger": "getArrayData()\tPolyCode",
+            "contents": "getArrayData()"
+        },
+        {
+            "trigger": "getDataSize()\tPolyCode",
+            "contents": "getDataSize()"
+        },
+        {
+            "trigger": "IndexDataArray(Number type)\tPolyCode",
+            "contents": "IndexDataArray(${1: type})"
+        },
+        {
+            "trigger": "getArrayData()\tPolyCode",
+            "contents": "getArrayData()"
+        },
+        {
+            "trigger": "getDataSize()\tPolyCode",
+            "contents": "getDataSize()"
+        },
+        {
+            "trigger": "Resize(Number xRes, Number yRes)\tPolyCode",
+            "contents": "Resize(${1: xRes}, ${2: yRes})"
+        },
+        {
+            "trigger": "BeginRender()\tPolyCode",
+            "contents": "BeginRender()"
+        },
+        {
+            "trigger": "EndRender()\tPolyCode",
+            "contents": "EndRender()"
+        },
+        {
+            "trigger": "createCubemap(Texture t0, Texture t1, Texture t2, Texture t3, Texture t4, Texture t5 )\tPolyCode",
+            "contents": "createCubemap(${1: t0}, ${2: t1}, ${3: t2}, ${4: t3}, ${5: t4}, ${6: t5})"
+        },
+        {
+            "trigger": "createTexture(Number width, Number height, char textureData, Boolean clamp, Boolean createMipmaps, Number type)\tPolyCode",
+            "contents": "createTexture(${1: width},${2: height}, ${3: textureData}, ${4: clamp}, ${5: createMipmaps}, ${6: type})"
+        },
+        {
+            "trigger": "destroyTexture(Texture texture)\tPolyCode",
+            "contents": "destroyTexture(${1: texture})"
+        },
+        {
+            "trigger": "createRenderTextures(Texture colorBuffer, Texture depthBuffer, Number width, Number height, Boolean floatingPointBuffer)\tPolyCode",
+            "contents": "createRenderTextures(${1: colorBuffer}, ${2: depthBuffer}, ${3: width}, ${4: height}, ${5: floatingPointBuffer})"
+        },
+        {
+            "trigger": "createFramebufferTexture(Number width, Number height)\tPolyCode",
+            "contents": "createFramebufferTexture(${1: width}, ${2: height})"
+        },
+        {
+            "trigger": "bindFrameBufferTexture(Texture texture)\tPolyCode",
+            "contents": "bindFrameBufferTexture(${1: texture})"
+        },
+        {
+            "trigger": "bindFrameBufferTextureDepth(Texture texture)\tPolyCode",
+            "contents": "bindFrameBufferTextureDepth(${1: texture})"
+        },
+        {
+            "trigger": "unbindFramebuffers()\tPolyCode",
+            "contents": "unbindFramebuffers()"
+        },
+        {
+            "trigger": "renderScreenToImage()\tPolyCode",
+            "contents": "renderScreenToImage()"
+        },
+        {
+            "trigger": "renderBufferToImage(Texture texture)\tPolyCode",
+            "contents": "renderBufferToImage(${1: texture})"
+        },
+        {
+            "trigger": "setViewportSize(Number w, Number h)\tPolyCode",
+            "contents": "setViewportSize(${1: w}, ${2: h})"
+        },
+        {
+            "trigger": "resetViewport()\tPolyCode",
+            "contents": "resetViewport()"
+        },
+        {
+            "trigger": "getViewport()\tPolyCode",
+            "contents": "getViewport()"
+        },
+        {
+            "trigger": "loadIdentity()\tPolyCode",
+            "contents": "loadIdentity()"
+        },
+        {
+            "trigger": "setProjectionOrtho(Number xSize, Number ySize, Number near, Number far, Boolean centered)\tPolyCode",
+            "contents": "setProjectionOrtho(${1: xSize}, ${2: ySize}, ${3: near}, ${4: far}, ${5: centered})"
+        },
+        {
+            "trigger": "setPerspectiveDefaults()\tPolyCode",
+            "contents": "setPerspectiveDefaults()"
+        },
+        {
+            "trigger": "setProjectionMatrix(Matrix4 matrix)\tPolyCode",
+            "contents": "setProjectionMatrix(${1: matrix})"
+        },
+        {
+            "trigger": "setTexture(Texture texture)\tPolyCode",
+            "contents": "setTexture(${1: texture})"
+        },
+        {
+            "trigger": "enableBackfaceCulling(Boolean val)\tPolyCode",
+            "contents": "enableBackfaceCulling(${1: val})"
+        },
+        {
+            "trigger": "setClearColor(Number r, Number g, Number b, Number a)\tPolyCode",
+            "contents": "setClearColor(${1: r}, ${2: g}, ${3: b}, ${4: a})"
+        },
+        {
+            "trigger": "setAmbientColor(Number r, Number g, Number b)\tPolyCode",
+            "contents": "setAmbientColor(${1: r}, ${2: g}, ${3: b})"
+        },
+        {
+            "trigger": "clearScreen(Boolean clearColor, Boolean clearDepth)\tPolyCode",
+            "contents": "clearScreen(${1: clearColor}, ${2: clearDepth})"
+        },
+        {
+            "trigger": "translate2D(Number x, Number y)\tPolyCode",
+            "contents": "translate2D(${1: x}, ${2: y})"
+        },
+        {
+            "trigger": "rotate2D(Number angle)\tPolyCode",
+            "contents": "rotate2D(${1: angle})"
+        },
+        {
+            "trigger": "scale2D(Vector2 scale)\tPolyCode",
+            "contents": "scale2D(${1: scale})"
+        },
+        {
+            "trigger": "setVertexColor(Number r, Number g, Number b, Number a)\tPolyCode",
+            "contents": "setVertexColor(${1: r}, ${2: g}, ${3: b}, ${4: a})"
+        },
+        {
+            "trigger": "pushRenderDataArray(RenderDataArray array)\tPolyCode",
+            "contents": "pushRenderDataArray(${1: array})"
+        },
+        {
+            "trigger": "drawArrays(Number drawType, IndexDataArray indexArray)\tPolyCode",
+            "contents": "drawArrays(${1: drawType}, ${2: indexArray})"
+        },
+        {
+            "trigger": "translate3D(Vector3 position)\tPolyCode",
+            "contents": "translate3D(${1: position})"
+        },
+        {
+            "trigger": "scale3D(Vector3 scale)\tPolyCode",
+            "contents": "scale3D(${1: scale})"
+        },
+        {
+            "trigger": "pushMatrix()\tPolyCode",
+            "contents": "pushMatrix()"
+        },
+        {
+            "trigger": "popMatrix()\tPolyCode",
+            "contents": "popMatrix()"
+        },
+        {
+            "trigger": "setLineSmooth(Boolean val)\tPolyCode",
+            "contents": "setLineSmooth(${1: val})"
+        },
+        {
+            "trigger": "setLineSize(Number lineSize)\tPolyCode",
+            "contents": "setLineSize(${1: lineSize})"
+        },
+        {
+            "trigger": "setPointSize(Number pointSize)\tPolyCode",
+            "contents": "setPointSize(${1: pointSize})"
+        },
+        {
+            "trigger": "setPointSmooth(Boolean val)\tPolyCode",
+            "contents": "setPointSmooth(${1: val})"
+        },
+        {
+            "trigger": "enableLighting(Boolean enable)\tPolyCode",
+            "contents": "enableLighting(${1: enable})"
+        },
+        {
+            "trigger": "enableFog(Boolean enable)\tPolyCode",
+            "contents": "enableFog(${1: enable})"
+        },
+        {
+            "trigger": "setFogProperties(Number fogMode, Color color, Number density, Number startDepth, Number endDepth)\tPolyCode",
+            "contents": "setFogProperties(${1: fogMode}, ${2: color}, ${3: density}, ${4: startDepth}, ${5: endDepth})"
+        },
+        {
+            "trigger": "multModelviewMatrix(Matrix4 matrix)\tPolyCode",
+            "contents": "multModelviewMatrix(${1: matrix})"
+        },
+        {
+            "trigger": "setModelviewMatrix(Matrix4 matrix)\tPolyCode",
+            "contents": "setModelviewMatrix(${1: matrix})"
+        },
+        {
+            "trigger": "setBlendingMode(Number blendingMode)\tPolyCode",
+            "contents": "setBlendingMode(${1: blendingMode})"
+        },
+        {
+            "trigger": "applyMaterial(Material mat, ShaderBinding localOptions, Number shaderIndex, Boolean forceMaterial)\tPolyCode",
+            "contents": "applyMaterial(${1: mat}, ${2: localOptions}, ${3: shaderIndex}, ${4: forceMaterial})"
+        },
+        {
+            "trigger": "clearShader()\tPolyCode",
+            "contents": "clearShader()"
+        },
+        {
+            "trigger": "setDepthFunction(Number depthFunction)\tPolyCode",
+            "contents": "setDepthFunction(${1: depthFunction})"
+        },
+        {
+            "trigger": "createVertexBufferForMesh(Mesh mesh)\tPolyCode",
+            "contents": "createVertexBufferForMesh(${1: mesh})"
+        },
+        {
+            "trigger": "drawVertexBuffer(VertexBuffer buffer, Boolean enableColorBuffer)\tPolyCode",
+            "contents": "drawVertexBuffer(${1: buffer}, ${2: enableColorBuffer})"
+        },
+        {
+            "trigger": "enableDepthTest(Boolean val)\tPolyCode",
+            "contents": "enableDepthTest(${1: val})"
+        },
+        {
+            "trigger": "enableDepthWrite(Boolean val)\tPolyCode",
+            "contents": "enableDepthWrite(${1: val})"
+        },
+        {
+            "trigger": "setWireframePolygonMode(Boolean val)\tPolyCode",
+            "contents": "setWireframePolygonMode(${1: val})"
+        },
+        {
+            "trigger": "billboardMatrix()\tPolyCode",
+            "contents": "billboardMatrix()"
+        },
+        {
+            "trigger": "billboardMatrixWithScale(Vector3 scale)\tPolyCode",
+            "contents": "billboardMatrixWithScale(${1: scale})"
+        },
+        {
+            "trigger": "setTextureFilteringMode(Number mode)\tPolyCode",
+            "contents": "setTextureFilteringMode(${1: mode})"
+        },
+        {
+            "trigger": "setProjectionFromFrustum(Number left, Number right, Number, bottom, Number top, Number front, Number back)\tPolyCode",
+            "contents": "setProjectionFromFrustum(${1: left}, ${2: right}, ${3: bottom}, ${4: top}, ${5: front}, ${6: back})"
+        },
+        {
+            "trigger": "setProjectionFromFoV(Number fov, Number near, Number far)\tPolyCode",
+            "contents": "setProjectionFromFoV(${1: fov}, ${2: near}, ${3: far})"
+        },
+        {
+            "trigger": "enableAlphaTest(Boolean val)\tPolyCode",
+            "contents": "enableAlphaTest(${1: val})"
+        },
+        {
+            "trigger": "clearBuffer(Boolean colorBuffer, Boolean depthBuffer)\tPolyCode",
+            "contents": "clearBuffer(${1: colorBuffer}, ${2: depthBuffer})"
+        },
+        {
+            "trigger": "drawToColorBuffer(Boolean val)\tPolyCode",
+            "contents": "drawToColorBuffer(${1: val})"
+        },
+        {
+            "trigger": "getCameraMatrix()\tPolyCode",
+            "contents": "getCameraMatrix()"
+        },
+        {
+            "trigger": "setCameraMatrix(Matrix4 matrix)\tPolyCode",
+            "contents": "setCameraMatrix(${1: matrix})"
+        },
+        {
+            "trigger": "drawScreenQuad(Number qx, Number qy)\tPolyCode",
+            "contents": "drawScreenQuad(${1: qx}, ${2: qy})"
+        },
+        {
+            "trigger": "getXRes()\tPolyCode",
+            "contents": "getXRes()"
+        },
+        {
+            "trigger": "getYRes()\tPolyCode",
+            "contents": "getYRes()"
+        },
+        {
+            "trigger": "isScissorEnabled()\tPolyCode",
+            "contents": "isScissorEnabled()"
+        },
+        {
+            "trigger": "enableScissor(Boolean val)\tPolyCode",
+            "contents": "enableScissor(${1: val})"
+        },
+        {
+            "trigger": "setScissorBox(Rectangle box)\tPolyCode",
+            "contents": "setScissorBox(${1: box})"
+        },
+        {
+            "trigger": "getScissorBox()\tPolyCode",
+            "contents": "getScissorBox()"
+        },
+        {
+            "trigger": "setAnisotropyAmount(Number amount)\tPolyCode",
+            "contents": "setAnisotropyAmount(${1: amount})"
+        },
+        {
+            "trigger": "getAnisotropyAmount()\tPolyCode",
+            "contents": "getAnisotropyAmount()"
+        },
+        {
+            "trigger": "cullFrontFaces(Boolean val)\tPolyCode",
+            "contents": "cullFrontFaces(${1: val})"
+        },
+        {
+            "trigger": "clearLights()\tPolyCode",
+            "contents": "clearLights()"
+        },
+        {
+            "trigger": "addLight(Number lightImportance, Vector3 position, Vector3 direction, Number type, Color color, Color specColor, Number constantAttenuation, Number linAttenuation, Number quadraticAtteniation, Number intensity, Number spotlightCutoff, Boolean shadowEnabled, Matrix4 texMatrix, Texture shadowMapTexture)\tPolyCode",
+            "contents": "addLight(${1: lightImportance}, ${2: position}, ${3: direction}, ${4: type}, ${5: color}, ${6: specColor}, ${7: constantAttenuation}, ${8: linAttenuation}, ${9: quadraticAtteniation}, ${10: intensity}, ${11: spotlightCutoff}, ${12: shadowEnabled}, ${13: texMatrix}, ${14: shadowMapTexture})"
+        },
+        {
+            "trigger": "setExposureLevel(Number level)\tPolyCode",
+            "contents": "setExposureLevel(${1: level})"
+        },
+        {
+            "trigger": "projectRayFrom2DCoordinate(Number x, Number y, Matrix4 cameraMatrix, Matrix4 projectionMatrix, Rectangle viewport)\tPolyCode",
+            "contents": "projectRayFrom2DCoordinate(${1: x}, ${2: y}, ${3: cameraMatrix}, ${4: projectionMatrix}, ${5: viewport})"
+        },
+        {
+            "trigger": "Project(Matrix4 cameraMatrix, Matrix4 projectionMatrix, Rectangle viewport, Vector3 coordinate)\tPolyCode",
+            "contents": "Project(${1: cameraMatrix}, ${2: projectionMatrix}, ${3: viewport}, ${4: coordinate})"
+        },
+        {
+            "trigger": "enableShaders(Boolean val)\tPolyCode",
+            "contents": "enableShaders(${1: val})"
+        },
+        {
+            "trigger": "getViewportWidth()\tPolyCode",
+            "contents": "getViewportWidth()"
+        },
+        {
+            "trigger": "getViewportHeight()\tPolyCode",
+            "contents": "getViewportHeight()"
+        },
+        {
+            "trigger": "setViewportShift(Number shiftX, Number shiftY)\tPolyCode",
+            "contents": "setViewportShift(${1: shiftX}, ${2: shiftY})"
+        },
+        {
+            "trigger": "getDataPointerForName(String name)\tPolyCode",
+            "contents": "getDataPointerForName(${1: name})"
+        },
+        {
+            "trigger": "setRendererShaderParams(Shader shader, ShaderBinding binding)\tPolyCode",
+            "contents": "setRendererShaderParams(${1: shader}, ${2: binding})"
+        },
+        {
+            "trigger": "addShaderModule(PolycodeShaderModule module)\tPolyCode",
+            "contents": "addShaderModule(${1: module})"
+        },
+        {
+            "trigger": "getProjectionMatrix()\tPolyCode",
+            "contents": "getProjectionMatrix()"
+        },
+        {
+            "trigger": "getModelviewMatrix()\tPolyCode",
+            "contents": "getModelviewMatrix()"
+        },
+        {
+            "trigger": "Unproject(Number x, Number y, Matrix cameraMatrix, Matrix4 projectionMatrix, Rectangle viewport)\tPolyCode",
+            "contents": "Unproject(${1: x}, ${2: y}, ${3: cameraMatrix}, ${4: projectionMatrix}, ${5: viewport})"
+        },
+        {
+            "trigger": "sortLights()\tPolyCode",
+            "contents": "sortLights()"
+        },
+        {
+            "trigger": "getNumPointLights()\tPolyCode",
+            "contents": "getNumPointLights()"
+        },
+        {
+            "trigger": "getNumSpotLights()\tPolyCode",
+            "contents": "getNumSpotLights()"
+        },
+        {
+            "trigger": "getNumLights()\tPolyCode",
+            "contents": "getNumLights()"
+        },
+        {
+            "trigger": "getPointLights()\tPolyCode",
+            "contents": "getPointLights()"
+        },
+        {
+            "trigger": "getSpotLights()\tPolyCode",
+            "contents": "getSpotLights()"
+        },
+        {
+            "trigger": "setBackingResolutionScale(Number xScale, Number yScale)\tPolyCode",
+            "contents": "setBackingResolutionScale(${1: xScale}, ${2: yScale})"
+        },
+        {
+            "trigger": "getBackingResolutionScaleX()\tPolyCode",
+            "contents": "getBackingResolutionScaleX()"
+        },
+        {
+            "trigger": "getBackingResolutionScaleY()\tPolyCode",
+            "contents": "getBackingResolutionScaleY()"
+        },
+        {
+            "trigger": "setOverrideMaterial(Material mat)\tPolyCode",
+            "contents": "setOverrideMaterial(${1: mat})"
+        },
+        {
+            "trigger": "pushVertexColor()\tPolyCode",
+            "contents": "pushVertexColor()"
+        },
+        {
+            "trigger": "popVertexColor()\tPolyCode",
+            "contents": "popVertexColor()"
+        },
+        {
+            "trigger": "loadVertexColorIdentity()\tPolyCode",
+            "contents": "loadVertexColorIdentity()"
+        },
+        {
+            "trigger": "multiplyVertexColor(Color color)\tPolyCode",
+            "contents": "multiplyVertexColor(${1: color})"
+        },
+        {
+            "trigger": "setRenderToGlobalFramebuffer(Boolean val)\tPolyCode",
+            "contents": "setRenderToGlobalFramebuffer(${1: val})"
+        },
+        {
+            "trigger": "getRenderToGlobalFramebuffer()\tPolyCode",
+            "contents": "getRenderToGlobalFramebuffer()"
+        },
+        {
+            "trigger": "getGlobalColorFramebuffer()\tPolyCode",
+            "contents": "getGlobalColorFramebuffer()"
+        },
+        {
+            "trigger": "getGlobalDepthFramebuffer()\tPolyCode",
+            "contents": "getGlobalDepthFramebuffer()"
+        },
+        {
+            "trigger": "Resource(Number type)\tPolyCode",
+            "contents": "Resource(${1: type})"
+        },
+        {
+            "trigger": "reloadResource()\tPolyCode",
+            "contents": "reloadResource()"
+        },
+        {
+            "trigger": "getResourceName()\tPolyCode",
+            "contents": "getResourceName()"
+        },
+        {
+            "trigger": "getResourceType()\tPolyCode",
+            "contents": "getResourceType()"
+        },
+        {
+            "trigger": "setResourceName(String newName)\tPolyCode",
+            "contents": "setResourceName(${1: newName})"
+        },
+        {
+            "trigger": "setResourcePath(String path)\tPolyCode",
+            "contents": "setResourcePath(${1: path})"
+        },
+        {
+            "trigger": "getResourcePath()\tPolyCode",
+            "contents": "getResourcePath()"
         }
-        //TODO: Ray
+
+        //TODO: ResourcePool
 
     ]
 }
