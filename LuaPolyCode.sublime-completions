@@ -3630,9 +3630,393 @@
         {
             "trigger": "getResourcePath()\tPolyCode",
             "contents": "getResourcePath()"
+        },
+        {
+        	"trigger": "ResourcePool (String name, ResourcePool fallbackPool)\tPolyCode",
+        	"contents": "ResourcePool (${1: name}, ${2: fallbackPool})"
+        },
+        {
+        	"trigger": "setFallbackPool (ResourcePool pool)\tPolyCode",
+        	"contents": "setFallbackPool(${1:pool})"
+        },
+        {
+        	"trigger": "addResource (Resource resource)\tPolyCode",
+        	"contents": "addResource (${1: Resource})"
+        },
+        {
+        	"trigger": "removeResource (Resource resource)\tPolyCode",
+        	"contents": "removeResource (${1: resource})"
+        },
+        {
+        	"trigger": "hasResource (Resource resource)\tPolyCode",
+        	"contents": "hasResource (${1: resource})"
+        },
+        {
+        	"trigger": "getResource (Integer resourceType, String resourceName)\tPolyCode",
+        	"contents": "getResource (${1: resourceType}, ${2: resourceName})"
+        },
+        {
+        	"trigger": "getName ()\tPolyCode",
+        	"contents": "getName ()"
+        },
+        {
+        	"trigger": "setName (Strign name)\tPolyCode",
+        	"contents": "setName (${1: name})"
+        },
+        {
+        	"trigger": "getResourceByPath (String resourcePath)\tPolyCode",
+        	"contents": "getResourceByPath (${1: resourcepath})"
+        },
+        {
+        	"trigger": "getResources (Integer resourceType)\tPolyCode",
+        	"contents": "getResources (${1: resourceType})"
+        },
+        {
+        	"trigger": "checkForChangedFiles ()\tPolyCode",
+        	"contents": "checkForChangedFiles ()"
+        },
+        {
+        	"trigger": "ResourceManager ()\tPolyCode",
+        	"contents": "ResourceManager ()"
+        },
+        {
+        	"trigger": "addDirResource (String dir, Boolean recursive)\tPolyCode",
+        	"contents": "addDirResource (${1: dir}, ${2: recursive})"
+        },
+        {
+        	"trigger": "addArchive (String path)\tPolyCode",
+        	"contents": "addArchive (${1: dir})"
+        },
+        {
+        	"trigger": "removeArchive (String path)\tPolyCode",
+        	"contents": "removeArchive (${1: path})"
+        },
+        {
+        	"trigger": "parseTexturesIntoPool (ResourcePool pool, String dirPath, Boolean recursive, String basePath)\tPolyCode",
+        	"contents": "parseTexturesIntoPool (${1: pool}, ${2: dirPath}, ${3: recursive}, ${4: basePath})"
+        },
+        {
+        	"trigger": "parseMaterialsIntoPool (ResourcePool pool, String dirPath, Boolean recursive)\tPolycode",
+        	"contents": "parseMaterialsIntoPool (${1: pool}, ${2: dirPath}, ${3: recursive})"
+        },
+        {
+        	"trigger": "parseShadersIntoPool (ResourcePool pool, String dirPath, Boolean recursive)\tPolyCode",
+        	"contents": "parseShadersIntoPool (${1: pool}, ${2: dirPath}, ${3: recursive})"
+        },
+        {
+        	"trigger": "parseProgramsIntoPool (ResourcePool pool, String dirPath, Boolean recursive)\tPolyCode",
+        	"contents": "parseProgramsIntoPool (${1: pool}, ${2: dirPath}, ${3: recursive})"
+        },
+        {
+        	"trigger": "parseCubemapsIntoPool (ResourcePool pool, String dirPath, Boolean recursive)\tPolyCode",
+        	"contents": "parseCubemapsIntoPool (${1: pool}, ${2: dirPath}, ${3: recursive})"
+        },
+        {
+        	"trigger": "parseOtherIntoPool (ResourcePool pool, String dirPath, Boolean recursive)\tPolyCode",
+        	"contents": "parseOtherIntoPool (${1: pool}, ${2: dirPath}, ${3: recursive})"
+        },
+        {
+        	"trigger": "getGlobalPool ()\tPolyCode",
+        	"contents": "getGlobalPool ()"
+        },
+        {
+        	"trigger": "getResourcePoolByName (String name)\tPolyCode",
+        	"contents": "getResourcePoolByName (${1: name})"
+        },
+        {
+        	"trigger": "addResourcePool (ResourcePool pool)\tPolyCode",
+        	"contents": "addResourcePool (${1: pool})"
+        },
+        {
+        	"trigger": "removeResourcePool (ResourcePool pool)\tPolyCode",
+        	"contents": "removeResourcePool (${1: pool})"
+        },
+        {
+        	"trigger": "getResources (Integer resourceType)\tPolyCode",
+        	"contents": "getResources (${1: resourceType})"
+        },
+        {
+        	"trigger": "removeResource (Resource resource)\tPolyCode",
+        	"contents": "removeResource (${1: resource})"
+        },
+        {
+        	"trigger": "subscribeToResourcePool (ResourcePool pool)\tPolyCode",
+        	"contents": "subscribeToResourcePool (${1: pool})"
+        },
+        {
+        	"trigger": "unsubscibeFromResourcePool (ResourcePool pool)\tPolyCode",
+        	"contents": "unsubscibeFromResourcePool (${1: pool})"
+        },
+        {
+        	"trigger": "Scene (Integer sceneType, Boolean virtualScene)\tPolyCode",
+        	"contents": "Scene (${1:sceneType}, ${2:virtualScene})"
+        },
+        {
+        	"trigger": "addEntity (Entity entitiy)\tPolyCode",
+        	"contents": "addEntity (${1: entity})"
+        },
+        {
+        	"trigger": "addChild (Entity entity)\tPolyCode",
+        	"contents": "addChild (${1: entity})"
+        },
+        {
+        	"trigger": "removeEntity (Entity entity)\tPolyCode",
+        	"contents": "removeEntity (${1: entity})"
+        },
+        {
+        	"trigger": "getDefaultCamera ()\tPolyCode",
+        	"contents": "getDefaultCamera ()"
+        },
+        {
+        	"trigger": "getActiveCamera ()\tPolyCode",
+        	"contents": "getActiveCamera ()"
+        },
+        {
+        	"trigger": "setActiveCamera (Camera camera)\tPolyCode",
+        	"contents": "setActiveCamera (${1: camera})"
+        },
+        {
+        	"trigger": "enableLighting (Boolean enable)\tPolyCode",
+        	"contents": "enableLighting (${1: enable})"
+        },
+        {
+        	"trigger": "enableFog (Boolean enable)\tPolyCode",
+        	"contents": "enableFog (${1: enable})"
+        },
+        {
+        	"trigger": "setFogProperties (Integer fogMode, Color color, Number density, Number startDepth, Number endDepth )\tPolyCode",
+        	"contents": "addResourcePool (${1: fogMode}, ${2: color}, ${3: density}, ${4: startDepth}, ${5: endDepth})"
+        },
+        {
+        	"trigger": "setSceneType(Integer newType)\tPolyCode",
+        	"contents": "setSceneType(${1: newType})"
+        },
+        {
+        	"trigger": "setVirtual(Boolean val)\tPolyCode",
+        	"contents": "setVirtual(${1: val})"
+        },
+        {
+        	"trigger": "isVirtual()\tPolyCode",
+        	"contents": "isVirtual()"
+        },
+        {
+        	"trigger": "isEnabled()\tPolyCode",
+        	"contents": "isEnabled()"
+        },
+        {
+        	"trigger": "setEnabled(Boolean enabled)\tPolyCode",
+        	"contents": "setEnabled(${1: enabled})"
+        },
+        {
+        	"trigger": "Render(Camera targetCamera)\tPolyCode",
+        	"contents": "Render(${1: targetCamera})"
+        },
+        {
+        	"trigger": "RenderDepthOnly(Camera targetCamera)\tPolyCode",
+        	"contents": "RenderDepthOnly(${1: targetCamera})"
+        },
+        {
+        	"trigger": "setOverrideMaterial(Material mat)\tPolyCode",
+        	"contents": "setOverrideMaterial(${1: mat})"
+        },
+        {
+        	"trigger": "projectRayFromCameraAndViewportCoordinate(Camera camera, Vector2 coordinate)\tPolyCode",
+        	"contents": "projectRayFromCameraAndViewportCoordinate(${1: camera}, ${2: coordinate})"
+        },
+        {
+        	"trigger": "addLight(Scenelight light)\tPolyCode",
+        	"contents": "addLight(${1: light})"
+        },
+        {
+        	"trigger": "removeLight(Scenelight light)\tPolyCode",
+        	"contents": "removeLight(${1: light})"
+        },
+        {
+        	"trigger": "getNumLights()\tPolyCode",
+        	"contents": "getNumLights()"
+        },
+        {
+        	"trigger": "getLight(Integer index)\tPolyCode",
+        	"contents": "getLight(${1: index})"
+        },
+        {
+        	"trigger": "doVisibilityCheck(Boolean val)\tPolyCode",
+        	"contents": "doVisibilityCheck(${1: val})"
+        },
+        {
+        	"trigger": "doesVisibilityChecking()\tPolyCode",
+        	"contents": "doesVisibilityChecking()"
+        },
+        {
+        	"trigger": "SceneEntityInstanceResourceEntry(SceneEntityInstance instance)\tPolyCode",
+        	"contents": "SceneEntityInstanceResourceEntry(${1: instance})"
+        },
+        {
+        	"trigger": "getInstance()\tPolyCode",
+        	"contents": "getInstance()"
+        },
+        {
+        	"trigger": "reloadResource()\tPolyCode",
+        	"contents": "reloadResource()"
+        },
+        {
+        	"trigger": "SceneEntityInstance(Scene parentScene, String fileName)\tPolyCode",
+        	"contents": "SceneEntityInstance(${1: parentScene}, ${2: filename})"
+        },
+        {
+        	"trigger": "Clone(Boolean deepClone, Boolean ignoreEditorOnly)\tPolyCode",
+        	"contents": "Clone(${1: deepClone}, ${2: ignoreEditorOnly})"
+        },
+        {
+        	"trigger": "applyClone(Entity clone, Boolean deepClone, Boolean ignoreEditorOnly)\tPolyCode",
+        	"contents": "applyClone(${1: clone}, ${2: deepClone}, ${3: ignoreEditorOnly})"
+        },
+        {
+        	"trigger": "reloadEntityInstance()\tPolyCode",
+        	"contents": "reloadEntityInstance()"
+        },
+        {
+        	"trigger": "clearInstance()\tPolyCode",
+        	"contents": "clearInstance()"
+        },
+        {
+        	"trigger": "parseObjectIntoCurve(ObjectEntry entry, BezierCurve curve)\tPolyCode",
+        	"contents": "parseObjectIntoCurve(${1: entry}, ${2: curve})"
+        },
+        {
+        	"trigger": "loadObjectEntryIntoEntity (ObjectEntry entry, Entity targetEntity, Integer entityFileVersion)\tPolyCode",
+        	"contents": "loadObjectEntryIntoEntity (${1:entry}, ${2:targetEntity}, ${3:entityFileVersion})"
+        },
+        {
+        	"trigger": "loadFromFile(String fileName)\tPolyCode",
+        	"contents": "loadFromFile(${1:fileName})"
+        },
+        {
+        	"trigger": "applySceneMesh(ObjectEntry entry, SceneMesh sceneMesh)\tPolyCode",
+        	"contents": "applySceneMesh(${1:entry}, ${2:sceneMesh})"
+        },
+        {
+        	"trigger": "linkResourcePool(ResourcePool resource)\tPolyCode",
+        	"contents": "linkResourcePool(${1:resource})"
+        },
+        {
+        	"trigger": "getNumLinkedResourePools()\tPolyCode",
+        	"contents": "getNumLinkedResourePools()"
+        },
+        {
+        	"trigger": "getLinkedResourcePoolAtIndex(Integer index)\tPolyCode",
+        	"contents": "getLinkedResourcePoolAtIndex(${1: index})"
+        },
+        {
+        	"trigger": "unlinkResourcePool(ResourcePool pool)\tPolyCode",
+        	"contents": "unlinkResourcePool(${1: pool})"
+        },
+        {
+        	"trigger": "getResourceEntry()\tPolyCode",
+        	"contents": "getResourceEntry()"
+        },
+        {
+        	"trigger": "getTopLevelResourcePool()\tPolyCode",
+        	"contents": "getTopLevelResourcePool()"
+        },
+        {
+        	"trigger": "hasLayerID(char layerID)\tPolyCode",
+        	"contents": "hasLayerID(${1:layerID})"
+        },
+        {
+        	"trigger": "getNumLayers()\tPolyCode",
+        	"contents": "getNumLayers()"
+        },
+        {
+        	"trigger": "getLayerAtIndex(Integer index)\tPolyCode",
+        	"contents": "getLayerAtIndex(${1: index})"
+        },
+        {
+        	"trigger": "removeLayer(SceneEntityInstanceLayer layer)\tPolyCode",
+        	"contents": "removeLayer(${1: layer})"
+        },
+        {
+        	"trigger": "createNewLayer(String name)\tPolyCode",
+        	"contents": "createNewLayer(${1: name})"
+        },
+        {
+        	"trigger": "getFileName()\tPolyCode",
+        	"contents": "getFileName()"
+        },
+        {
+        	"trigger": "SceneEntityInstanceLayer(SceneEntityInstance instance)\tPolyCode",
+        	"contents": "SceneEntityInstanceLayer(${1: instance})"
+        },
+        {
+        	"trigger": "setLayerVisibility(Boolean val)\tPolyCode",
+        	"contents": "setLayerVisibility(${1: val})"
+        },
+        {
+        	"trigger": "SceneImage(String fileName)\tPolyCode",
+        	"contents": "SceneImage(${1: fileName})"
+        },
+        {
+        	"trigger": "Clone(Boolean deepClone, Boolean ignoreEditorOnly)\tPolyCode",
+        	"contents": "Clone(${1: deepClone}, ${2: ignoreEditorOnly})"
+        },
+        {
+        	"trigger": "applyClone(Entity clone, Boolean deepClone, Boolean ignoreEditorOnly)\tPolyCode",
+        	"contents": "applyClone(${1: clone}, ${2: deepClone}, ${3: ignoreEditorOnly})"
+        },
+        {
+        	"trigger": "setImageCoordinates(Number x, Number y, Number width, Number height, Number realWidth, Number realHeight)\tPolyCode",
+        	"contents": "setImageCoordinates(${1: x}, ${2: y}, ${3: width}, ${4: height}, ${5: realWidth}, ${6: realHeight})"
+        },
+        {
+        	"trigger": "getImageWidth()\tPolyCode",
+        	"contents": "getImageWidth()"
+        },
+        {
+        	"trigger": "getImageHeight()\tPolyCode",
+        	"contents": "getImageHeight()"
+        },
+        {
+        	"trigger": "SceneLabel(String text, Integer size, String fontName, Integer amode, Number actualHeight, Boolean premultiplyAlpha)\tPolyCode",
+        	"contents": "SceneLabel(${1:text}, ${2: size}, ${3: fontName}, ${4: amode}, ${5: actualHeight}, ${6: premultiplyAlpha})"
+        },
+        {
+        	"trigger": "getText()\tPolyCode",
+        	"contents": "getText()"
+        },
+        {
+        	"trigger": "setLabelActualHeight(Number aHeight)\tPolyCode",
+        	"contents": "setLabelActualHeight(${1: aHeight})"
+        },
+        {
+        	"trigger": "getLabelActualHeight()\tPolyCode",
+        	"contents": "getLabelActualHeight()"
+        },
+        {
+        	"trigger": "getTextWidthForString(String text)\tPolyCode",
+        	"contents": "getTextWidthForString(${1: text})"
+        },
+        {
+        	"trigger": "setText(String newText)\tPolyCode",
+        	"contents": "setText(${1: text})"
+        },
+        {
+        	"trigger": "Clone(Boolean deepClone, Boolean ignoreEditorOnly)\tPolyCode",
+        	"contents": "Clone(${1:deepClone}, ${2: ignoreEditorOnly})"
+        },
+        {
+        	"trigger": "applyClone(Entity clone, Boolean deepClone, Boolean ignoreEditorOnly)\tPolyCode",
+        	"contents": "applyClone(${1:clone}, ${2:deepClone}, ${3:ignoreEditorOnly})"
+        },
+        {
+        	"trigger": "updateFromLabel()\tPolyCode",
+        	"contents": "updateFromLabel()"
+        },
+        {
+        	"trigger": "getLabel()\tPolyCode",
+        	"contents": "getLabel()"
         }
 
-        //TODO: ResourcePool
+        //TODO: SceneLight
 
     ]
 }
