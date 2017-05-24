@@ -17,7 +17,7 @@ contexts:
           captures:
             0: punctuation.definition.comment.lua
           pop: true
-    - match: '(--)(?!\[\[).*$\n?'
+    - match: '(--).*$\n?'
       scope: comment.line.double-dash.lua
       captures:
         1: punctuation.definition.comment.lua
@@ -590,17 +590,18 @@ contexts:
           scope: invalid.illegal.integer.lua
         - match: \d++
           scope: constant.numeric.integer.decimal.lua
-  parenthesized-expression:
-    - match: (\()
-      captures:
-        1: punctuation.section.expression.begin.lua
-      push:
-        - meta_scope: meta.expression.parenthesized
-        - match: (\))
-          captures:
-            1: punctuation.section.expression.end.lua
-          pop: true
-        - include: everything-else
+  # parenthesized-expression:
+  #   - match: '[(\(|\))]'
+  #     captures:
+  #       1: punctuation.section.expression.begin.lua
+  #       2: punctuation.section.expression.end.lua
+  #     # push:
+  #     #   - meta_scope: meta.expression.parenthesized
+  #     #   - match: '(\))'
+  #     #     captures:
+  #     #       1: punctuation.section.expression.end.lua
+  #     #     pop: true
+  #     #   - include: everything-else
   record-directive:
     - match: '^\s*+(-)\s*+(record)\s*+(\()\s*+([a-z][a-zA-Z\d@_]*+)\s*+(,)'
       captures:

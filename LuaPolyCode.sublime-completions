@@ -16,7 +16,7 @@
             "contents": "getSecondEntity()"
         },
         {
-            "trigger": "PhysicsScreen2D (Number worldScale, Number velIterations, Number posIterations)\t2DPhysics",
+            "trigger": "PhysicsScreen2D(Number worldScale, Number velIterations, Number posIterations)\t2DPhysics",
             "contents": "PhysicsScreen2D(${1:worldScale}, ${2:freq}, ${3:velIterations}, ${4:posIterations})"
         },
         {
@@ -24,123 +24,123 @@
             "contents": "fixedUpdate()"
         },
         {
-            "trigger": "addPhysicsChild (Entity newEntity, Number entType, Boolean isStatic, Number friction, Number density, Number restitution, Boolean isSensor, Boolean fixedRotation, Number groupIndex)\t2DPhysics",
+            "trigger": "addPhysicsChild(Entity newEntity, Number entType, Boolean isStatic, Number friction, Number density, Number restitution, Boolean isSensor, Boolean fixedRotation, Number groupIndex)\t2DPhysics",
             "contents": "addPhysicsChild(${1:newEntity}, ${2:entType}, ${3:isStatic}, ${4:friction}, ${5:density}, ${6:restitution}, ${7:isSensor}, ${8:fixedRotation}, ${9:groupIndex})"
         },
         {
-            "trigger": "trackPhysicsChild (Entity newEntity, Number entType, Boolean isStatic, Number friction, Number density, Number restitution, Boolean isSensor, Boolean fixedRotation, Number groupIndex)\t2DPhysics",
+            "trigger": "trackPhysicsChild(Entity newEntity, Number entType, Boolean isStatic, Number friction, Number density, Number restitution, Boolean isSensor, Boolean fixedRotation, Number groupIndex)\t2DPhysics",
             "contents": "trackPhysicsChild( ${1: newEntity},${2:  entType}, ${3: isStatic},${4: friction},${5: density},${6:  restitution},${7: isSensor},${8: fixedRotation},${9: groupIndex})"
         },
         {
-            "trigger": "stopTrackingChild (Entity entity)\t2DPhysics",
+            "trigger": "stopTrackingChild(Entity entity)\t2DPhysics",
             "contents": "stopTrackingChild(${1: entity})"
         },
         {
-          "trigger": "removePhysicsChild (Entity entityToRemove)\t2DPhysics",
+          "trigger": "removePhysicsChild(Entity entityToRemove)\t2DPhysics",
           "contents": "removePhysicsChild(${1: entityToRemove})"
         },
         {
-            "trigger": "removeChild (Entity entityToRemove)\t2DPhysics",
+            "trigger": "removeChild(Entity entityToRemove)\t2DPhysics",
             "contents": "removeChild(${1: entityToRemove})"
         },
         {
-            "trigger": "addCollisionChild (Entity newEntity, Number entType, Number groupIndex, Boolean sensorOnly)\t2DPhysics",
+            "trigger": "addCollisionChild(Entity newEntity, Number entType, Number groupIndex, Boolean sensorOnly)\t2DPhysics",
             "contents": "addCollisionChild(${1: newEntity}, ${2: entType}, ${3: groupIndex}, ${4: sensorOnly})"
         },        
         {
-            "trigger": "trackCollisionChild (Entity newEntity, Number entType, Number groupIndex)\t2DPhysics",
+            "trigger": "trackCollisionChild(Entity newEntity, Number entType, Number groupIndex)\t2DPhysics",
             "contents": "trackCollisionChild(${1: newEntity}, ${2: entType}, ${3: groupIndex})"
         },        
         {
-            "trigger": "destroyJoint (PhysicsJoNumber joint)\t2DPhysics",
+            "trigger": "destroyJoint(PhysicsJoNumber joint)\t2DPhysics",
             "contents": "destroyJoint(${1: joint})"
         },       
         {
-            "trigger": "createDistanceJoint (Entity ent1, Entity ent2, Boolean collideConnected)\t2DPhysics",
+            "trigger": "createDistanceJoint(Entity ent1, Entity ent2, Boolean collideConnected)\t2DPhysics",
             "contents": "createDistanceJoint(${1: ent1}, ${2: ent2}, ${3: collideConnected})"
         },     
         {
-            "trigger": "createPrismaticJoint (Entity ent1, Entity ent2, Vector2 worldAxis, Number ax, Number ay, Boolean collideConnected, Number lowerTranslation, Number upperTranslation, Boolean enableLimit, Number motorSpeed, Number motorForce, Boolean motorEnabled)\t2DPhysics",
+            "trigger": "createPrismaticJoint(Entity ent1, Entity ent2, Vector2 worldAxis, Number ax, Number ay, Boolean collideConnected, Number lowerTranslation, Number upperTranslation, Boolean enableLimit, Number motorSpeed, Number motorForce, Boolean motorEnabled)\t2DPhysics",
             "contents": "createPrismaticJoint(${1: ent1}, ${2: ent2}, ${3: worldAxis}, ${4: ax }, ${5: ay}, ${6: collideConnected}, ${7: lowerTranslation}, ${8: upperTranslation}, ${9: enableLimit}, ${10: motorSpeed}, ${11: motorForce}, ${12: motorEnabled})"
         },
         {
-            "trigger": "createRevoluteJoint (Entity ent1, Entity ent2, Number ax, Number ay, Boolean collideConnected, Boolean enableLimit, Number lowerLimit, Number upperLimit, Boolean motorEnabled, Number motorSpeed, Number maxTorque)\t2DPhysics",
+            "trigger": "createRevoluteJoint(Entity ent1, Entity ent2, Number ax, Number ay, Boolean collideConnected, Boolean enableLimit, Number lowerLimit, Number upperLimit, Boolean motorEnabled, Number motorSpeed, Number maxTorque)\t2DPhysics",
             "contents": "createRevoluteJoint( ${1: ent1}, ${2: ent2}, ${3: ax}, ${4: ay}, ${5: collideConnected}, ${6: enableLimit}, ${7: lowerLimit}, ${8: upperLimit}, ${9: motorEnabled}, ${10: motorSpeed}, ${11: maxTorque})"
         },
         {
-            "trigger": "applyForce (Entity ent, Number fx, Number fy)\t2DPhysics",
+            "trigger": "applyForce(Entity ent, Number fx, Number fy)\t2DPhysics",
             "contents": "applyForce(${1: ent}, ${2: fx}, ${3: fy})"
         },
         {
-            "trigger": "applyImpulse (Entity ent, Number fx, Number fy)\t2DPhysics",
+            "trigger": "applyImpulse(Entity ent, Number fx, Number fy)\t2DPhysics",
             "contents": "applyImpulse(${1: ent}, ${2: fx}, ${3: fy})"
         },
         {
-            "trigger": "setGravity (Vector2 newGravity)\t2DPhysics",
+            "trigger": "setGravity(Vector2 newGravity)\t2DPhysics",
             "contents": "setGravity(${1: newGravity})"
         },
         {
-            "trigger": "setTransform (Entity ent, Vector2 pos, Number angle)\t2DPhysics",
+            "trigger": "setTransform(Entity ent, Vector2 pos, Number angle)\t2DPhysics",
             "contents": "setTransform(${1: ent}, ${2: pos}, ${3: angle})"
         },
         {
-            "trigger": "getPhysicsEntityByShape (b2Shape PhysicsScene2DEntity)\t2DPhysics",
+            "trigger": "getPhysicsEntityByShape(b2Shape PhysicsScene2DEntity)\t2DPhysics",
             "contents": "getPhysicsEntityByShape(${1: shape})"
         },
         {
-            "trigger": "getPhysicsEntityByFixture (b2Fixture fixture)\t2DPhysics",
+            "trigger": "getPhysicsEntityByFixture(b2Fixture fixture)\t2DPhysics",
             "contents": "getPhysicsEntityByFixture(${1: fixture})"
         },
         {
-            "trigger": "setVelocity (Entity ent, Number fx, Number fy)\t2DPhysics",
-            "contents": "setVelocity (${1: ent}, ${2: fx}, ${3: fy})"
+            "trigger": "setVelocity(Entity ent, Number fx, Number fy)\t2DPhysics",
+            "contents": "setVelocity(${1: ent}, ${2: fx}, ${3: fy})"
         },
         {
-            "trigger": "setVelocityX (Entity ent, Number fx)\t2DPhysics",
-            "contents": "setVelocityX (${1: ent}, ${2: fx})"
+            "trigger": "setVelocityX(Entity ent, Number fx)\t2DPhysics",
+            "contents": "setVelocityX(${1: ent}, ${2: fx})"
         },
         {
-            "trigger": "setVelocityY (Entity ent, Number fy)\t2DPhysics",
-            "contents": "setVelocityY (${1: ent}, ${2: fy})"
+            "trigger": "setVelocityY(Entity ent, Number fy)\t2DPhysics",
+            "contents": "setVelocityY(${1: ent}, ${2: fy})"
         },
         {
-            "trigger": "setAngularVelocity (Entity ent, Number spin)\t2DPhysics",
+            "trigger": "setAngularVelocity(Entity ent, Number spin)\t2DPhysics",
             "contents": "setAngularVelocity(${1: ent}, ${2: spin})"
         },
         {
-            "trigger": "getVelocity (ent Entity)\t2DPhysics",
+            "trigger": "getVelocity(ent Entity)\t2DPhysics",
             "contents": "getVelocity(${1: ent})"
         },
         {
-            "trigger": "BeginContact (b2Contact contact)\t2DPhysics",
+            "trigger": "BeginContact(b2Contact contact)\t2DPhysics",
             "contents": "BeginContact(${1: contact})"
         },
         {
-            "trigger": "EndContact (b2Contact contact)\t2DPhysics",
+            "trigger": "EndContact(b2Contact contact)\t2DPhysics",
             "contents": "EndContact(${1: contact})"
         },
         {
-            "trigger": "PreSolve (b2Contact contact, b2Manifold oldManifold)\t2DPhysics",
+            "trigger": "PreSolve(b2Contact contact, b2Manifold oldManifold)\t2DPhysics",
             "contents": "PreSolve(${1: contact}, ${2: oldManifold})"
         },
         {
-            "trigger": "PostSolve (b2Contact contact, b2ContactImpulse impulse)\t2DPhysics",
+            "trigger": "PostSolve(b2Contact contact, b2ContactImpulse impulse)\t2DPhysics",
             "contents": "PostSolve(${1: contact}, ${2: impulse})"
         },
         {
-            "trigger": "wakeUp (Entity ent)\t2DPhysics",
+            "trigger": "wakeUp(Entity ent)\t2DPhysics",
             "contents": "wakeUp(${1: ent})"
         },
         {
-            "trigger": "getEntityAtPosition (Number x, Number y)\t2DPhysics",
+            "trigger": "getEntityAtPosition(Number x, Number y)\t2DPhysics",
             "contents": "getEntityAtPosition(${1: x}, ${2: y})"
         },
         {
-            "trigger": "testEntityAtPosition (Entity ent, Number x, Number y)\t2DPhysics",
+            "trigger": "testEntityAtPosition(Entity ent, Number x, Number y)\t2DPhysics",
             "contents": "testEntityAtPosition(${1: ent}, ${2: x}, ${3: y})"
         },
         {
-            "trigger": "isEntityColliding (Entity ent1)\t2DPhysics",
+            "trigger": "isEntityColliding(Entity ent1)\t2DPhysics",
             "contents": "isEntityColliding(${1: ent1})"
         },
         {
@@ -148,11 +148,11 @@
             "contents": "Shutdown()"
         },       
         {
-            "trigger": "getPhysicsByScreenEntity (Entity ent)\t2DPhysics",
+            "trigger": "getPhysicsByScreenEntity(Entity ent)\t2DPhysics",
             "contents": "getPhysicsByScreenEntity(${1: ent})"
         },
         {
-            "trigger": "destroyMouseJoint (b2MouseJoNumber mJoint)\t2DPhysics",
+            "trigger": "destroyMouseJoint(b2MouseJoNumber mJoint)\t2DPhysics",
             "contents": "destroyMouseJoint(${1: mJoint})"
         },
         {
@@ -184,43 +184,43 @@
             "contents": "getEntity()"
         },
         {
-            "trigger": "applyTorque (Number touque)\t2DPhysics",
+            "trigger": "applyTorque(Number touque)\t2DPhysics",
             "contents": "applyTorque(${1: torque})"
         },
         {
-            "trigger": "applyForce (Vector2 force)\t2DPhysics",
+            "trigger": "applyForce(Vector2 force)\t2DPhysics",
             "contents": "applyForce(${1: force})"
         },
         {
-            "trigger": "applyImpulse (Number fx, Number fy)\t2DPhysics",
+            "trigger": "applyImpulse(Number fx, Number fy)\t2DPhysics",
             "contents": "applyImpulse(${1: fx}, ${2: fy})"
         },
         {
-            "trigger": "setTransform (Vector2 pos, Number angle)\t2DPhysics",
+            "trigger": "setTransform(Vector2 pos, Number angle)\t2DPhysics",
             "contents": "setTransform(${1: pos}, ${2: angle})"
         },
         {
-            "trigger": "setVelocity (Number fx, Number fy)\t2DPhysics",
+            "trigger": "setVelocity(Number fx, Number fy)\t2DPhysics",
             "contents": "setVelocity(${1: fx}, ${2: fy})"
         },
         {
-            "trigger": "setVelocityX (Number fx)\t2DPhysics",
+            "trigger": "setVelocityX(Number fx)\t2DPhysics",
             "contents": "setVelocityX(${1: fx})"
         },
         {
-            "trigger": "setVelocityY (Number fy)\t2DPhysics",
+            "trigger": "setVelocityY(Number fy)\t2DPhysics",
             "contents": "setVelocityY(${1: fy})"
         },
         {
-            "trigger": "setLinearDamping (Number damping)\t2DPhysics",
+            "trigger": "setLinearDamping(Number damping)\t2DPhysics",
             "contents": "setLinearDamping(${1: damping})"
         },
         {
-            "trigger": "setAngularDamping (Number damping)\t2DPhysics",
+            "trigger": "setAngularDamping(Number damping)\t2DPhysics",
             "contents": "setAngularDamping(${1: damping})"
         },
         {
-            "trigger": "setFriction (Number friction)\t2DPhysics",
+            "trigger": "setFriction(Number friction)\t2DPhysics",
             "contents": "setFriction(${1:friction})"
         },
         {
@@ -236,7 +236,7 @@
             "contents": "getFriction()"
         },
         {
-            "trigger": "setDensity (Number density)\t2DPhysics",
+            "trigger": "setDensity(Number density)\t2DPhysics",
             "contents": "setDensity(${1: density})"
         },
         {
@@ -244,19 +244,19 @@
             "contents": "getDensity()"
         },
         {
-            "trigger": "setCollisionCategory (Number categoryBits)\t2DPhysics",
+            "trigger": "setCollisionCategory(Number categoryBits)\t2DPhysics",
             "contents": "setCollisionCategory(${1:categoryBits})"
         },
         {
-            "trigger": "setCollisionMask (Number maskBits)\t2DPhysics",
+            "trigger": "setCollisionMask(Number maskBits)\t2DPhysics",
             "contents": "setCollisionMask(${1: maskBits})"
         },
         {
-            "trigger": "setCollisionGroupIndex (Number group)\t2DPhysics",
+            "trigger": "setCollisionGroupIndex(Number group)\t2DPhysics",
             "contents": "setCollisionGroupIndex(${1:group})"
         },
         {
-            "trigger": "getFixture (Number index)\t2DPhysics",
+            "trigger": "getFixture(Number index)\t2DPhysics",
             "contents": "getFixture(${1: index})"
         },
         {
@@ -264,79 +264,79 @@
             "contents": "getFixedRotation()"
         },
         {
-            "trigger": "setFixedRotation (Boolean val)\t2DPhysics",
-            "contents": "setFixedRotation (${1: val})"
+            "trigger": "setFixedRotation(Boolean val)\t2DPhysics",
+            "contents": "setFixedRotation(${1: val})"
         },
         //End
 
         //3D Physics
 
         {
-            "trigger": "CollisionScene (Vector3 size, Boolean virtualScene, Boolean deferInitCollision)\t3DPhysics",
+            "trigger": "CollisionScene(Vector3 size, Boolean virtualScene, Boolean deferInitCollision)\t3DPhysics",
             "contents": "CollisionScene(${1: size}, ${2: virtualScene} ,${3: deferInitCollision})"
         },
         {
-            "trigger": "initCollisionScene (Vector3 size)\t3DPhysics",
-            "contents": "initCollisionScene (${1: size})"
+            "trigger": "initCollisionScene(Vector3 size)\t3DPhysics",
+            "contents": "initCollisionScene(${1: size})"
         },
         {
             "trigger": "fixedUpdate()\t3DPhysics",
             "contents": "fixedUpdate()"
         },
         {
-            "trigger": "removeEntity (Entity entity)\t3DPhysics",
+            "trigger": "removeEntity(Entity entity)\t3DPhysics",
             "contents": "removeEntity(${1: entity})"
         },
         {
-            "trigger": "getCollisionEntityByObject (btCollisionObject collisionObject)\t3DPhysics",
-            "contents": "getCollisionEntityByObject (${1: collisionObject})"
+            "trigger": "getCollisionEntityByObject(btCollisionObject collisionObject)\t3DPhysics",
+            "contents": "getCollisionEntityByObject(${1: collisionObject})"
         },
         {
-            "trigger": "getFirstEntityInRay (Vector3 origin, Vector3 dest)\t3DPhysics",
+            "trigger": "getFirstEntityInRay(Vector3 origin, Vector3 dest)\t3DPhysics",
             "contents": "getFirstEntityInRay(${1: origin}, ${2: dest})"
         },
         {
-            "trigger": "enableCollision (Entity ent, Boolean val)\t3DPhysics",
+            "trigger": "enableCollision(Entity ent, Boolean val)\t3DPhysics",
             "contents": "enableCollision(${1: entity}, ${2: val})"
         },
         {
-            "trigger": "getCollisionByScreenEntity (Entity ent)\t3DPhysics",
+            "trigger": "getCollisionByScreenEntity(Entity ent)\t3DPhysics",
             "contents": "getCollisionByScreenEntity(${1: ent})"
         },
         {
-            "trigger": "testCollision (Entity ent1, Entity ent2)\t3DPhysics",
+            "trigger": "testCollision(Entity ent1, Entity ent2)\t3DPhysics",
             "contents": "testCollision(${1: ent1}, ${2: ent2})"
         },
         {
-            "trigger": "testCollisionOnCollisionChild (CollisionEntity cEnt1, CollisionEntity cEnt2)\t3DPhysics",
+            "trigger": "testCollisionOnCollisionChild(CollisionEntity cEnt1, CollisionEntity cEnt2)\t3DPhysics",
             "contents": "testCollisionOnCollisionChild(${1: cEnt1}, ${2: cEnt2})"
         },
         {
-            "trigger": "testCollisionOnCollisionChild_Convex (CollisionEntity cEnt1, CollisionEntity cEnt2)\t3DPhysics",
+            "trigger": "testCollisionOnCollisionChild_Convex(CollisionEntity cEnt1, CollisionEntity cEnt2)\t3DPhysics",
             "contents": "testCollisionOnCollisionChild_Convex(${1: cEnt1}, ${2: cEnt2})"
         },
         {
-            "trigger": "isColliding (Entity ent1)\t3DPhysics",
+            "trigger": "isColliding(Entity ent1)\t3DPhysics",
             "contents": "isColliding(${1: ent1})"
         },
         {
-            "trigger": "addCollisionChild (Entity newEntity, Number type, Number group)\t3DPhysics",
+            "trigger": "addCollisionChild(Entity newEntity, Number type, Number group)\t3DPhysics",
             "contents": "addCollisionChild(${1: newEntity}, ${2: type}, ${3: group})"
         },
         {
-            "trigger": "trackCollision (Entity newEntity, Number type, Number group)\t3DPhysics",
+            "trigger": "trackCollision(Entity newEntity, Number type, Number group)\t3DPhysics",
             "contents": "trackCollision(${1: newEntity}, ${2: type}, ${3: group})"
         },
         {
-            "trigger": "removeCollision (Entity ent)\t3DPhysics",
+            "trigger": "removeCollision(Entity ent)\t3DPhysics",
             "contents": "removeCollision(${1: ent})"
         },
         {
-            "trigger": "adjustForCollision (CollisionEntity ent1)\t3DPhysics",
+            "trigger": "adjustForCollision(CollisionEntity ent1)\t3DPhysics",
             "contents": "adjustForCollision(${1: collisionEntity})"
         },
         {
-            "trigger": "CollisionEntity (Entity ent, Number type, Boolean compoundChildren)\t3DPhysics",
+            "trigger": "CollisionEntity(Entity ent, Number type, Boolean compoundChildren)\t3DPhysics",
             "contents": "CollisionSceneEntity(${1: entity}, ${2: type}, ${3: compoundChildren})"
         },
         {
@@ -356,7 +356,7 @@
             "contents": "getConvexShape()"
         },   
         {
-            "trigger": "createCollisionShape (Entity ent, Number type)\t3DPhysics",
+            "trigger": "createCollisionShape(Entity ent, Number type)\t3DPhysics",
             "contents": "createCollisionShape(${1: entity}, ${2: type})"
         },
         {
@@ -364,7 +364,7 @@
             "contents": "PhysicsConstraint()"
         },
         {
-            "trigger": "PhysicsScene (Number maxSubSteps, Vector3 size, Boolean virtualScene)\t3DPhysics",
+            "trigger": "PhysicsScene(Number maxSubSteps, Vector3 size, Boolean virtualScene)\t3DPhysics",
             "contents": "PhysicsScene(${1: maxSubSteps}, ${2: size }, ${3: virtualScene })"
         },
         {
@@ -372,7 +372,7 @@
             "contents": "fixedUpdate()"
         },
         {
-            "trigger": "removeIdentity (Entity ent)\t3DPhysics",
+            "trigger": "removeIdentity(Entity ent)\t3DPhysics",
             "contents": "removeIdentity(${1: ent})"
         },
         {
@@ -380,92 +380,92 @@
             "contents": "processWorldCollisions()"
         },
         {
-            "trigger": "getPhysicsEntityByCollisionObject (btCollisionObject obj)\t3DPhysics",
+            "trigger": "getPhysicsEntityByCollisionObject(btCollisionObject obj)\t3DPhysics",
             "contents": "getPhysicsEntityByCollisionObject(${1: object})"
         },
         {
-            "trigger": "removePhysicsChild (Entity ent)\t3DPhysics",
+            "trigger": "removePhysicsChild(Entity ent)\t3DPhysics",
             "contents": "removePhysicsChild(${1: entity})"
         },
         {
-            "trigger": "getPhysicsEntityByEntity (Entity ent)\t3DPhysics",
-            "contents": "getPhysicsEntityByEntity (${1: entity})"
+            "trigger": "getPhysicsEntityByEntity(Entity ent)\t3DPhysics",
+            "contents": "getPhysicsEntityByEntity(${1: entity})"
         },
         {
-            "trigger": "addPhysicsChild (Entity newEnt, Number type, Number mass, Number friction, Number restitution, Number group, Boolean compoundChildren)\t3DPhysics",
-            "contents": "addPhysicsChild (${1: newEntity}, ${2: type}, ${3: mass}, ${4: friction}, ${5: restitution}, ${6: group}, ${7: compoundChildren})"
+            "trigger": "addPhysicsChild(Entity newEnt, Number type, Number mass, Number friction, Number restitution, Number group, Boolean compoundChildren)\t3DPhysics",
+            "contents": "addPhysicsChild(${1: newEntity}, ${2: type}, ${3: mass}, ${4: friction}, ${5: restitution}, ${6: group}, ${7: compoundChildren})"
         },
         {
-            "trigger": "trackPhysicsChild (Entity newEnt, Number type, Number mass, Number friction, Number restitution, Number group, Boolean compoundChildren)\t3DPhysics",
-            "contents": "trackPhysicsChild (${1: newEntity}, ${2: type}, ${3: mass}, ${4: friction}, ${5: restitution}, ${6: group}, ${7: compoundChildren})"
+            "trigger": "trackPhysicsChild(Entity newEnt, Number type, Number mass, Number friction, Number restitution, Number group, Boolean compoundChildren)\t3DPhysics",
+            "contents": "trackPhysicsChild(${1: newEntity}, ${2: type}, ${3: mass}, ${4: friction}, ${5: restitution}, ${6: group}, ${7: compoundChildren})"
         },
         {
-            "trigger": "addCharacterChild (Entity newEnt, Number mass, Number friction, Number stepSize, Number group)\t3DPhysics",
-            "contents": "addCharacterChild (${1: newEntity}, ${1: mass}, ${3: friction}, ${4: stepSize}, ${5: group})"
+            "trigger": "addCharacterChild(Entity newEnt, Number mass, Number friction, Number stepSize, Number group)\t3DPhysics",
+            "contents": "addCharacterChild(${1: newEntity}, ${1: mass}, ${3: friction}, ${4: stepSize}, ${5: group})"
         },
         {
-            "trigger": "trackCharacterChild (Entity newEnt, Number mass, Number friction, Number stepSize, Number group)\t3DPhysics",
-            "contents": "trackCharacterChild (${1: newEntity}, ${1: mass}, ${3: friction}, ${4: stepSize}, ${5: group})"
+            "trigger": "trackCharacterChild(Entity newEnt, Number mass, Number friction, Number stepSize, Number group)\t3DPhysics",
+            "contents": "trackCharacterChild(${1: newEntity}, ${1: mass}, ${3: friction}, ${4: stepSize}, ${5: group})"
         },
         {
-            "trigger": "removeCharacterChild (PhysicsCharacter character)\t3DPhysics",
-            "contents": "removeCharacterChild (${1: character})"
+            "trigger": "removeCharacterChild(PhysicsCharacter character)\t3DPhysics",
+            "contents": "removeCharacterChild(${1: character})"
         },
         {
-            "trigger": "createPointToPointConstraint (Entity ent1, Entity ent2, Vector3 pivot1, Vector3 pivot2)\t3DPhysics",
-            "contents": "createPointToPointConstraint (${1: entity1}, ${2: entity2}, ${3: pivot1}, ${4: pivot2})"
+            "trigger": "createPointToPointConstraint(Entity ent1, Entity ent2, Vector3 pivot1, Vector3 pivot2)\t3DPhysics",
+            "contents": "createPointToPointConstraint(${1: entity1}, ${2: entity2}, ${3: pivot1}, ${4: pivot2})"
         },
         {
-            "trigger": "createHingeConstraint (Entity ent, Vector3 pivot, Vector3 axis, Number minLimit, Number maxLimit)\t3DPhysics",
-            "contents": "createHingeConstraint (${1: entity} , ${2: pivot} , ${3: axis} , ${4: minLimit} , ${5: maxLimit} )"
+            "trigger": "createHingeConstraint(Entity ent, Vector3 pivot, Vector3 axis, Number minLimit, Number maxLimit)\t3DPhysics",
+            "contents": "createHingeConstraint(${1: entity} , ${2: pivot} , ${3: axis} , ${4: minLimit} , ${5: maxLimit} )"
         },
         {
-            "trigger": "createHingeJoint (Entity ent1, Entity ent2, Vector3 pivot1, Vector3 axis1, Vector3, pivot2, Vector3 axis2, Number minLimit, Number maxLimit)\t3DPhysics",
-            "contents": "createHingeJoint (${1:entity1} , ${2:entity2} , ${3:pivot1} , ${4:axis1} , ${5:pivot2} , ${6:axis2} , ${7:minLimit} , ${8:maxLimit} )"
+            "trigger": "createHingeJoint(Entity ent1, Entity ent2, Vector3 pivot1, Vector3 axis1, Vector3, pivot2, Vector3 axis2, Number minLimit, Number maxLimit)\t3DPhysics",
+            "contents": "createHingeJoint(${1:entity1} , ${2:entity2} , ${3:pivot1} , ${4:axis1} , ${5:pivot2} , ${6:axis2} , ${7:minLimit} , ${8:maxLimit} )"
         },
         {
-            "trigger": "createGenericConstraint (Entity ent)\t3DPhysics",
-            "contents": "createGenericConstraint (${1: entity})"
+            "trigger": "createGenericConstraint(Entity ent)\t3DPhysics",
+            "contents": "createGenericConstraint(${1: entity})"
         },
         {
-            "trigger": "setVelocity (Entity ent, Vector3 velocity)\t3DPhysics",
-            "contents": "setVelocity (${1: entity}, ${2: velocity})"
+            "trigger": "setVelocity(Entity ent, Vector3 velocity)\t3DPhysics",
+            "contents": "setVelocity(${1: entity}, ${2: velocity})"
         },        
         {
-            "trigger": "setSpin (Entity ent, Vector3 spin)\t3DPhysics",
-            "contents": "setSpin (${1: entity}, ${2: spin} )"
+            "trigger": "setSpin(Entity ent, Vector3 spin)\t3DPhysics",
+            "contents": "setSpin(${1: entity}, ${2: spin} )"
         },        
         {
-            "trigger": "warpEntity (Entity ent, Vector3 pos, Boolean resetRotation)\t3DPhysics",
-            "contents": "warpEntity (${1: entity}, ${2: position}, ${3: resetRotation} )"
+            "trigger": "warpEntity(Entity ent, Vector3 pos, Boolean resetRotation)\t3DPhysics",
+            "contents": "warpEntity(${1: entity}, ${2: position}, ${3: resetRotation} )"
         },
         {
-            "trigger": "removeConstraint (PhysicsConstraNumber constraint)\t3DPhysics",
+            "trigger": "removeConstraint(PhysicsConstraNumber constraint)\t3DPhysics",
             "contents": "removeConstraint(${1: constraint})"
         },
         {
-            "trigger": "applyImpulse (Entity ent1, Vector3 force, Vector3 point)\t3DPhysics",
-            "contents": "applyImpulse (${1: entity}, ${2: force}, ${3: point} )"
+            "trigger": "applyImpulse(Entity ent1, Vector3 force, Vector3 point)\t3DPhysics",
+            "contents": "applyImpulse(${1: entity}, ${2: force}, ${3: point} )"
         },
         {
-            "trigger": "addVehicleChild (Entity newEnt, Number mass, Number friction, Number group)\t3DPhysics",
-            "contents": "addVehicleChild (${1: newEntity}, ${2: mass}, ${3: friction} , ${4: group} )"
+            "trigger": "addVehicleChild(Entity newEnt, Number mass, Number friction, Number group)\t3DPhysics",
+            "contents": "addVehicleChild(${1: newEntity}, ${2: mass}, ${3: friction} , ${4: group} )"
         },
         {
-            "trigger": "trackVehicleChild (Entity newEnt, Number mass, Number friction, Number group)\t3DPhysics",
-            "contents": "trackVehicleChild (${1: newEntity}, ${2: mass}, ${3: friction} , ${4: group} )"
+            "trigger": "trackVehicleChild(Entity newEnt, Number mass, Number friction, Number group)\t3DPhysics",
+            "contents": "trackVehicleChild(${1: newEntity}, ${2: mass}, ${3: friction} , ${4: group} )"
         },
         {
-            "trigger": "setGravity (Vector3 gravity)\t3DPhysics",
-            "contents": "setGravity (${1: gravity})"
+            "trigger": "setGravity(Vector3 gravity)\t3DPhysics",
+            "contents": "setGravity(${1: gravity})"
         },
         {
-            "trigger": "wakeUp (Entity ent)\t3DPhysics",
+            "trigger": "wakeUp(Entity ent)\t3DPhysics",
             "contents": "wakeUp(${1: entity})"
         },
         {
-            "trigger": "setLimits (Number minLimit, Number maxLimit)\t3DPhysics",
-            "contents": "setLimits (${1: minLimit} , ${2: maxLimit} )"
+            "trigger": "setLimits(Number minLimit, Number maxLimit)\t3DPhysics",
+            "contents": "setLimits(${1: minLimit} , ${2: maxLimit} )"
         },
         {
             "trigger": "getAngle()\t3DPhysics",
@@ -476,100 +476,100 @@
             "contents": "PhysicsSceneEvent()"
         },
         {
-            "trigger": "setLinearLowerLimit (Vector3 limit)\t3DPhysics",
-            "contents": "setLinearLowerLimit (${1: limit} )"
+            "trigger": "setLinearLowerLimit(Vector3 limit)\t3DPhysics",
+            "contents": "setLinearLowerLimit(${1: limit} )"
         },
         {
-            "trigger": "setLinearUpperLimit (Vector3 limit)\t3DPhysics",
+            "trigger": "setLinearUpperLimit(Vector3 limit)\t3DPhysics",
             "contents": "setLinearUpperLimit(${1: limit})"
         },
         {
-            "trigger": "setAngularLowerLimit (Vector3 limit)\t3DPhysics",
+            "trigger": "setAngularLowerLimit(Vector3 limit)\t3DPhysics",
             "contents": "setAngularLowerLimit(${1: limit})"
         },
         {
-            "trigger": "setAngularUpperLimit (Vector3 limit)\t3DPhysics",
+            "trigger": "setAngularUpperLimit(Vector3 limit)\t3DPhysics",
             "contents": "setAngularUpperLimit(${1: limit})"
         },
         {
-            "trigger": "PhysicsVehicle (Entity ent, Number mass, Number friction, btDefaultVehicleRaycaster rayCaster )\t3DPhysics",
-            "contents": "PhysicsVehicle (${1: entity} , ${2: mass} , ${3: friction} , ${4: rayCaster} )"
+            "trigger": "PhysicsVehicle(Entity ent, Number mass, Number friction, btDefaultVehicleRaycaster rayCaster )\t3DPhysics",
+            "contents": "PhysicsVehicle(${1: entity} , ${2: mass} , ${3: friction} , ${4: rayCaster} )"
         },
         {
-            "trigger": "addWheel (Entity ent, Vector3 connection, Vector3 direction, Vector3 axle, Number suspentionRestLength, Number wheelRadius, Boolean isFrontWheel, Number suspensionStiffness, Number suspensionDamping, Number suspensionCompression, Number wheelFriction, Number rollInfluence)\t3DPhysics",
-            "contents": "addWheel (${1: entity} , ${2:  connection} , ${3: direction} , ${4: axle} , ${5: suspentionRestLength} , ${6: wheelRadius} , ${7: isFrontWheel} , ${8: suspensionStiffness} , ${9: suspensionDamping} , ${10: suspensionCompression} , ${11: wheelFriction} , ${12: rollInfluence} )"
+            "trigger": "addWheel(Entity ent, Vector3 connection, Vector3 direction, Vector3 axle, Number suspentionRestLength, Number wheelRadius, Boolean isFrontWheel, Number suspensionStiffness, Number suspensionDamping, Number suspensionCompression, Number wheelFriction, Number rollInfluence)\t3DPhysics",
+            "contents": "addWheel(${1: entity} , ${2:  connection} , ${3: direction} , ${4: axle} , ${5: suspentionRestLength} , ${6: wheelRadius} , ${7: isFrontWheel} , ${8: suspensionStiffness} , ${9: suspensionDamping} , ${10: suspensionCompression} , ${11: wheelFriction} , ${12: rollInfluence} )"
         },
         {
-            "trigger": "applyEngineForce (Number force, Number wheelIndex)\t3DPhysics",
-            "contents": "applyEngineForce (${1: force} , ${2: wheelIndex} )"
+            "trigger": "applyEngineForce(Number force, Number wheelIndex)\t3DPhysics",
+            "contents": "applyEngineForce(${1: force} , ${2: wheelIndex} )"
         },
         {
-            "trigger": "setSteeringValue (Number value, Number wheelIndex)\t3DPhysics",
-            "contents": "setSteeringValue (${1: value} , ${2: wheelIndex} )"
+            "trigger": "setSteeringValue(Number value, Number wheelIndex)\t3DPhysics",
+            "contents": "setSteeringValue(${1: value} , ${2: wheelIndex} )"
         },
         {
-            "trigger": "setBrake (Number value, Number wheelIndex)\t3DPhysics",
-            "contents": "setBrake (${1: value} , ${2: wheelIndex} )"
+            "trigger": "setBrake(Number value, Number wheelIndex)\t3DPhysics",
+            "contents": "setBrake(${1: value} , ${2: wheelIndex} )"
         },
         {
-            "trigger": "warpVehicle (Vector3 position)\t3DPhysics",
-            "contents": "warpVehicle (${1: position} )"
+            "trigger": "warpVehicle(Vector3 position)\t3DPhysics",
+            "contents": "warpVehicle(${1: position} )"
         },
         {
             "trigger": "Update()\t3DPhysics",
             "contents": "Update()"
         },
         {
-            "trigger": "PhysicsCharacter (Entity ent, Number mass, Number friction, Number stepSize)\t3DPhysics",
-            "contents": "PhysicsCharacter (${1: entity} , ${2: mass} , ${3: friction} , ${4: stepSize} )"
+            "trigger": "PhysicsCharacter(Entity ent, Number mass, Number friction, Number stepSize)\t3DPhysics",
+            "contents": "PhysicsCharacter(${1: entity} , ${2: mass} , ${3: friction} , ${4: stepSize} )"
         },
         {
-            "trigger": "setWalkDirection (Vector3 direction)\t3DPhysics",
-            "contents": "setWalkDirection (${1: direction})"
+            "trigger": "setWalkDirection(Vector3 direction)\t3DPhysics",
+            "contents": "setWalkDirection(${1: direction})"
         },
         {
             "trigger": "jump()\t3DPhysics",
             "contents": "jump()"
         },
         {
-            "trigger": "warpCharacter (Vector3 position)\t3DPhysics",
+            "trigger": "warpCharacter(Vector3 position)\t3DPhysics",
             "contents": "warpCharacter(${1: position} )"
         },
         {
-            "trigger": "setJumpSpeed (Number jumpSpeed)\t3DPhysics",
-            "contents": "setJumpSpeed (${1: jumpSpeed} )"
+            "trigger": "setJumpSpeed(Number jumpSpeed)\t3DPhysics",
+            "contents": "setJumpSpeed(${1: jumpSpeed} )"
         },
         {
-            "trigger": "setFallSpeed (Number fallSpeed)\t3DPhysics",
-            "contents": "setFallSpeed (${1: fallSpeed} )"
+            "trigger": "setFallSpeed(Number fallSpeed)\t3DPhysics",
+            "contents": "setFallSpeed(${1: fallSpeed} )"
         },
         {
-            "trigger": "setMaxJumpHeight (Number setMaxJumpHeight)\t3DPhysics",
-            "contents": "setMaxJumpHeight (${1: setMaxJumpHeight} )"
+            "trigger": "setMaxJumpHeight(Number setMaxJumpHeight)\t3DPhysics",
+            "contents": "setMaxJumpHeight(${1: setMaxJumpHeight} )"
         },
         {
             "trigger": "onGround()\t3DPhysics",
             "contents": "onGround()"
         },
         {
-            "trigger": "PhysicsEntity (Entity ent, Number type, Number, mass, Number friction, Number restitution, Boolean compoundChildren)\t3DPhysics",
-            "contents": "PhysicsEntity (${1: entity} , ${2: type} , ${3: mass} , ${4: friction} , ${5: restitution} , ${6: compoundChildren} )"
+            "trigger": "PhysicsEntity(Entity ent, Number type, Number, mass, Number friction, Number restitution, Boolean compoundChildren)\t3DPhysics",
+            "contents": "PhysicsEntity(${1: entity} , ${2: type} , ${3: mass} , ${4: friction} , ${5: restitution} , ${6: compoundChildren} )"
         },
         {
-            "trigger": "setFriction (Number friction)\t3DPhysics",
-            "contents": "setFriction (${1: friction} )"
+            "trigger": "setFriction(Number friction)\t3DPhysics",
+            "contents": "setFriction(${1: friction} )"
         },
         {
             "trigger": "getType()\t3DPhysics",
             "contents": "getType()"
         },
         {
-            "trigger": "setSpin (Vector3 spin)\t3DPhysics",
-            "contents": "setSpin (${1: Spin} )"
+            "trigger": "setSpin(Vector3 spin)\t3DPhysics",
+            "contents": "setSpin(${1: Spin} )"
         },
         {
-            "trigger": "setMass (Number mass)\t3DPhysics",
-            "contents": "setMass (${1: mass} )"
+            "trigger": "setMass(Number mass)\t3DPhysics",
+            "contents": "setMass(${1: mass} )"
         },
         {
             "trigger": "getVelocity()\t3DPhysics",
@@ -580,20 +580,20 @@
             "contents": "getSpin()"
         },
         {
-            "trigger": "setRotation (Quaternion quat)\t3DPhysics",
-            "contents": "setRotation (${1: quat} )"
+            "trigger": "setRotation(Quaternion quat)\t3DPhysics",
+            "contents": "setRotation(${1: quat} )"
         },
         {
-            "trigger": "setVelocity (Vector3 velocity)\t3DPhysics",
-            "contents": "setVelocity (${1: velocity} )"
+            "trigger": "setVelocity(Vector3 velocity)\t3DPhysics",
+            "contents": "setVelocity(${1: velocity} )"
         },
         {
-            "trigger": "warpTo (Vector3 position, Boolean resetRotation)\t3DPhysics",
-            "contents": "warpTo (${1: position} , ${2: resetRotation} )"
+            "trigger": "warpTo(Vector3 position, Boolean resetRotation)\t3DPhysics",
+            "contents": "warpTo(${1: position} , ${2: resetRotation} )"
         },
         {
-            "trigger": "applyImpulse (Vector3 direction, Vector3 point)\t3DPhysics",
-            "contents": "applyImpulse (${1: direction}, ${2: point})"
+            "trigger": "applyImpulse(Vector3 direction, Vector3 point)\t3DPhysics",
+            "contents": "applyImpulse(${1: direction}, ${2: point})"
         },
         //END
 
@@ -603,60 +603,60 @@
             "contents": "bezierCurve()"
         },
         {
-            "trigger": "getControlPoint (Number index)\tPolyCode",
-            "contents": "getControlPoint (${1: index})"
+            "trigger": "getControlPoint(Number index)\tPolyCode",
+            "contents": "getControlPoint(${1: index})"
         },
         {
             "trigger": "getNumControlPoints()\tPolyCode",
             "contents": "getNumControlPoints()"
         },
         {
-            "trigger": "addControlPoint (Number p1x, Number p1y, Number p1z, Number p2x, Number p2y, Number p2z, Number p3x, Number p3y, Number p3z)\tPolyCode",
-            "contents": "addControlPoint (${1: p1x}, ${2: p1y}, ${3: p1z}, ${4: p2x}, ${5: p2y}, ${6: p2z}, ${7: p3x}, ${8: p3y}, ${9: p3z} )"
+            "trigger": "addControlPoint(Number p1x, Number p1y, Number p1z, Number p2x, Number p2y, Number p2z, Number p3x, Number p3y, Number p3z)\tPolyCode",
+            "contents": "addControlPoint(${1: p1x}, ${2: p1y}, ${3: p1z}, ${4: p2x}, ${5: p2y}, ${6: p2z}, ${7: p3x}, ${8: p3y}, ${9: p3z} )"
         },
         {
             "trigger": "addControlPoint3dWithHandles(Number p1x, Number p1y, Number p1z, Number p2x, Number p2y, Number p2z, Number p3x, Number p3y, Number p3z)\tPolyCode",
-            "contents": "addControlPoint3dWithHandles (${1: p1x} , ${2: p1y} , ${3: p1z} , ${4: p2x} , ${5: p2y} , ${6: p2z} , ${7: p3x} , ${8: p3y} , ${9: p3z} )"
+            "contents": "addControlPoint3dWithHandles(${1: p1x} , ${2: p1y} , ${3: p1z} , ${4: p2x} , ${5: p2y} , ${6: p2z} , ${7: p3x} , ${8: p3y} , ${9: p3z} )"
         },
         {
-            "trigger": "addControlPoint3d (Number x, Number y, Number z)\tPolyCode",
-            "contents": "addControlPoint3d (${1: x}, ${2: y}, ${3: z})"
+            "trigger": "addControlPoint3d(Number x, Number y, Number z)\tPolyCode",
+            "contents": "addControlPoint3d(${1: x}, ${2: y}, ${3: z})"
         },
         {
-            "trigger": "addControlPoint2dWithHandles (Number p1x, Number p1y, , Number p2x, Number p2y, , Number p3x, Number p3y)\tPolyCode",
-            "contents": "addControlPoint2dWithHandles (${1: p1x}, ${2: p1y}, ${3: p2x}, ${4: p2y}, ${5: p3x}, ${6: p3y})"
+            "trigger": "addControlPoint2dWithHandles(Number p1x, Number p1y, , Number p2x, Number p2y, , Number p3x, Number p3y)\tPolyCode",
+            "contents": "addControlPoint2dWithHandles(${1: p1x}, ${2: p1y}, ${3: p2x}, ${4: p2y}, ${5: p3x}, ${6: p3y})"
         },
         {
-            "trigger": "addControlPoint2d (Number x, Number y)\tPolyCode",
-            "contents": "addControlPoint2d (${1: x}, ${2: y})"
+            "trigger": "addControlPoint2d(Number x, Number y)\tPolyCode",
+            "contents": "addControlPoint2d(${1: x}, ${2: y})"
         },
         {
-            "trigger": "getPointAt (Number a)\tPolyCode",
-            "contents": "getPointAt (${1: a})"
+            "trigger": "getPointAt(Number a)\tPolyCode",
+            "contents": "getPointAt(${1: a})"
         },
         {
-            "trigger": "getPointBetween (Number a, BezierPointeger bp1, BezierPointeger bp2)\tPolyCode",
-            "contents": "getPointBetween (${1: a}, ${2: bp1}, ${3: bp2})"
+            "trigger": "getPointBetween(Number a, BezierPointeger bp1, BezierPointeger bp2)\tPolyCode",
+            "contents": "getPointBetween(${1: a}, ${2: bp1}, ${3: bp2})"
         },
         {
             "trigger": "clearControlPoints()\tPolyCode",
             "contents": "clearControlPoints()"
         },
         {
-            "trigger": "getYValueAtX (Number x)\tPolyCode",
-            "contents": "getYValueAtX (${1: x})"
+            "trigger": "getYValueAtX(Number x)\tPolyCode",
+            "contents": "getYValueAtX(${1: x})"
         },
         {
-            "trigger": "getTValueAtX (Number x)\tPolyCode",
-            "contents": "getTValueAtX (${1: x})"
+            "trigger": "getTValueAtX(Number x)\tPolyCode",
+            "contents": "getTValueAtX(${1: x})"
         },
         {
-            "trigger": "removePoint (BezierPointeger point)\tPolyCode",
-            "contents": "removePoint (${1: point})"
+            "trigger": "removePoint(BezierPointeger point)\tPolyCode",
+            "contents": "removePoint(${1: point})"
         },
         {
-            "trigger": "setHeightCacheResolution (Number resolution)\tPolyCode",
-            "contents": "setHeightCacheResolution (${1: resolution})"
+            "trigger": "setHeightCacheResolution(Number resolution)\tPolyCode",
+            "contents": "setHeightCacheResolution(${1: resolution})"
         },
         {
             "trigger": "rebuildHeightCache()\tPolyCode",
@@ -667,11 +667,11 @@
             "contents": "recalculateDistance()"
         },
         {
-            "trigger": "BezierPoint (Number p1x, Number p1y, Number p1z, Number p2x, Number p2y, Number p2z, Number p3x, Number p3y, Number p3z)\tPolyCode",
+            "trigger": "BezierPoint(Number p1x, Number p1y, Number p1z, Number p2x, Number p2y, Number p2z, Number p3x, Number p3y, Number p3z)\tPolyCode",
             "contents": "BezierPoint(${1: p1x}, ${2: p1y}, ${3: p1z}, ${4: p2x}, ${5: p2y}, ${6: p2z}, ${7: p3x}, ${8: p3y}, ${9: p3z})"
         },
         {
-            "trigger": "Bone (String bone)\tPolyCode",
+            "trigger": "Bone(String bone)\tPolyCode",
             "contents": "Bone(${1:  bone})"
         },
         {
@@ -679,11 +679,11 @@
             "contents": "getName()"
         },
         {
-            "trigger": "setParentBone (Bone bone)\tPolyCode",
+            "trigger": "setParentBone(Bone bone)\tPolyCode",
             "contents": "setParentBone(${1: bone})"
         },
         {
-            "trigger": "addChildBone (Bone bone)\tPolyCode",
+            "trigger": "addChildBone(Bone bone)\tPolyCode",
             "contents": "addChildBone(${1: bone})" 
         },
         {
@@ -695,7 +695,7 @@
             "contents": "getNumChildBones()"
         },
         {
-            "trigger": "getChildBone (Number index)\tPolyCode",
+            "trigger": "getChildBone(Number index)\tPolyCode",
             "contents": "getChildBone(${1: index})"
         },
         {
@@ -703,7 +703,7 @@
             "contents": "getBoneMatrix()"
         },
         {
-            "trigger": "setBoneMatrix (Matrix4 matrix)\tPolyCode",
+            "trigger": "setBoneMatrix(Matrix4 matrix)\tPolyCode",
             "contents": "setBoneMatrix(${1: matrix})"
         },
         {
@@ -723,11 +723,11 @@
             "contents": "getFinalMatrix()"
         },
         {
-            "trigger": "setRestMatrix (Matrix4 matrix)\tPolyCode",
+            "trigger": "setRestMatrix(Matrix4 matrix)\tPolyCode",
             "contents": "setRestMatrix(${1: matrix})"
         },
         {
-            "trigger": "setBaseMatrix (Matrix4 matrix)\tPolyCode",
+            "trigger": "setBaseMatrix(Matrix4 matrix)\tPolyCode",
             "contents": "setBaseMatrix(${1: matrix})"
         },
         {
@@ -747,11 +747,11 @@
             "contents": "buildFinalMatrix()"
         },
         {
-            "trigger": "intializeBone (Vector3 basePosition, Vector3 baseScale, Quaternion baseRotation, Vector3 restPosition, Vector3 restScale, Quaternion restRotation)\tPolyCode",
+            "trigger": "intializeBone(Vector3 basePosition, Vector3 baseScale, Quaternion baseRotation, Vector3 restPosition, Vector3 restScale, Quaternion restRotation)\tPolyCode",
             "contents": "intializeBone(${1: basePosition}, ${2: baseScale}, ${3: baseRotation}, ${4: restPosition}, ${5: restScale}, ${6: restRotation})"
         },
         {
-            "trigger": "Camera (Scene parentScene)\tPolyCode",
+            "trigger": "Camera(Scene parentScene)\tPolyCode",
             "contents": "Camera(${1: parentScene})"
         },
         {
@@ -759,24 +759,24 @@
             "contents": "buildFrustumPlanes()"
         },
         {
-            "trigger": "isSphereInFrustum (Vector3 pos, Number fRadius)\tPolyCode",
-            "contents": "isSphereInFrustum (${1: pos}, ${2: fRadius})"
+            "trigger": "isSphereInFrustum(Vector3 pos, Number fRadius)\tPolyCode",
+            "contents": "isSphereInFrustum(${1: pos}, ${2: fRadius})"
         },
         {
-            "trigger": "isAABBInFrustum (AABB aabb)\tPolyCode",
-            "contents": "isAABBInFrustum (${1:aabb})"
+            "trigger": "isAABBInFrustum(AABB aabb)\tPolyCode",
+            "contents": "isAABBInFrustum(${1:aabb})"
         },
         {
-            "trigger": "setOrthoMode (Boolean mode)\tPolyCode",
-            "contents": "setOrthoMode (${1: mode})"
+            "trigger": "setOrthoMode(Boolean mode)\tPolyCode",
+            "contents": "setOrthoMode(${1: mode})"
         },
         {
-            "trigger": "setOrthoSize (Number orthoSizeX, Number orthoSizeY)\tPolyCode",
+            "trigger": "setOrthoSize(Number orthoSizeX, Number orthoSizeY)\tPolyCode",
             "contents": "setOrthoSize(${1: orthoSizeX}, ${2: orthoSizeY})"
         },
         {
-            "trigger": "setFrustumMode (Number left, Number right, Number bottom, Number top, Number front, Number back)\tPolyCode",
-            "contents": "setFrustumMode (${1: left}, ${2: right}, ${3: bottom}, ${4: top}, ${5: front}, ${6: back})"
+            "trigger": "setFrustumMode(Number left, Number right, Number bottom, Number top, Number front, Number back)\tPolyCode",
+            "contents": "setFrustumMode(${1: left}, ${2: right}, ${3: bottom}, ${4: top}, ${5: front}, ${6: back})"
         },
         {
             "trigger": "getOrthoMode()\tPolyCode",
@@ -791,16 +791,16 @@
             "contents": "getOrthoSizeY()"
         },
         {
-            "trigger": "setFov (Number fov)\tPolyCode",
-            "contents": "getOrthoSizeY (${1: fov})"
+            "trigger": "setFov(Number fov)\tPolyCode",
+            "contents": "getOrthoSizeY(${1: fov})"
         },
         {
             "trigger": "getFov()\tPolyCode",
             "contents": "getFov()"
         },
         {
-            "trigger": "setClippingPlanes (Number nearClipPlane, Number farClipPlane)\tPolyCode",
-            "contents": "setClippingPlanes (${1: nearClipPlane, ${2: farClipPlane})"
+            "trigger": "setClippingPlanes(Number nearClipPlane, Number farClipPlane)\tPolyCode",
+            "contents": "setClippingPlanes(${1: nearClipPlane, ${2: farClipPlane})"
         },
         {
             "trigger": "getNearClippingPlane()\tPolyCode",
@@ -811,8 +811,8 @@
             "contents": "getFarClippingPlane()"
         },
         {
-            "trigger": "setParentScene (Scene parentScene)\tPolyCode",
-            "contents": "setParentScene (${1: parentScene})"
+            "trigger": "setParentScene(Scene parentScene)\tPolyCode",
+            "contents": "setParentScene(${1: parentScene})"
         },
         {
             "trigger": "getParentScene()\tPolyCode",
@@ -827,24 +827,24 @@
             "contents": "hasFilterShader()"
         },
         {
-            "trigger": "drawFilter (Texture targetTexture, Number targetTextureWidth, Number targetTextureHeight, Texture targetColorTexture, Texture targetZTexture)\tPolyCode",
-            "contents": "drawFilter (${1: targetTexture}, ${2: targetTextureWidth}, ${3: targetTextureHeight}, ${4: targetColorTexture}, ${5: targetZTexture})"
+            "trigger": "drawFilter(Texture targetTexture, Number targetTextureWidth, Number targetTextureHeight, Texture targetColorTexture, Texture targetZTexture)\tPolyCode",
+            "contents": "drawFilter(${1: targetTexture}, ${2: targetTextureWidth}, ${3: targetTextureHeight}, ${4: targetColorTexture}, ${5: targetZTexture})"
         },
         {
-            "trigger": "setExposureLevel (Number level)\tPolyCode",
-            "contents": "setExposureLevel (${1: level})"
+            "trigger": "setExposureLevel(Number level)\tPolyCode",
+            "contents": "setExposureLevel(${1: level})"
         },
         {
             "trigger": "getExposureLevel()\tPolyCode",
             "contents": "getExposureLevel()"
         },
         {
-            "trigger": "setPostFilter (Material shaderMat)\tPolyCode",
-            "contents": "setPostFilter (${1: shaderMat})"
+            "trigger": "setPostFilter(Material shaderMat)\tPolyCode",
+            "contents": "setPostFilter(${1: shaderMat})"
         },
         {
-            "trigger": "setPostFilterByName (String shaderName)\tPolyCode",
-            "contents": "setPostFilterByName (${1: shaderName})"
+            "trigger": "setPostFilterByName(String shaderName)\tPolyCode",
+            "contents": "setPostFilterByName(${1: shaderName})"
         },
         {
             "trigger": "removePostFilter()\tPolyCode",
@@ -859,92 +859,92 @@
             "contents": "getNumLocalShaderOptions()"
         },
         {
-            "trigger": "getLocalShaderOption (Number index)\tPolyCode",
-            "contents": "getLocalShaderOption (${1: index})"
+            "trigger": "getLocalShaderOption(Number index)\tPolyCode",
+            "contents": "getLocalShaderOption(${1: index})"
         },
         {
             "trigger": "getScreenShaderMaterial()\tPolyCode",
             "contents": "getScreenShaderMaterial()"
         },
         {
-            "trigger": "Clone (Boolean deepClone, Boolean ignoreEditorOnly)\tPolyCode",
-            "contents": "Clone (${1: deepClone}, ${2: ignoreEditorOnly})"
+            "trigger": "Clone(Boolean deepClone, Boolean ignoreEditorOnly)\tPolyCode",
+            "contents": "Clone(${1: deepClone}, ${2: ignoreEditorOnly})"
         },
         {
-            "trigger": "applyClone (Entity clone, Boolean deepClone, Boolean ignoreEditorOnly)\tPolyCode",
-            "contents": "applyClone (${1: clone}, ${2: deepClone}, ${3: ignoreEditorOnly})"
+            "trigger": "applyClone(Entity clone, Boolean deepClone, Boolean ignoreEditorOnly)\tPolyCode",
+            "contents": "applyClone(${1: clone}, ${2: deepClone}, ${3: ignoreEditorOnly})"
         },
         {
             "trigger": "getProjectionMatrix()\tPolyCode",
             "contents": "getProjectionMatrix()"
         },
         {
-            "trigger": "setProjectionMatrix (Matrix4 matrix)\tPolyCode",
-            "contents": "setProjectionMatrix (${1: matrix})"
+            "trigger": "setProjectionMatrix(Matrix4 matrix)\tPolyCode",
+            "contents": "setProjectionMatrix(${1: matrix})"
         },
         {
             "trigger": "getViewport()\tPolyCode",
             "contents": "getViewport()"
         },
         {
-            "trigger": "setOrthoSizeMode (Number orthoSizeMode)\tPolyCode",
-            "contents": "setOrthoSizeMode (${1: orthoSizeMode})"
+            "trigger": "setOrthoSizeMode(Number orthoSizeMode)\tPolyCode",
+            "contents": "setOrthoSizeMode(${1: orthoSizeMode})"
         },
         {
             "trigger": "getOrthoSizeMode()\tPolyCode",
             "contents": "getOrthoSizeMode()"
         },
         {
-            "trigger": "setProjectionMode (Number mode)\tPolyCode",
-            "contents": "setProjectionMode (${1: mode})"
+            "trigger": "setProjectionMode(Number mode)\tPolyCode",
+            "contents": "setProjectionMode(${1: mode})"
         },
         {
             "trigger": "getProjectionMode()\tPolyCode",
             "contents": "getProjectionMode()"
         },
         {
-            "trigger": "setUseGlobalFramebuffer (Boolean val)\tPolyCode",
-            "contents": "setUseGlobalFramebuffer (${1: val})"
+            "trigger": "setUseGlobalFramebuffer(Boolean val)\tPolyCode",
+            "contents": "setUseGlobalFramebuffer(${1: val})"
         },
         {
             "trigger": "getUseGlobalFramebuffer()\tPolyCode",
             "contents": "getUseGlobalFramebuffer()"
         },
         {
-            "trigger": "Color (Number r, Number g, Number b, Number a)\tPolyCode",
-            "contents": "Color (${1: r}, ${2: g}, ${3: b}, ${4: a})"
+            "trigger": "Color(Number r, Number g, Number b, Number a)\tPolyCode",
+            "contents": "Color(${1: r}, ${2: g}, ${3: b}, ${4: a})"
         },
         {
-            "trigger": "setColorHex (Number hex)\tPolyCode",
-            "contents": "setColorHex (${1: hex})"
+            "trigger": "setColorHex(Number hex)\tPolyCode",
+            "contents": "setColorHex(${1: hex})"
         },
         {
-            "trigger": "setColorHexRGB (Number hex)\tPolyCode",
-            "contents": "setColorHexRGB (${1: hex})"
+            "trigger": "setColorHexRGB(Number hex)\tPolyCode",
+            "contents": "setColorHexRGB(${1: hex})"
         },
         {
-            "trigger": "setColorHexFromString (String hex)\tPolyCode",
-            "contents": "setColorHexFromString (${1: hex})"
+            "trigger": "setColorHexFromString(String hex)\tPolyCode",
+            "contents": "setColorHexFromString(${1: hex})"
         },
         {
-            "trigger": "setColorHSV (Number h, Number s, Number v)\tPolyCode",
-            "contents": "setColorHSV (${1: h},${2: s}, ${3: v})"
+            "trigger": "setColorHSV(Number h, Number s, Number v)\tPolyCode",
+            "contents": "setColorHSV(${1: h},${2: s}, ${3: v})"
         },
         {
-            "trigger": "setColorRGBA (Number r, Number g, Number b, Number a)\tPolyCode",
-            "contents": "setColorRGBA ( ${1: r},  ${2: g},  ${3: b}, ${4: a})"
+            "trigger": "setColorRGBA(Number r, Number g, Number b, Number a)\tPolyCode",
+            "contents": "setColorRGBA( ${1: r},  ${2: g},  ${3: b}, ${4: a})"
         },
         {
-            "trigger": "setColorRGB (Number r, Number g, Number b)\tPolyCode",
-            "contents": "setColorRGB (${1: r}, ${2: g}, ${3: b})"
+            "trigger": "setColorRGB(Number r, Number g, Number b)\tPolyCode",
+            "contents": "setColorRGB(${1: r}, ${2: g}, ${3: b})"
         },
         {   
-             "trigger": "setColor (Number r, Number g, Number b, Number a)\tPolyCode",
-            "contents": "setColor (${1: r}, ${2: g}, ${3: b}, ${4: a})"
+             "trigger": "setColor(Number r, Number g, Number b, Number a)\tPolyCode",
+            "contents": "setColor(${1: r}, ${2: g}, ${3: b}, ${4: a})"
         },
         {
-            "trigger": "blendColor (Color c1, Number mode, Number amount, Color c2)\tPolyCode",
-            "contents": "blendColor (${1: c1}, ${2: mode}, ${3: amount}, ${4: c2})"
+            "trigger": "blendColor(Color c1, Number mode, Number amount, Color c2)\tPolyCode",
+            "contents": "blendColor(${1: c1}, ${2: mode}, ${3: amount}, ${4: c2})"
         },
         {
             "trigger": "Random()\tPolyCode",
@@ -975,40 +975,40 @@
             "contents": "Config()"
         },
         {
-            "trigger": "loadConfig (String cNameSpace, String fileName)\tPolyCode",
-            "contents": "loadConfig (${1: cNameSpace}, ${2: fileName})"
+            "trigger": "loadConfig(String cNameSpace, String fileName)\tPolyCode",
+            "contents": "loadConfig(${1: cNameSpace}, ${2: fileName})"
         },
         {
-            "trigger": "saveConfig (String cNameSpace, String fileName)\tPolyCode",
-            "contents": "saveConfig (${1: cNameSpace}, ${2: fileName})"
+            "trigger": "saveConfig(String cNameSpace, String fileName)\tPolyCode",
+            "contents": "saveConfig(${1: cNameSpace}, ${2: fileName})"
         },
         {
-            "trigger": "getEntry (String cNameSpace, String key)\tPolyCode",
-            "contents": "getEntry (${1: cNameSpace}, ${2: key})"
+            "trigger": "getEntry(String cNameSpace, String key)\tPolyCode",
+            "contents": "getEntry(${1: cNameSpace}, ${2: key})"
         },
         {
-            "trigger": "setStringValue (String cNameSpace, String key, String value )\tPolyCode",
-            "contents": "setStringValue (${1: cNameSpace}, ${2: key}, ${3: value})"
+            "trigger": "setStringValue(String cNameSpace, String key, String value )\tPolyCode",
+            "contents": "setStringValue(${1: cNameSpace}, ${2: key}, ${3: value})"
         },
         {
-            "trigger": "setNumericValue (String cNameSpace, String key, String value)\tPolyCode",
-            "contents": "setNumericValue (${1: cNameSpace}, ${2: key}, ${3: value})"
+            "trigger": "setNumericValue(String cNameSpace, String key, String value)\tPolyCode",
+            "contents": "setNumericValue(${1: cNameSpace}, ${2: key}, ${3: value})"
         },
         {
-            "trigger": "getNumericValue (String cNameSpace, key)\tPolyCode",
-            "contents": "getNumericValue (${1: cNameSpace}, ${2: key})"
+            "trigger": "getNumericValue(String cNameSpace, key)\tPolyCode",
+            "contents": "getNumericValue(${1: cNameSpace}, ${2: key})"
         },
         {
-            "trigger": "getStringValue (String cNameSpace, key)\tPolyCode",
-            "contents": "getStringValue (${1: cNameSpace}, ${2: key})"
+            "trigger": "getStringValue(String cNameSpace, key)\tPolyCode",
+            "contents": "getStringValue(${1: cNameSpace}, ${2: key})"
         },
         {
-            "trigger": "setBoolValue (String cNameSpace, String key, Boolean value)\tPolyCode",
-            "contents": "setBoolValue (${1: cNameSpace}, ${2: key}, ${3: value})"
+            "trigger": "setBoolValue(String cNameSpace, String key, Boolean value)\tPolyCode",
+            "contents": "setBoolValue(${1: cNameSpace}, ${2: key}, ${3: value})"
         },
         {
-            "trigger": "getBoolValue (String cNameSpace, String key)\tPolyCode",
-            "contents": "getBoolValue (${1: cNameSpace}, ${2: key})"
+            "trigger": "getBoolValue(String cNameSpace, String key)\tPolyCode",
+            "contents": "getBoolValue(${1: cNameSpace}, ${2: key})"
         },
         {
             "trigger": "PolycodeViewBase()\tPolyCode",
@@ -1035,40 +1035,40 @@
             "contents": "updateAndRender()"
         },
         {
-            "trigger": "enableMouse (Boolean newVal)\tPolyCode",
-            "contents": "enableMouse (${1: newVal})"
+            "trigger": "enableMouse(Boolean newVal)\tPolyCode",
+            "contents": "enableMouse(${1: newVal})"
         },
         {
-            "trigger": "captureMouse (Boolean newVal)\tPolyCode",
-            "contents": "captureMouse (${1: newVal})"
+            "trigger": "captureMouse(Boolean newVal)\tPolyCode",
+            "contents": "captureMouse(${1: newVal})"
         },
         {
-            "trigger": "setCursor (Number cursorType)\tPolyCode",
-            "contents": "setCursor (${1: cursorType})"
+            "trigger": "setCursor(Number cursorType)\tPolyCode",
+            "contents": "setCursor(${1: cursorType})"
         },
         {
-            "trigger": "warpCursor (Number x, Number y)\tPolyCode",
-            "contents": "warpCursor (${1: x}, ${2: y})"
+            "trigger": "warpCursor(Number x, Number y)\tPolyCode",
+            "contents": "warpCursor(${1: x}, ${2: y})"
         },
         {
-            "trigger": "createThread (Threaded target)\tPolyCode",
-            "contents": "createThread (${1: target})"
+            "trigger": "createThread(Threaded target)\tPolyCode",
+            "contents": "createThread(${1: target})"
         },
         {
-            "trigger": "lockMutex (CoreMutex mutex)\tPolyCode",
-            "contents": "lockMutex (${1: mutex})"
+            "trigger": "lockMutex(CoreMutex mutex)\tPolyCode",
+            "contents": "lockMutex(${1: mutex})"
         },
         {
-            "trigger": "unlockMutex (CoreMutex mutex)\tPolyCode",
-            "contents": "unlockMutex (${1: mutex})"
+            "trigger": "unlockMutex(CoreMutex mutex)\tPolyCode",
+            "contents": "unlockMutex(${1: mutex})"
         },
         {
             "trigger": "createMutex()\tPolyCode",
             "contents": "createMutex()"
         },
         {
-            "trigger": "copyStringToClipboard (String str)\tPolyCode",
-            "contents": "copyStringToClipboard (${1: str})"
+            "trigger": "copyStringToClipboard(String str)\tPolyCode",
+            "contents": "copyStringToClipboard(${1: str})"
         },
         {
             "trigger": "getClipboardString()\tPolyCode",
@@ -1123,52 +1123,52 @@
             "contents": "getScreenHeight()"
         },
         {
-            "trigger": "createFolder (String path)\tPolyCode",
-            "contents": "createFolder (${1: path})"
+            "trigger": "createFolder(String path)\tPolyCode",
+            "contents": "createFolder(${1: path})"
         },
         {
-            "trigger": "copyDiskItem (String itemPath, String destItemPath)\tPolyCode",
-            "contents": "copyDiskItem (${1: itemPath}, ${2: destItemPath})"
+            "trigger": "copyDiskItem(String itemPath, String destItemPath)\tPolyCode",
+            "contents": "copyDiskItem(${1: itemPath}, ${2: destItemPath})"
         },
         {
-            "trigger": "moveDiskItem (String itemPath, String destItemPath)\tPolyCode",
-            "contents": "moveDiskItem (${1: itemPath}, ${2: destItemPath})"
+            "trigger": "moveDiskItem(String itemPath, String destItemPath)\tPolyCode",
+            "contents": "moveDiskItem(${1: itemPath}, ${2: destItemPath})"
         },
         {
-            "trigger": "removeDiskItem (String itemPath)\tPolyCode",
-            "contents": "removeDiskItem (${1: itemPath})"
+            "trigger": "removeDiskItem(String itemPath)\tPolyCode",
+            "contents": "removeDiskItem(${1: itemPath})"
         },
         {
             "trigger": "openFolderPicker()\tPolyCode",
             "contents": "openFolderPicker()"
         },
         {
-            "trigger": "setFramerate (Number frameRate, Number maxFixedCycles)\tPolyCode",
-            "contents": "setFramerate (${1: frameRate}, ${2: maxFixedCycles})"
+            "trigger": "setFramerate(Number frameRate, Number maxFixedCycles)\tPolyCode",
+            "contents": "setFramerate(${1: frameRate}, ${2: maxFixedCycles})"
         },
         {
-            "trigger": "openFilePicker (CoreFileExtension ext, Boolean allowMultiple)\tPolyCode",
-            "contents": "openFilePicker (${1: ext}, ${2: allowMultiple})"
+            "trigger": "openFilePicker(CoreFileExtension ext, Boolean allowMultiple)\tPolyCode",
+            "contents": "openFilePicker(${1: ext}, ${2: allowMultiple})"
         },
         {
-            "trigger": "saveFilePicker (CoreFileExtension ext)\tPolyCode",
-            "contents": "saveFilePicker (${1: ext})"
+            "trigger": "saveFilePicker(CoreFileExtension ext)\tPolyCode",
+            "contents": "saveFilePicker(${1: ext})"
         },
         {
-            "trigger": "setVideoMode (Number xRes, Number yRes, Boolean fullScreen, Boolean vSync, Number aaLevel, Number anisotropyLevel, Boolean retinaSupport)\tPolyCode",
-            "contents": "setVideoMode (${1: xRes}, ${2: yRes}, ${3: fullScreen}, ${4: vSync}, ${5: aaLevel}, ${6: anisotropyLevel}, ${7: retinaSupport})"
+            "trigger": "setVideoMode(Number xRes, Number yRes, Boolean fullScreen, Boolean vSync, Number aaLevel, Number anisotropyLevel, Boolean retinaSupport)\tPolyCode",
+            "contents": "setVideoMode(${1: xRes}, ${2: yRes}, ${3: fullScreen}, ${4: vSync}, ${5: aaLevel}, ${6: anisotropyLevel}, ${7: retinaSupport})"
         },
         {
-            "trigger": "resizeTo (Number xRes, Number yRes)\tPolyCode",
-            "contents": "resizeTo (${1: xRes}, ${2: yRes})"
+            "trigger": "resizeTo(Number xRes, Number yRes)\tPolyCode",
+            "contents": "resizeTo(${1: xRes}, ${2: yRes})"
         },
         {
             "trigger": "doSleep()\tPolyCode",
             "contents": "doSleep()"
         },
         {
-            "trigger": "openURL (String url)\tPolyCode",
-            "contents": "openURL (${1: url})"
+            "trigger": "openURL(String url)\tPolyCode",
+            "contents": "openURL(${1: url})"
         },
         {
             "trigger": "getElapsed()\tPolyCode",
@@ -1195,16 +1195,16 @@
             "contents": "getTicksFloat()"
         },
         {
-            "trigger": "setUserPointer (nil ptr)\tPolyCode",
-            "contents": "setUserPointer (${1: ptr})"
+            "trigger": "setUserPointer(nil ptr)\tPolyCode",
+            "contents": "setUserPointer(${1: ptr})"
         },
         {
             "trigger": "getUserPointer()\tPolyCode",
             "contents": "getUserPointer()"
         },
         {
-            "trigger": "executeExternalCommand (String command, String args, String inDirectory)\tPolyCode",
-            "contents": "executeExternalCommand (${1: command}, ${2: args}, ${3: inDirectory})"
+            "trigger": "executeExternalCommand(String command, String args, String inDirectory)\tPolyCode",
+            "contents": "executeExternalCommand(${1: command}, ${2: args}, ${3: inDirectory})"
         },
         {
             "trigger": "getDefaultWorkingDirectory()\tPolyCode",
@@ -1223,8 +1223,8 @@
             "contents": "getEventMutex()"
         },
         {
-            "trigger": "removeThread (Threaded thread)\tPolyCode",
-            "contents": "removeThread (${1: thread})"
+            "trigger": "removeThread(Threaded thread)\tPolyCode",
+            "contents": "removeThread(${1: thread})"
         },
         {
             "trigger": "CoreInput()\tPolyCode",
@@ -1235,92 +1235,92 @@
             "contents": "getMousePosition()"
         },
         {
-            "trigger": "getKeyState (PolyKey keyCode)\tPolyCode",
-            "contents": "getKeyState (${1: keyCode})"
+            "trigger": "getKeyState(PolyKey keyCode)\tPolyCode",
+            "contents": "getKeyState(${1: keyCode})"
         },
         {
-            "trigger": "getJoystickButtonState (Number joystickIndex, Number button)\tPolyCode",
-            "contents": "getJoystickButtonState (${1: joystickIndex}, ${2: button})"
+            "trigger": "getJoystickButtonState(Number joystickIndex, Number button)\tPolyCode",
+            "contents": "getJoystickButtonState(${1: joystickIndex}, ${2: button})"
         },
         {
-            "trigger": "getJoystickAxisValue (Number joystickIndex, Number axis)\tPolyCode",
-            "contents": "getJoystickAxisValue (${1: joystickIndex}, ${2: axis})"
+            "trigger": "getJoystickAxisValue(Number joystickIndex, Number axis)\tPolyCode",
+            "contents": "getJoystickAxisValue(${1: joystickIndex}, ${2: axis})"
         },
         {
             "trigger": "getMouseDelta()\tPolyCode",
             "contents": "getMouseDelta()"
         },
         {
-            "trigger": "getMouseButtonState (Number mouseButton)\tPolyCode",
-            "contents": "getMouseButtonState (${1: mouseButton})"
+            "trigger": "getMouseButtonState(Number mouseButton)\tPolyCode",
+            "contents": "getMouseButtonState(${1: mouseButton})"
         },
         {
             "trigger": "getNumJoysticks()\tPolyCode",
             "contents": "getNumJoysticks()"
         },
         {
-            "trigger": "getJoystickInfoByIndex (Number index)\tPolyCode",
-            "contents": "getJoystickInfoByIndex (${1: index})"
+            "trigger": "getJoystickInfoByIndex(Number index)\tPolyCode",
+            "contents": "getJoystickInfoByIndex(${1: index})"
         },
         {
-            "trigger": "getJoystickInfoByID (Number deviceID)\tPolyCode",
-            "contents": "getJoystickInfoByID (${1: deviceID})"
+            "trigger": "getJoystickInfoByID(Number deviceID)\tPolyCode",
+            "contents": "getJoystickInfoByID(${1: deviceID})"
         },
         {
-            "trigger": "addJoystick (Number deviceID)\tPolyCode",
-            "contents": "addJoystick (${1: deviceID})"
+            "trigger": "addJoystick(Number deviceID)\tPolyCode",
+            "contents": "addJoystick(${1: deviceID})"
         },
         {
-            "trigger": "removeJoystick (Number deviceID)\tPolyCode",
-            "contents": "removeJoystick (${1: deviceID})"
+            "trigger": "removeJoystick(Number deviceID)\tPolyCode",
+            "contents": "removeJoystick(${1: deviceID})"
         },
         {
-            "trigger": "joystickAxisMoved (Number axisID, Number value, Number deviceID)\tPolyCode",
-            "contents": "joystickAxisMoved (${1: axisID}, ${2: value}, ${3: deviceID})"
+            "trigger": "joystickAxisMoved(Number axisID, Number value, Number deviceID)\tPolyCode",
+            "contents": "joystickAxisMoved(${1: axisID}, ${2: value}, ${3: deviceID})"
         },
         {
-            "trigger": "joystickButtonDown (Number buttonID, Number deviceID)\tPolyCode",
-            "contents": "joystickButtonDown (${1: buttonID}, ${2: deviceID})"
+            "trigger": "joystickButtonDown(Number buttonID, Number deviceID)\tPolyCode",
+            "contents": "joystickButtonDown(${1: buttonID}, ${2: deviceID})"
         },
         {
-            "trigger": "joystickButtonUp (Number buttonID, Number deviceID)\tPolyCode",
-            "contents": "joystickButtonUp (${1: buttonID}, ${2: deviceID})"
+            "trigger": "joystickButtonUp(Number buttonID, Number deviceID)\tPolyCode",
+            "contents": "joystickButtonUp(${1: buttonID}, ${2: deviceID})"
         },
         {
-            "trigger": "mouseWheelUp (Number ticks)\tPolyCode",
-            "contents": "mouseWheelUp (${1: ticks})"
+            "trigger": "mouseWheelUp(Number ticks)\tPolyCode",
+            "contents": "mouseWheelUp(${1: ticks})"
         },
         {
-            "trigger": "mouseWheelDown (Number ticks)\tPolyCode",
-            "contents": "mouseWheelDown (${1: ticks})"
+            "trigger": "mouseWheelDown(Number ticks)\tPolyCode",
+            "contents": "mouseWheelDown(${1: ticks})"
         },
         {
-            "trigger": "setMouseButtonState (Number mouseButton, Boolean state, Number ticks)\tPolyCode",
-            "contents": "setMouseButtonState (${1: mouseButton}, ${2: state}, ${3: ticks})"
+            "trigger": "setMouseButtonState(Number mouseButton, Boolean state, Number ticks)\tPolyCode",
+            "contents": "setMouseButtonState(${1: mouseButton}, ${2: state}, ${3: ticks})"
         },
         {
-            "trigger": "setMousePosition (Number x, Number y, Number ticks)\tPolyCode",
-            "contents": "setMousePosition (${1: x}, ${2: y}, ${3: ticks})"
+            "trigger": "setMousePosition(Number x, Number y, Number ticks)\tPolyCode",
+            "contents": "setMousePosition(${1: x}, ${2: y}, ${3: ticks})"
         },
         {
-            "trigger": "setKeyState (PolyKey keyCode, wchar_t code, Boolean newState, Number ticks)\tPolyCode",
-            "contents": "setKeyState (${1: keyCode}, ${2: code}, ${3: newState}, ${4: ticks})"
+            "trigger": "setKeyState(PolyKey keyCode, wchar_t code, Boolean newState, Number ticks)\tPolyCode",
+            "contents": "setKeyState(${1: keyCode}, ${2: code}, ${3: newState}, ${4: ticks})"
         },
         {
-            "trigger": "setDeltaPosition (Number x, Number y)\tPolyCode",
-            "contents": "setDeltaPosition (${1: x}, ${2: y})"
+            "trigger": "setDeltaPosition(Number x, Number y)\tPolyCode",
+            "contents": "setDeltaPosition(${1: x}, ${2: y})"
         },
         {
-            "trigger": "touchesBegan (TouchInfo touch, TouchInfo touches, Number ticks)\tPolyCode",
-            "contents": "touchesBegan (${1: touch}, ${2: touches}, ${3: ticks})"
+            "trigger": "touchesBegan(TouchInfo touch, TouchInfo touches, Number ticks)\tPolyCode",
+            "contents": "touchesBegan(${1: touch}, ${2: touches}, ${3: ticks})"
         },
         {
-            "trigger": "touchesMoved (TouchInfo touch, TouchInfo touches, Number ticks)\tPolyCode",
-            "contents": "touchesMoved (${1: touch}, ${2: touches}, ${3: ticks})"
+            "trigger": "touchesMoved(TouchInfo touch, TouchInfo touches, Number ticks)\tPolyCode",
+            "contents": "touchesMoved(${1: touch}, ${2: touches}, ${3: ticks})"
         },
         {
-            "trigger": "touchesEnded (TouchInfo touch, TouchInfo touches, Number ticks)\tPolyCode",
-            "contents": "touchesEnded (${1: touch}, ${2: touches}, ${3: ticks})"
+            "trigger": "touchesEnded(TouchInfo touch, TouchInfo touches, Number ticks)\tPolyCode",
+            "contents": "touchesEnded(${1: touch}, ${2: touches}, ${3: ticks})"
         },
         {
             "trigger": "clearInput()\tPolyCode",
@@ -1331,20 +1331,20 @@
             "contents": "JoystickInfo()"
         },
         {
-            "trigger": "setRenderer (Renderer renderer)\tPolyCode",
-            "contents": "setRenderer (${1: renderer})"
+            "trigger": "setRenderer(Renderer renderer)\tPolyCode",
+            "contents": "setRenderer(${1: renderer})"
         },
         {
             "trigger": "getRenderer()\tPolyCode",
             "contents": "getRenderer()"
         },
         {
-            "trigger": "Update (Number elapsed)\tPolyCode",
-            "contents": "Update (${1: elapsed})"
+            "trigger": "Update(Number elapsed)\tPolyCode",
+            "contents": "Update(${1: elapsed})"
         },
         {
-            "trigger": "setCore (Core core)\tPolyCode",
-            "contents": "setCore (${1: core})"
+            "trigger": "setCore(Core core)\tPolyCode",
+            "contents": "setCore(${1: core})"
         },
         {
             "trigger": "setupBasicListeners()\tPolyCode",
@@ -1359,8 +1359,8 @@
             "contents": "getInput()"
         },
         {
-            "trigger": "installModule (PolycodeModule module)\tPolyCode",
-            "contents": "installModule (${1: module})"
+            "trigger": "installModule(PolycodeModule module)\tPolyCode",
+            "contents": "installModule(${1: module})"
         },
         {
             "trigger": "getMaterialManager()\tPolyCode",
@@ -1399,16 +1399,16 @@
             "contents": "getConfig()"
         },
         {
-            "trigger": "Cubemap (Texture t0, Texture t1, Texture t2, Texture t3, Texture t4, Texture t5)\tPolyCode",
-            "contents": "Cubemap (${1: t0}, ${2: t1}, ${2: t2}, ${3: t3}, ${4: t4}, ${5: t5})"
+            "trigger": "Cubemap(Texture t0, Texture t1, Texture t2, Texture t3, Texture t4, Texture t5)\tPolyCode",
+            "contents": "Cubemap(${1: t0}, ${2: t1}, ${2: t2}, ${3: t3}, ${4: t4}, ${5: t5})"
         },
         {
-            "trigger": "getTexture (Number index)\tPolyCode",
-            "contents": "getTexture (${1: index})"
+            "trigger": "getTexture(Number index)\tPolyCode",
+            "contents": "getTexture(${1: index})"
         },
         {
-            "trigger": "setTexture (Texture texture, Number index)\tPolyCode",
-            "contents": "setTexture (${1: texture}, ${2: index})"
+            "trigger": "setTexture(Texture texture, Number index)\tPolyCode",
+            "contents": "setTexture(${1: texture}, ${2: index})"
         },
         {
             "trigger": "recreateFromTextures()\tPolyCode",
@@ -1419,20 +1419,20 @@
             "contents": "Data()"
         },
         {
-            "trigger": "loadFromFile (String fileName)\tPolyCode",
-            "contents": "loadFromFile (${1: fileName})"
+            "trigger": "loadFromFile(String fileName)\tPolyCode",
+            "contents": "loadFromFile(${1: fileName})"
         },
         {
-            "trigger": "getAsString (Number encoding)\tPolyCode",
-            "contents": "getAsString (${1: encoding})"
+            "trigger": "getAsString(Number encoding)\tPolyCode",
+            "contents": "getAsString(${1: encoding})"
         },
         {
-            "trigger": "setFromString (String str, Number encoding)\tPolyCode",
-            "contents": "setFromString (${1: str}, ${2: encoding})"
+            "trigger": "setFromString(String str, Number encoding)\tPolyCode",
+            "contents": "setFromString(${1: str}, ${2: encoding})"
         },
         {
-            "trigger": "saveToFile (String fileName)\tPolyCode",
-            "contents": "saveToFile (${1: fileName})"
+            "trigger": "saveToFile(String fileName)\tPolyCode",
+            "contents": "saveToFile(${1: fileName})"
         },
         {
             "trigger": "getData()\tPolyCode",
@@ -1459,16 +1459,16 @@
             "contents": "renderChildren()"
         },
         {
-            "trigger": "Clone (Boolean deepClone, Boolean ignoreEditorOnly)\tPolyCode",
-            "contents": "Clone (${1: deepClone}, ${2: ignoreEditorOnly})"
+            "trigger": "Clone(Boolean deepClone, Boolean ignoreEditorOnly)\tPolyCode",
+            "contents": "Clone(${1: deepClone}, ${2: ignoreEditorOnly})"
         },
         {
-            "trigger": "applyClone (Entity clone, Boolean deepClone, Boolean ignoreEditorOnly)\tPolyCode",
-            "contents": "applyClone (${1: clone}, ${2: deepClone}, ${3: ignoreEditorOnly})"
+            "trigger": "applyClone(Entity clone, Boolean deepClone, Boolean ignoreEditorOnly)\tPolyCode",
+            "contents": "applyClone(${1: clone}, ${2: deepClone}, ${3: ignoreEditorOnly})"
         },
         {
-            "trigger": "dirtyMatrix (Boolean state)\tPolyCode",
-            "contents": "dirtyMatrix (${1: state})"
+            "trigger": "dirtyMatrix(Boolean state)\tPolyCode",
+            "contents": "dirtyMatrix(${1: state})"
         },
         {
             "trigger": "rebuildTransformMatrix()\tPolyCode",
@@ -1487,8 +1487,8 @@
             "contents": "getConcatenatedMatrix()"
         },
         {
-            "trigger": "getConcatenatedMatrixRelativeTo (Entity relativeEnt)\tPolyCode",
-            "contents": "getConcatenatedMatrixRelativeTo (${1: relativeEnt})"
+            "trigger": "getConcatenatedMatrixRelativeTo(Entity relativeEnt)\tPolyCode",
+            "contents": "getConcatenatedMatrixRelativeTo(${1: relativeEnt})"
         },
         {
             "trigger": "getAnchorAdjustedMatrix()\tPolyCode",
@@ -1499,40 +1499,40 @@
             "contents": "getConcatenatedRollMatrix()"
         },
         {
-            "trigger": "setTransformByMatrixPure (Matrix4 matrix)\tPolyCode",
-            "contents": "setTransformByMatrixPure (${1: matrix})"
+            "trigger": "setTransformByMatrixPure(Matrix4 matrix)\tPolyCode",
+            "contents": "setTransformByMatrixPure(${1: matrix})"
         },
         {
-            "trigger": "getLookAtMatrix (Vector3 loc, Vector3 upVector)\tPolyCode",
-            "contents": "getLookAtMatrix (${1: loc}, ${2: upVector})"
+            "trigger": "getLookAtMatrix(Vector3 loc, Vector3 upVector)\tPolyCode",
+            "contents": "getLookAtMatrix(${1: loc}, ${2: upVector})"
         },
         {
-            "trigger": "addChild (Entity newChild)\tPolyCode",
-            "contents": "addChild (${1: newChild})"
+            "trigger": "addChild(Entity newChild)\tPolyCode",
+            "contents": "addChild(${1: newChild})"
         },
         {
-            "trigger": "removeChild (Entity entToRemove)\tPolyCode",
-            "contents": "removeChild (${1: entToRemove})"
+            "trigger": "removeChild(Entity entToRemove)\tPolyCode",
+            "contents": "removeChild(${1: entToRemove})"
         },
         {
-            "trigger": "moveChildUp (Entity child)\tPolyCode",
-            "contents": "moveChildUp (${1: child})"
+            "trigger": "moveChildUp(Entity child)\tPolyCode",
+            "contents": "moveChildUp(${1: child})"
         },
         {
-            "trigger": "moveChildDown (Entity child)\tPolyCode",
-            "contents": "moveChildDown (${1: child})"
+            "trigger": "moveChildDown(Entity child)\tPolyCode",
+            "contents": "moveChildDown(${1: child})"
         },
         {
-            "trigger": "moveChildTop (Entity child)\tPolyCode",
-            "contents": "moveChildTop (${1: child})"
+            "trigger": "moveChildTop(Entity child)\tPolyCode",
+            "contents": "moveChildTop(${1: child})"
         },
         {
-            "trigger": "moveChildBottom (Entity child)\tPolyCode",
-            "contents": "moveChildBottom (${1: child})"
+            "trigger": "moveChildBottom(Entity child)\tPolyCode",
+            "contents": "moveChildBottom(${1: child})"
         },
         {
-            "trigger": "setParentEntity (Entity ent)\tPolyCode",
-            "contents": "setParentEntity (${1: ent})"
+            "trigger": "setParentEntity(Entity ent)\tPolyCode",
+            "contents": "setParentEntity(${1: ent})"
         },
         {
             "trigger": "getParentEntity()\tPolyCode",
@@ -1543,12 +1543,12 @@
             "contents": "getNumChildren()"
         },
         {
-            "trigger": "getChildAtIndex (Number index)\tPolyCode",
-            "contents": "getChildAtIndex (${1: index})"
+            "trigger": "getChildAtIndex(Number index)\tPolyCode",
+            "contents": "getChildAtIndex(${1: index})"
         },
         {
-            "trigger": "setOwnsChildrenRecursive (Boolean state)\tPolyCode",
-            "contents": "setOwnsChildrenRecursive (${1: state})"
+            "trigger": "setOwnsChildrenRecursive(Boolean state)\tPolyCode",
+            "contents": "setOwnsChildrenRecursive(${1: state})"
         },
         {
             "trigger": "getPosition()\tPolyCode",
@@ -1563,40 +1563,40 @@
             "contents": "getCombinedPosition()"
         },
         {
-            "trigger": "setPosition (Number x, Number y, Number z)\tPolyCode",
-            "contents": "setPosition (${1: x}, ${2: y}, ${3: z})"
+            "trigger": "setPosition(Number x, Number y, Number z)\tPolyCode",
+            "contents": "setPosition(${1: x}, ${2: y}, ${3: z})"
         },
         {
-            "trigger": "setPositionX (Number x)\tPolyCode",
-            "contents": "setPositionX (${1: x})"
+            "trigger": "setPositionX(Number x)\tPolyCode",
+            "contents": "setPositionX(${1: x})"
         },
         {
-            "trigger": "setPositionY (Number y)\tPolyCode",
-            "contents": "getChildAtIndex (${1: y})"
+            "trigger": "setPositionY(Number y)\tPolyCode",
+            "contents": "getChildAtIndex(${1: y})"
         },
         {
-            "trigger": "Translate (Number x, Number y, Number z)\tPolyCode",
-            "contents": "Translate (${1: x}, ${2: y}, ${3: z})"
+            "trigger": "Translate(Number x, Number y, Number z)\tPolyCode",
+            "contents": "Translate(${1: x}, ${2: y}, ${3: z})"
         },
         {
-            "trigger": "setPositionZ (Number z)\tPolyCode",
-            "contents": "setPositionZ (${1: z})"
+            "trigger": "setPositionZ(Number z)\tPolyCode",
+            "contents": "setPositionZ(${1: z})"
         },
         {
-            "trigger": "setScaleX (Number x)\tPolyCode",
-            "contents": "setScaleX (${1: x})"
+            "trigger": "setScaleX(Number x)\tPolyCode",
+            "contents": "setScaleX(${1: x})"
         },
         {
-            "trigger": "setScaleY (Number y)\tPolyCode",
-            "contents": "setScaleY (${1: y})"
+            "trigger": "setScaleY(Number y)\tPolyCode",
+            "contents": "setScaleY(${1: y})"
         },
         {
-            "trigger": "setScaleZ (Number z)\tPolyCode",
-            "contents": "setScaleZ (${1: z})"
+            "trigger": "setScaleZ(Number z)\tPolyCode",
+            "contents": "setScaleZ(${1: z})"
         },
         {
-            "trigger": "Scale (Number x, Number y, Number z)\tPolyCode",
-            "contents": "Scale (${1: x}, ${2: y}, ${3: z})"
+            "trigger": "Scale(Number x, Number y, Number z)\tPolyCode",
+            "contents": "Scale(${1: x}, ${2: y}, ${3: z})"
         },
         {
             "trigger": "setScale()\tPolyCode",
@@ -1631,32 +1631,32 @@
             "contents": "rebuildRotation()"
         },
         {
-            "trigger": "setRotationEuler (Vector3 rotation)\tPolyCode",
-            "contents": "setRotationEuler (${1: rotation})"
+            "trigger": "setRotationEuler(Vector3 rotation)\tPolyCode",
+            "contents": "setRotationEuler(${1: rotation})"
         },
         {
-            "trigger": "setPitch (Number pitch)\tPolyCode",
-            "contents": "setPitch (${1: pitch})"
+            "trigger": "setPitch(Number pitch)\tPolyCode",
+            "contents": "setPitch(${1: pitch})"
         },
         {
-            "trigger": "setYaw (Number yaw)\tPolyCode",
-            "contents": "setYaw (${1: yaw})"
+            "trigger": "setYaw(Number yaw)\tPolyCode",
+            "contents": "setYaw(${1: yaw})"
         },
         {
-            "trigger": "setRoll (Number roll)\tPolyCode",
-            "contents": "setRoll (${1: roll})"
+            "trigger": "setRoll(Number roll)\tPolyCode",
+            "contents": "setRoll(${1: roll})"
         },
         {
-            "trigger": "Roll (Number roll)\tPolyCode",
-            "contents": "Roll (${1: roll})"
+            "trigger": "Roll(Number roll)\tPolyCode",
+            "contents": "Roll(${1: roll})"
         },
         {
-            "trigger": "Yaw (Number yaw)\tPolyCode",
-            "contents": "Yaw (${1: yaw})"
+            "trigger": "Yaw(Number yaw)\tPolyCode",
+            "contents": "Yaw(${1: yaw})"
         },
         {
-            "trigger": "Pitch (Number pitch)\tPolyCode",
-            "contents": "Pitch (${1: pitch})"
+            "trigger": "Pitch(Number pitch)\tPolyCode",
+            "contents": "Pitch(${1: pitch})"
         },
         {
             "trigger": "getPitch()\tPolyCode",
@@ -1683,24 +1683,24 @@
             "contents": "getDepth()"
         },
         {
-            "trigger": "setWidth (Number width)\tPolyCode",
-            "contents": "setWidth (${1: width})"
+            "trigger": "setWidth(Number width)\tPolyCode",
+            "contents": "setWidth(${1: width})"
         },
         {
-            "trigger": "setHeight (Number height)\tPolyCode",
-            "contents": "setHeight (${1: height})"
+            "trigger": "setHeight(Number height)\tPolyCode",
+            "contents": "setHeight(${1: height})"
         },
         {
-            "trigger": "setDepth (Number depth)\tPolyCode",
-            "contents": "setDepth (${1: depth})"
+            "trigger": "setDepth(Number depth)\tPolyCode",
+            "contents": "setDepth(${1: depth})"
         },
         {
-            "trigger": "setRotationQuat (Number w, Number x, Number y, Number z)\tPolyCode",
+            "trigger": "setRotationQuat(Number w, Number x, Number y, Number z)\tPolyCode",
             "contents": "setRotationQuat()"
         },
         {
-            "trigger": "setRotationByQuaternion (Quaternion quat)\tPolyCode",
-            "contents": "setRotationByQuaternion (${1: quat})"
+            "trigger": "setRotationByQuaternion(Quaternion quat)\tPolyCode",
+            "contents": "setRotationByQuaternion(${1: quat})"
         },
         {
             "trigger": "getRotationQuat()\tPolyCode",
@@ -1711,84 +1711,84 @@
             "contents": "getConcatenatedQuat()"
         },
         {
-            "trigger": "lookAt (Vector3 loc, Vector3 upVector)\tPolyCode",
-            "contents": "lookAt (${1: loc}, ${2: upVector})"
+            "trigger": "lookAt(Vector3 loc, Vector3 upVector)\tPolyCode",
+            "contents": "lookAt(${1: loc}, ${2: upVector})"
         },
         {
-            "trigger": "lookAtEntity (Entity ent, Vector3 upVector)\tPolyCode",
-            "contents": "lookAtEntity (${1: ent}. ${2: upVector})"
+            "trigger": "lookAtEntity(Entity ent, Vector3 upVector)\tPolyCode",
+            "contents": "lookAtEntity(${1: ent}. ${2: upVector})"
         },
         {
             "trigger": "getCombinedColor()\tPolyCode",
             "contents": "getCombinedColor()"
         },
         {
-            "trigger": "setColor (Number r, Number g, Number b, Number a)\tPolyCode",
-            "contents": "setColor (${1: r}, ${2: g}, ${3: b}, ${4: a})"
+            "trigger": "setColor(Number r, Number g, Number b, Number a)\tPolyCode",
+            "contents": "setColor(${1: r}, ${2: g}, ${3: b}, ${4: a})"
         },
         {
-            "trigger": "setColorInt (Number r, Number g, Number b, Number a)\tPolyCode",
-            "contents": "setColorInt (${1: r}, ${2: g}, ${3: b}, ${4: a})"
+            "trigger": "setColorInt(Number r, Number g, Number b, Number a)\tPolyCode",
+            "contents": "setColorInt(${1: r}, ${2: g}, ${3: b}, ${4: a})"
         },
         {
-            "trigger": "setAnchorPoint (Vector3 anchorPoint)\tPolyCode",
-            "contents": "setAnchorPoint (${1: anchorPoint})"
+            "trigger": "setAnchorPoint(Vector3 anchorPoint)\tPolyCode",
+            "contents": "setAnchorPoint(${1: anchorPoint})"
         },
         {
             "trigger": "getAnchorPoint()\tPolyCode",
             "contents": "getAnchorPoint()"
         },
         {
-            "trigger": "onMouseDown (Ray ray, Number mouseButton, Number timestamp)\tPolyCode",
-            "contents": "onMouseDown (${1: ray}, ${2: mouseButton}, ${3: timestamp})"
+            "trigger": "onMouseDown(Ray ray, Number mouseButton, Number timestamp)\tPolyCode",
+            "contents": "onMouseDown(${1: ray}, ${2: mouseButton}, ${3: timestamp})"
         },
         {
-            "trigger": "onMouseUp (Ray ray, Number mouseButton, Number timestamp)\tPolyCode",
-            "contents": "onMouseUp (${1: ray}, ${2: mouseButton}, ${3: timestamp})"
+            "trigger": "onMouseUp(Ray ray, Number mouseButton, Number timestamp)\tPolyCode",
+            "contents": "onMouseUp(${1: ray}, ${2: mouseButton}, ${3: timestamp})"
         },
         {
-            "trigger": "onMouseMove (Ray ray, Number timestamp)\tPolyCode",
-            "contents": "onMouseMove (${1: ray}, ${2: timestamp})"
+            "trigger": "onMouseMove(Ray ray, Number timestamp)\tPolyCode",
+            "contents": "onMouseMove(${1: ray}, ${2: timestamp})"
         },
         {
-            "trigger": "onMouseWheelUp (Ray ray, Number timestamp)\tPolyCode",
-            "contents": "onMouseWheelUp (${1: ray}, ${2: timestamp})"
+            "trigger": "onMouseWheelUp(Ray ray, Number timestamp)\tPolyCode",
+            "contents": "onMouseWheelUp(${1: ray}, ${2: timestamp})"
         },
         {
-            "trigger": "onMouseWheelDown (Ray ray, Number timestamp)\tPolyCode",
-            "contents": "onMouseWheelDown (${1: ray}, ${2: timestamp})"
+            "trigger": "onMouseWheelDown(Ray ray, Number timestamp)\tPolyCode",
+            "contents": "onMouseWheelDown(${1: ray}, ${2: timestamp})"
         },
         {
-            "trigger": "setUserData (nil userData)\tPolyCode",
-            "contents": "setUserData (${ userData})"
+            "trigger": "setUserData(nil userData)\tPolyCode",
+            "contents": "setUserData(${ userData})"
         },
         {
-            "trigger": "setBlendingMode (Number newBlendingMode)\tPolyCode",
-            "contents": "setBlendingMode (${1: newBlendingMode})"
+            "trigger": "setBlendingMode(Number newBlendingMode)\tPolyCode",
+            "contents": "setBlendingMode(${1: newBlendingMode})"
         },
         {
-            "trigger": "getEntityById (String id, Boolean recursive)\tPolyCode",
-            "contents": "getEntityById (${1: id}, ${2: recursive})"
+            "trigger": "getEntityById(String id, Boolean recursive)\tPolyCode",
+            "contents": "getEntityById(${1: id}, ${2: recursive})"
         },
         {
-            "trigger": "getEntitiesByTag (String tag, Boolean recursive)\tPolyCode",
-            "contents": "getEntitiesByTag (${1: tag}, ${2: recursive})"
+            "trigger": "getEntitiesByTag(String tag, Boolean recursive)\tPolyCode",
+            "contents": "getEntitiesByTag(${1: tag}, ${2: recursive})"
         },
         {
-            "trigger": "getEntitiesByLayerID (char layerID, Boolean recursive)\tPolyCode",
-            "contents": "getEntitiesByLayerID (${1: layerID}, ${2: recursive})"
+            "trigger": "getEntitiesByLayerID(char layerID, Boolean recursive)\tPolyCode",
+            "contents": "getEntitiesByLayerID(${1: layerID}, ${2: recursive})"
         },
         {
-            "trigger": "getEntityProp (String propName)\tPolyCode",
-            "contents": "getEntityProp (${1: propName})"
+            "trigger": "getEntityProp(String propName)\tPolyCode",
+            "contents": "getEntityProp(${1: propName})"
         },
         {
-            "trigger": "setEntityProp (String propName, String propValue)\tPolyCode",
-            "contents": "setEntityProp (${1: propName}, ${2: propValue})"
+            "trigger": "setEntityProp(String propName, String propValue)\tPolyCode",
+            "contents": "setEntityProp(${1: propName}, ${2: propValue})"
         },
         {
-            "trigger": "setInverseY (Boolean state)\tPolyCode",
-            "contents": "setInverseY (${1: val})"
+            "trigger": "setInverseY(Boolean state)\tPolyCode",
+            "contents": "setInverseY(${1: val})"
         },
         {
             "trigger": "getInverseY()\tPolyCode",
@@ -1807,36 +1807,36 @@
             "contents": "buildPositionMatrix()"
         },
         {
-            "trigger": "setRenderer (Renderer renderer)\tPolyCode",
-            "contents": "setRenderer (${1: renderer})"
+            "trigger": "setRenderer(Renderer renderer)\tPolyCode",
+            "contents": "setRenderer(${1: renderer})"
         },
         {
-            "trigger": "customHitDetection (Ray ray)\tPolyCode",
-            "contents": "customHitDetection (${1: ray})"
+            "trigger": "customHitDetection(Ray ray)\tPolyCode",
+            "contents": "customHitDetection(${1: ray})"
         },
         {
             "trigger": "getNumTags()\tPolyCode",
             "contents": "getNumTags()"
         },
         {
-            "trigger": "getTagAtIndex (Number index)\tPolyCode",
-            "contents": "getTagAtIndex (${1: index})"
+            "trigger": "getTagAtIndex(Number index)\tPolyCode",
+            "contents": "getTagAtIndex(${1: index})"
         },
         {
-            "trigger": "hasTag (String tag)\tPolyCode",
-            "contents": "hasTag (${1: tag})"
+            "trigger": "hasTag(String tag)\tPolyCode",
+            "contents": "hasTag(${1: tag})"
         },
         {
             "trigger": "clearTags()\tPolyCode",
             "contents": "clearTags()"
         },
         {
-            "trigger": "addTag (String tag)\tPolyCode",
-            "contents": "addTag (${1: tag})"
+            "trigger": "addTag(String tag)\tPolyCode",
+            "contents": "addTag(${1: tag})"
         },
         {
-            "trigger": "getScreenPosition (Matrix4 projectionMatrix, Matrix4 cameraMatrix, Rectangle viewport)\tPolyCode",
-            "contents": "getScreenPosition (${1: projectionMatrix}, ${2: cameraMatrix}, ${3: viewport})"
+            "trigger": "getScreenPosition(Matrix4 projectionMatrix, Matrix4 cameraMatrix, Rectangle viewport)\tPolyCode",
+            "contents": "getScreenPosition(${1: projectionMatrix}, ${2: cameraMatrix}, ${3: viewport})"
         },
         {
             "trigger": "getScreenPositionForMainCamera()\tPolyCode",
@@ -1859,20 +1859,20 @@
             "contents": "getLocalBoundingBox()"
         },
         {
-            "trigger": "setLocalBoundingBox (Vector3 box)\tPolyCode",
-            "contents": "setLocalBoundingBox (${1: box})"
+            "trigger": "setLocalBoundingBox(Vector3 box)\tPolyCode",
+            "contents": "setLocalBoundingBox(${1: box})"
         },
         {
-            "trigger": "setLocalBoundingBoxX (Number x)\tPolyCode",
-            "contents": "setLocalBoundingBoxX (${1: x})"
+            "trigger": "setLocalBoundingBoxX(Number x)\tPolyCode",
+            "contents": "setLocalBoundingBoxX(${1: x})"
         },
         {
-            "trigger": "setLocalBoundingBoxY (Number y)\tPolyCode",
-            "contents": "setLocalBoundingBoxY (${1: y})"
+            "trigger": "setLocalBoundingBoxY(Number y)\tPolyCode",
+            "contents": "setLocalBoundingBoxY(${1: y})"
         },
         {
-            "trigger": "setLocalBoundingBoxZ (Number z)\tPolyCode",
-            "contents": "setLocalBoundingBoxZ (${1: z})"
+            "trigger": "setLocalBoundingBoxZ(Number z)\tPolyCode",
+            "contents": "setLocalBoundingBoxZ(${1: z})"
         },
         {
             "trigger": "Event()\tPolyCode",
@@ -1887,12 +1887,12 @@
             "contents": "getDispatcher()"
         },
         {
-            "trigger": "setEventCode (Number eventCode)\tPolyCode",
-            "contents": "setEventCode (${1: eventCode})"
+            "trigger": "setEventCode(Number eventCode)\tPolyCode",
+            "contents": "setEventCode(${1: eventCode})"
         },
         {
-            "trigger": "setDispatcher (EventDispatcher dispatcher)\tPolyCode",
-            "contents": "setDispatcher (${1: dispatcher})"
+            "trigger": "setDispatcher(EventDispatcher dispatcher)\tPolyCode",
+            "contents": "setDispatcher(${1: dispatcher})"
         },
         {
             "trigger": "getEventType()\tPolyCode",
@@ -1911,36 +1911,36 @@
             "contents": "removeAllHandlers()"
         },
         {
-            "trigger": "removeAllHandlersForListener (EventHandler handler)\tPolyCode",
-            "contents": "removeAllHandlersForListener (${1: handler})"
+            "trigger": "removeAllHandlersForListener(EventHandler handler)\tPolyCode",
+            "contents": "removeAllHandlersForListener(${1: handler})"
         },
         {
-            "trigger": "addEventListener (EventHandler handler, Number eventCode)\tPolyCode",
-            "contents": "addEventListener (${1: handler}, ${2: eventCode})"
+            "trigger": "addEventListener(EventHandler handler, Number eventCode)\tPolyCode",
+            "contents": "addEventListener(${1: handler}, ${2: eventCode})"
         },
         {
-            "trigger": "addEventListenerUnique (EventHandler handler, Number eventCode)\tPolyCode",
-            "contents": "addEventListenerUnique (${1: handler}, ${2: eventCode})"
+            "trigger": "addEventListenerUnique(EventHandler handler, Number eventCode)\tPolyCode",
+            "contents": "addEventListenerUnique(${1: handler}, ${2: eventCode})"
         },
         {
-            "trigger": "hasEventListener (EventHandler handler, Number eventCode)\tPolyCode",
-            "contents": "hasEventListener (${1: handler}, ${2: eventCode})"
+            "trigger": "hasEventListener(EventHandler handler, Number eventCode)\tPolyCode",
+            "contents": "hasEventListener(${1: handler}, ${2: eventCode})"
         },
         {
-            "trigger": "removeEventListener (EventHandler handler, Number eventCode)\tPolyCode",
-            "contents": "removeEventListener (${1: handler}, ${2: eventCode})"
+            "trigger": "removeEventListener(EventHandler handler, Number eventCode)\tPolyCode",
+            "contents": "removeEventListener(${1: handler}, ${2: eventCode})"
         },
         {
-            "trigger": "__dispatchEvent (Event event, Number eventCode)\tPolyCode",
-            "contents": "__dispatchEvent (${1: event}, ${2: eventCode})"
+            "trigger": "__dispatchEvent(Event event, Number eventCode)\tPolyCode",
+            "contents": "__dispatchEvent(${1: event}, ${2: eventCode})"
         },
         {
-            "trigger": "dispatchEvent (Event event, Number eventCode)\tPolyCode",
-            "contents": "dispatchEvent (${1: event}, ${2: eventCode})"
+            "trigger": "dispatchEvent(Event event, Number eventCode)\tPolyCode",
+            "contents": "dispatchEvent(${1: event}, ${2: eventCode})"
         },
         {
-            "trigger": "dispatchEventNoDelete (Event event, Number eventCode)\tPolyCode",
-            "contents": "dispatchEventNoDelete (${1: event}, ${2: eventCode})"
+            "trigger": "dispatchEventNoDelete(Event event, Number eventCode)\tPolyCode",
+            "contents": "dispatchEventNoDelete(${1: event}, ${2: eventCode})"
         },
         {
             "trigger": "FixedShader()\tPolyCode",
@@ -1951,24 +1951,24 @@
             "contents": "createBinding()"
         },
         {
-            "trigger": "FixedShaderBinding (Fixedshader shader)\tPolyCode",
-            "contents": "FixedShaderBinding (${1: shader})"
+            "trigger": "FixedShaderBinding(Fixedshader shader)\tPolyCode",
+            "contents": "FixedShaderBinding(${1: shader})"
         },
         {
-            "trigger": "addTexture (String name, Texture tex)\tPolyCode",
-            "contents": "getChildAtIndex (${1: name}, ${2: tex})"
+            "trigger": "addTexture(String name, Texture tex)\tPolyCode",
+            "contents": "getChildAtIndex(${1: name}, ${2: tex})"
         },
         {
-            "trigger": "addCubemap (String name, Cubemap cubemap)\tPolyCode",
-            "contents": "addCubemap (${1: name}, ${2: cubemap})"
+            "trigger": "addCubemap(String name, Cubemap cubemap)\tPolyCode",
+            "contents": "addCubemap(${1: name}, ${2: cubemap})"
         },
         {
             "trigger": "getDiffuseTexture()\tPolyCode",
             "contents": "getDiffuseTexture()"
         },
         {
-            "trigger": "Font (String fileName, FT_Library FTLibrary)\tPolyCode",
-            "contents": "Font (${1: fileName}, ${2: FTLibrary})"
+            "trigger": "Font(String fileName, FT_Library FTLibrary)\tPolyCode",
+            "contents": "Font(${1: fileName}, ${2: FTLibrary})"
         },
         {
             "trigger": "getFace()\tPolyCode",
@@ -1979,8 +1979,8 @@
             "contents": "isValid()"
         },
         {
-            "trigger": "setFontName (String fontName)\tPolyCode",
-            "contents": "setFontName (${1: fontName})"
+            "trigger": "setFontName(String fontName)\tPolyCode",
+            "contents": "setFontName(${1: fontName})"
         },
         {
             "trigger": "getFontName()\tPolyCode",
@@ -1995,112 +1995,112 @@
             "contents": "FontManager()"
         },
         {
-            "trigger": "registerFont (String fontName, String fontPath)\tPolyCode",
-            "contents": "registerFont (${1: fontName}, ${2: fontPath})"
+            "trigger": "registerFont(String fontName, String fontPath)\tPolyCode",
+            "contents": "registerFont(${1: fontName}, ${2: fontPath})"
         },
         {
-            "trigger": "getFontByName (String fontName)\tPolyCode",
-            "contents": "getFontByName (${1: fontName})"
+            "trigger": "getFontByName(String fontName)\tPolyCode",
+            "contents": "getFontByName(${1: fontName})"
         },
         {
             "trigger": "getNumFonts()\tPolyCode",
             "contents": "getNumFonts()"
         },
         {
-            "trigger": "getFontEntryByIndex (Number index)\tPolyCode",
-            "contents": "getFontEntryByIndex (${1: index})"
+            "trigger": "getFontEntryByIndex(Number index)\tPolyCode",
+            "contents": "getFontEntryByIndex(${1: index})"
         },
         {
-            "trigger": "getFontEntryByFontPath (String fontPath)\tPolyCode",
-            "contents": "getFontEntryByFontPath (${1: fontPath})"
+            "trigger": "getFontEntryByFontPath(String fontPath)\tPolyCode",
+            "contents": "getFontEntryByFontPath(${1: fontPath})"
         },
         {
-            "trigger": "removeFontEntry (FontEntry entry, Boolean deleteFont)\tPolyCode",
-            "contents": "removeFontEntry (${1: entry}, ${2: deleteFont})"
+            "trigger": "removeFontEntry(FontEntry entry, Boolean deleteFont)\tPolyCode",
+            "contents": "removeFontEntry(${1: entry}, ${2: deleteFont})"
         },
         {
-            "trigger": "Image (String fileName)\tPolyCode",
-            "contents": "Image (${1: fileName})"
+            "trigger": "Image(String fileName)\tPolyCode",
+            "contents": "Image(${1: fileName})"
         },
         {
-            "trigger": "loadImage (String fileName)\tPolyCode",
-            "contents": "loadImage (${1: fileName})"
+            "trigger": "loadImage(String fileName)\tPolyCode",
+            "contents": "loadImage(${1: fileName})"
         },
         {
-            "trigger": "saveImage (String fileName)\tPolyCode",
-            "contents": "saveImage (${1: fileName})"
+            "trigger": "saveImage(String fileName)\tPolyCode",
+            "contents": "saveImage(${1: fileName})"
         },
         {
-            "trigger": "savePNG (String fileName)\tPolyCode",
-            "contents": "savePNG (${1: fileName})"
+            "trigger": "savePNG(String fileName)\tPolyCode",
+            "contents": "savePNG(${1: fileName})"
         },
         {
-            "trigger": "pasteImage (Image image, Number x, Number y, Number blendingMode, Number blendAmount, Color blendColor)\tPolyCode",
-            "contents": "pasteImage (${1: image}, ${2: x}, ${3: y}, ${4: blendingMode}, ${5: blendAmount}, ${6: blendColor})"
+            "trigger": "pasteImage(Image image, Number x, Number y, Number blendingMode, Number blendAmount, Color blendColor)\tPolyCode",
+            "contents": "pasteImage(${1: image}, ${2: x}, ${3: y}, ${4: blendingMode}, ${5: blendAmount}, ${6: blendColor})"
         },
         {
-            "trigger": "createEmpty (Number width, Number height)\tPolyCode",
-            "contents": "createEmpty (${1: width}, ${2: height})"
+            "trigger": "createEmpty(Number width, Number height)\tPolyCode",
+            "contents": "createEmpty(${1: width}, ${2: height})"
         },
         {
-            "trigger": "fill (Color color)\tPolyCode",
-            "contents": "fill (${1: color})"
+            "trigger": "fill(Color color)\tPolyCode",
+            "contents": "fill(${1: color})"
         },
         {
-            "trigger": "setPixel (Number x, Number y, Number r, Number g, Number b, Number a)\tPolyCode",
-            "contents": "setPixel (${1: x}, ${2: y}, ${3: r}, ${4: g}, ${5: b}, ${6: a})"
+            "trigger": "setPixel(Number x, Number y, Number r, Number g, Number b, Number a)\tPolyCode",
+            "contents": "setPixel(${1: x}, ${2: y}, ${3: r}, ${4: g}, ${5: b}, ${6: a})"
         },
         {
-            "trigger": "getPixel (Number x, Number y)\tPolyCode",
-            "contents": "getPixel (${1: x}, ${2: y})"
+            "trigger": "getPixel(Number x, Number y)\tPolyCode",
+            "contents": "getPixel(${1: x}, ${2: y})"
         },
         {
-            "trigger": "swap (Number v1, Number v2)\tPolyCode",
-            "contents": "swap (${1: v1}, ${2: v2})"
+            "trigger": "swap(Number v1, Number v2)\tPolyCode",
+            "contents": "swap(${1: v1}, ${2: v2})"
         },
         {
-            "trigger": "drawLine (Number x0, Number y0, Number x1, Number y1)\tPolyCode",
-            "contents": "drawLine (${1: x0}, ${2: y0}, ${3: x1}, ${4: y1})"
+            "trigger": "drawLine(Number x0, Number y0, Number x1, Number y1)\tPolyCode",
+            "contents": "drawLine(${1: x0}, ${2: y0}, ${3: x1}, ${4: y1})"
         },
         {
-            "trigger": "moveBrushTo (Number x, Number y)\tPolyCode",
-            "contents": "moveBrushTo (${1: x}, ${2: y})"
+            "trigger": "moveBrushTo(Number x, Number y)\tPolyCode",
+            "contents": "moveBrushTo(${1: x}, ${2: y})"
         },
         {
-            "trigger": "moveBrush (Number x, Number y)\tPolyCode",
-            "contents": "moveBrush (${1: x}, ${2: y})"
+            "trigger": "moveBrush(Number x, Number y)\tPolyCode",
+            "contents": "moveBrush(${1: x}, ${2: y})"
         },
         {
-            "trigger": "drawLineTo (Number x, Number y, Color col)\tPolyCode",
-            "contents": "drawLineTo (${1: x}, ${2: y}, ${3: col})"
+            "trigger": "drawLineTo(Number x, Number y, Color col)\tPolyCode",
+            "contents": "drawLineTo(${1: x}, ${2: y}, ${3: col})"
         },
         {
-            "trigger": "fillRect (Number x, Number y, Number w, Number h, Color col)\tPolyCode",
-            "contents": "fillRect (${1: x}, ${2: y}, ${3: w}, ${4: h}, ${5: col})"
+            "trigger": "fillRect(Number x, Number y, Number w, Number h, Color col)\tPolyCode",
+            "contents": "fillRect(${1: x}, ${2: y}, ${3: w}, ${4: h}, ${5: col})"
         },
         {
-            "trigger": "perlinNoise (Number seed, Boolean alpha)\tPolyCode",
-            "contents": "perlinNoise (${1: seed}, ${2: alpha})"
+            "trigger": "perlinNoise(Number seed, Boolean alpha)\tPolyCode",
+            "contents": "perlinNoise(${1: seed}, ${2: alpha})"
         },
         {
-            "trigger": "fastBlur (Number blueSize)\tPolyCode",
-            "contents": "fastBlur (${1: blurSize})"
+            "trigger": "fastBlur(Number blueSize)\tPolyCode",
+            "contents": "fastBlur(${1: blurSize})"
         },
         {
-            "trigger": "fastBlurVert (Number blurSize)\tPolyCode",
-            "contents": "fastBlurVert (${1: blurSize})"
+            "trigger": "fastBlurVert(Number blurSize)\tPolyCode",
+            "contents": "fastBlurVert(${1: blurSize})"
         },
         {
-            "trigger": "fastBlurHor (Number blurSize)\tPolyCode",
-            "contents": "fastBlurHor (${1: blurSize})"
+            "trigger": "fastBlurHor(Number blurSize)\tPolyCode",
+            "contents": "fastBlurHor(${1: blurSize})"
         },
         {
-            "trigger": "getPixelsInRect (Number x, Number y, Number width, Number height)\tPolyCode",
-            "contents": "getPixelsInRect (${1: x}, ${2: y}, ${3: width}, ${4: height})"
+            "trigger": "getPixelsInRect(Number x, Number y, Number width, Number height)\tPolyCode",
+            "contents": "getPixelsInRect(${1: x}, ${2: y}, ${3: width}, ${4: height})"
         },
         {
-            "trigger": "getImagePart (Rectangle subRect)\tPolyCode",
-            "contents": "getImagePart (${1: subRect})"
+            "trigger": "getImagePart(Rectangle subRect)\tPolyCode",
+            "contents": "getImagePart(${1: subRect})"
         },
         {
             "trigger": "getBrushX()\tPolyCode",
@@ -2171,28 +2171,28 @@
             "contents": "clearData()"
         },
         {
-            "trigger": "ColorRange (Color col, Number rangeStart, Number rangeEnd)\tPolyCode",
-            "contents": "ColorRange (${1: col}, ${2: rangeStart}, ${3: rangeEnd})"
+            "trigger": "ColorRange(Color col, Number rangeStart, Number rangeEnd)\tPolyCode",
+            "contents": "ColorRange(${1: col}, ${2: rangeStart}, ${3: rangeEnd})"
         },
         {
-            "trigger": "Label (Font font, String text, Number size, Number antiAliasMode, Boolean premultiplyAlpha)\tPolyCode",
-            "contents": "Label (${1: font}, ${2: text}, ${3: size}, ${4: antiAliasMode}, ${5: premultiplyAlpha})"
+            "trigger": "Label(Font font, String text, Number size, Number antiAliasMode, Boolean premultiplyAlpha)\tPolyCode",
+            "contents": "Label(${1: font}, ${2: text}, ${3: size}, ${4: antiAliasMode}, ${5: premultiplyAlpha})"
         },
         {
-            "trigger": "setText (String text)\tPolyCode",
-            "contents": "setText (${1: text})"
+            "trigger": "setText(String text)\tPolyCode",
+            "contents": "setText(${1: text})"
         },
         {
             "trigger": "getText()\tPolyCode",
             "contents": "getText()"
         },
         {
-            "trigger": "getTextWidthForString (String text)\tPolyCode",
-            "contents": "getTextWidthForString (${1: text})"
+            "trigger": "getTextWidthForString(String text)\tPolyCode",
+            "contents": "getTextWidthForString(${1: text})"
         },
         {
-            "trigger": "getTextHeightForString (String text)\tPolyCode",
-            "contents": "getTextHeightForString (${1: text})"
+            "trigger": "getTextHeightForString(String text)\tPolyCode",
+            "contents": "getTextHeightForString(${1: text})"
         },
         {
             "trigger": "getTextWidth()\tPolyCode",
@@ -2203,36 +2203,36 @@
             "contents": "getTextHeight()"
         },
         {
-            "trigger": "setColorForRange (Color col, Number rangeStart, integer rangeEnd)\tPolyCode",
-            "contents": "setColorForRange (${1: col}, ${2: rangeStart}, ${3: rangeEnd})"
+            "trigger": "setColorForRange(Color col, Number rangeStart, integer rangeEnd)\tPolyCode",
+            "contents": "setColorForRange(${1: col}, ${2: rangeStart}, ${3: rangeEnd})"
         },
         {
             "trigger": "clearColors()\tPolyCode",
             "contents": "clearColors()"
         },
         {
-            "trigger": "getColorForIndex (Number index)\tPolyCode",
-            "contents": "getColorForIndex (${1: index})"
+            "trigger": "getColorForIndex(Number index)\tPolyCode",
+            "contents": "getColorForIndex(${1: index})"
         },
         {
             "trigger": "getPremultiplyAlpha()\tPolyCode",
             "contents": "getPremultiplyAlpha()"
         },
         {
-            "trigger": "setPremultiplyAlpha (Boolean state)\tPolyCode",
-            "contents": "setPremultiplyAlpha (${1: state})"
+            "trigger": "setPremultiplyAlpha(Boolean state)\tPolyCode",
+            "contents": "setPremultiplyAlpha(${1: state})"
         },
         {
-            "trigger": "setFont (Font newFont)\tPolyCode",
-            "contents": "setFont (${1: newFont})"
+            "trigger": "setFont(Font newFont)\tPolyCode",
+            "contents": "setFont(${1: newFont})"
         },
         {
             "trigger": "getFont()\tPolyCode",
             "contents": "getFont()"
         },
         {
-            "trigger": "setSize (Number newSize)\tPolyCode",
-            "contents": "setSize (${1: newSize})"
+            "trigger": "setSize(Number newSize)\tPolyCode",
+            "contents": "setSize(${1: newSize})"
         },
         {
             "trigger": "getSize()\tPolyCode",
@@ -2243,8 +2243,8 @@
             "contents": "getAntialiasMode()"
         },
         {
-            "trigger": "setAntialiasMode (Number newMode)\tPolyCode",
-            "contents": "setAntialiasMode (${1: newMode})"
+            "trigger": "setAntialiasMode(Number newMode)\tPolyCode",
+            "contents": "setAntialiasMode(${1: newMode})"
         },
         {
             "trigger": "getBaselineAdjust()\tPolyCode",
@@ -2255,44 +2255,44 @@
             "contents": "optionsChanged()"
         },
         {
-            "trigger": "Material (String name)\tPolyCode",
-            "contents": "Material (${1: name})"
+            "trigger": "Material(String name)\tPolyCode",
+            "contents": "Material(${1: name})"
         },
         {
-            "trigger": "addShader (Shader shader,ShaderBinding shaderBinding)\tPolyCode",
-            "contents": "addShader (${1: shader}, ${2: shaderBinding})"
+            "trigger": "addShader(Shader shader,ShaderBinding shaderBinding)\tPolyCode",
+            "contents": "addShader(${1: shader}, ${2: shaderBinding})"
         },
         {
-            "trigger": "addShaderAtIndex (Shader shader, ShaderBinding shaderBinding, Number shaderIndex)\tPolyCode",
-            "contents": "addShaderAtIndex (${1: shader}, ${2: shaderBinding}, ${3: shaderIndex})"
+            "trigger": "addShaderAtIndex(Shader shader, ShaderBinding shaderBinding, Number shaderIndex)\tPolyCode",
+            "contents": "addShaderAtIndex(${1: shader}, ${2: shaderBinding}, ${3: shaderIndex})"
         },
         {
             "trigger": "getNumShaders()\tPolyCode",
             "contents": "getNumShaders()"
         },
         {
-            "trigger": "removeShader (Number shaderIndex)\tPolyCode",
-            "contents": "removeShader (${1: shaderIndex})"
+            "trigger": "removeShader(Number shaderIndex)\tPolyCode",
+            "contents": "removeShader(${1: shaderIndex})"
         },
         {
-            "trigger": "addShaderRenderTarget (ShaderRenderTarget newTarget)\tPolyCode",
-            "contents": "addShaderRenderTarget (${1: newTarget})"
+            "trigger": "addShaderRenderTarget(ShaderRenderTarget newTarget)\tPolyCode",
+            "contents": "addShaderRenderTarget(${1: newTarget})"
         },
         {
             "trigger": "getNumShaderRenderTargets()\tPolyCode",
             "contents": "getNumShaderRenderTargets()"
         },
         {
-            "trigger": "getShaderRenderTarget (Number index)\tPolyCode",
-            "contents": "getShaderRenderTarget (${1: index})"
+            "trigger": "getShaderRenderTarget(Number index)\tPolyCode",
+            "contents": "getShaderRenderTarget(${1: index})"
         },
         {
-            "trigger": "removeShaderRenderTarget (Number index)\tPolyCode",
-            "contents": "removeShaderRenderTarget (${1: index})"
+            "trigger": "removeShaderRenderTarget(Number index)\tPolyCode",
+            "contents": "removeShaderRenderTarget(${1: index})"
         },
         {
-            "trigger": "recreateRenderTarget (ShaderRenderTarget renderTarget)\tPolyCode",
-            "contents": "recreateRenderTarget (${1: renderTarget})"
+            "trigger": "recreateRenderTarget(ShaderRenderTarget renderTarget)\tPolyCode",
+            "contents": "recreateRenderTarget(${1: renderTarget})"
         },
         {
             "trigger": "recreateRenderTargets()\tPolyCode",
@@ -2303,20 +2303,20 @@
             "contents": "getName()"
         },
         {
-            "trigger": "getShader (Number index)\tPolyCode",
-            "contents": "getShader (${1: index})"
+            "trigger": "getShader(Number index)\tPolyCode",
+            "contents": "getShader(${1: index})"
         },
         {
-            "trigger": "getShaderBinding (Number index)\tPolyCode",
-            "contents": "getShaderBinding (${1: index})"
+            "trigger": "getShaderBinding(Number index)\tPolyCode",
+            "contents": "getShaderBinding(${1: index})"
         },
         {
-            "trigger": "loadMaterial (String fileName)\tPolyCode",
-            "contents": "loadMaterial (${1: fileName})"
+            "trigger": "loadMaterial(String fileName)\tPolyCode",
+            "contents": "loadMaterial(${1: fileName})"
         },
         {
-            "trigger": "setName (String name)\tPolyCode",
-            "contents": "setName (${1: name})"
+            "trigger": "setName(String name)\tPolyCode",
+            "contents": "setName(${1: name})"
         },
         {
             "trigger": "clearShaders()\tPolyCode",
@@ -2327,24 +2327,24 @@
             "contents": "MaterialManager()"
         },
         {
-            "trigger": "createFramebufferTexture (Number width, Number height, Number type)\tPolyCode",
-            "contents": "createFramebufferTexture (${1: width}, ${2: height}, ${3: type})"
+            "trigger": "createFramebufferTexture(Number width, Number height, Number type)\tPolyCode",
+            "contents": "createFramebufferTexture(${1: width}, ${2: height}, ${3: type})"
         },
         {
-            "trigger": "createTexture (Number width, Number height, char imageData, Boolean clamp, Boolean createMipmaps, Number type)\tPolyCode",
-            "contents": "createTexture (${1: width}, ${2: height}, ${3: imageData}, ${4: clamp}, ${5: createMipmaps}, ${6: type}, ${7: type})"
+            "trigger": "createTexture(Number width, Number height, char imageData, Boolean clamp, Boolean createMipmaps, Number type)\tPolyCode",
+            "contents": "createTexture(${1: width}, ${2: height}, ${3: imageData}, ${4: clamp}, ${5: createMipmaps}, ${6: type}, ${7: type})"
         },
         {
-            "trigger": "createNewTexture (Number width, Number height, Boolean clamp, Boolean createMipmaps, Number type)\tPolyCode",
-            "contents": "createNewTexture (${1: width}, ${2: height}, ${3: clamp}, ${4: createMipmaps}, ${5: type}, ${6: type})"
+            "trigger": "createNewTexture(Number width, Number height, Boolean clamp, Boolean createMipmaps, Number type)\tPolyCode",
+            "contents": "createNewTexture(${1: width}, ${2: height}, ${3: clamp}, ${4: createMipmaps}, ${5: type}, ${6: type})"
         },
         {
-            "trigger": "createTextureFromImage (Image image, Boolean clamp, Boolean createMipmaps)\tPolyCode",
-            "contents": "createTextureFromImage (${1: image}, ${2: clamp}, ${3: createMipmaps})"
+            "trigger": "createTextureFromImage(Image image, Boolean clamp, Boolean createMipmaps)\tPolyCode",
+            "contents": "createTextureFromImage(${1: image}, ${2: clamp}, ${3: createMipmaps})"
         },
         {
-            "trigger": "createTextureFromFile (String fileName, Boolean clamp, Boolean createMipmaps, ResourcePool resourcePool)\tPolyCode",
-            "contents": "createTextureFromFile (${1: fileName}, ${2: clamp}, ${3: createMipmaps}, ${4: resourcePool})"
+            "trigger": "createTextureFromFile(String fileName, Boolean clamp, Boolean createMipmaps, ResourcePool resourcePool)\tPolyCode",
+            "contents": "createTextureFromFile(${1: fileName}, ${2: clamp}, ${3: createMipmaps}, ${4: resourcePool})"
         },
         {
             "trigger": "deleteTexture()\tPolyCode",
@@ -2363,72 +2363,72 @@
             "contents": "reloadPrograms()"
         },
         {
-            "trigger": "addShaderModule (PolycodeShaderModule module)\tPolyCode",
-            "contents": "addShaderModule (${1: module})"
+            "trigger": "addShaderModule(PolycodeShaderModule module)\tPolyCode",
+            "contents": "addShaderModule(${1: module})"
         },
         {
-            "trigger": "getTextureByResourcePath (String resourcePath)\tPolyCode",
-            "contents": "getTextureByResourcePath (${1: resourcePath})"
+            "trigger": "getTextureByResourcePath(String resourcePath)\tPolyCode",
+            "contents": "getTextureByResourcePath(${1: resourcePath})"
         },
         {
-            "trigger": "createProgramFromFile (String programPath)\tPolyCode",
-            "contents": "createProgramFromFile (${1: programPath})"
+            "trigger": "createProgramFromFile(String programPath)\tPolyCode",
+            "contents": "createProgramFromFile(${1: programPath})"
         },
         {
-            "trigger": "loadMaterialLibraryIntoPool (ResourcePool pool, String materialFile)\tPolyCode",
+            "trigger": "loadMaterialLibraryIntoPool(ResourcePool pool, String materialFile)\tPolyCode",
             "contents": "loadMaterialLibraryIntoPool()"
         },
         {
-            "trigger": "cubemapFromXMLNode (TiXmlNode node)\tPolyCode",
-            "contents": "cubemapFromXMLNode (${1: node})"
+            "trigger": "cubemapFromXMLNode(TiXmlNode node)\tPolyCode",
+            "contents": "cubemapFromXMLNode(${1: node})"
         },
         {
-            "trigger": "materialFromXMLNode (ResourcePool pool, TiXmlNode node)\tPolyCode",
-            "contents": "materialFromXMLNode (${1: pool}, ${2: node})"
+            "trigger": "materialFromXMLNode(ResourcePool pool, TiXmlNode node)\tPolyCode",
+            "contents": "materialFromXMLNode(${1: pool}, ${2: node})"
         },
         {
-            "trigger": "createMaterial (ResourcePool resourcePool, String materialName, String shaderName)\tPolyCode",
-            "contents": "createMaterial (${1: resourcePool}, ${2: materialName}, ${3: shaderName})"
+            "trigger": "createMaterial(ResourcePool resourcePool, String materialName, String shaderName)\tPolyCode",
+            "contents": "createMaterial(${1: resourcePool}, ${2: materialName}, ${3: shaderName})"
         },
         {
-            "trigger": "setShaderFromXMLNode (ResourcePool resourcePool, TiXmlNode node)\tPolyCode",
-            "contents": "setShaderFromXMLNode (${1: resourcePool}, ${2: node})"
+            "trigger": "setShaderFromXMLNode(ResourcePool resourcePool, TiXmlNode node)\tPolyCode",
+            "contents": "setShaderFromXMLNode(${1: resourcePool}, ${2: node})"
         },
         {
-            "trigger": "createShaderFromXMLNode (ResourcePool resourcePool, TiXmlNode node)\tPolyCode",
-            "contents": "createShaderFromXMLNode (${1: resourcePool}, ${2: node})"
+            "trigger": "createShaderFromXMLNode(ResourcePool resourcePool, TiXmlNode node)\tPolyCode",
+            "contents": "createShaderFromXMLNode(${1: resourcePool}, ${2: node})"
         },
         {
-            "trigger": "createShader (ResourcePool resourcePool, String shaderType, String name, String vpName, String fpName, Boolean screenShader)\tPolyCode",
-            "contents": "createShader (${1: resourcePool}, ${2: shaderType}, ${3: name}, ${4: vpName}, ${5: fpName}, ${6: screenShader})"
+            "trigger": "createShader(ResourcePool resourcePool, String shaderType, String name, String vpName, String fpName, Boolean screenShader)\tPolyCode",
+            "contents": "createShader(${1: resourcePool}, ${2: shaderType}, ${3: name}, ${4: vpName}, ${5: fpName}, ${6: screenShader})"
         },
         {
-            "trigger": "loadMaterialsFromFile (ResourcePool resourcePool, String fileName)\tPolyCode",
-            "contents": "loadMaterialsFromFile (${1: resourcePool}, ${2: fileName})"
+            "trigger": "loadMaterialsFromFile(ResourcePool resourcePool, String fileName)\tPolyCode",
+            "contents": "loadMaterialsFromFile(${1: resourcePool}, ${2: fileName})"
         },
         {
-            "trigger": "loadShadersFromFile (ResourcePool resourcePool, String fileName)\tPolyCode",
-            "contents": "loadShadersFromFile (${1: resourcePool}, ${2: fileName})"
+            "trigger": "loadShadersFromFile(ResourcePool resourcePool, String fileName)\tPolyCode",
+            "contents": "loadShadersFromFile(${1: resourcePool}, ${2: fileName})"
         },
         {
-            "trigger": "loadCubemapsFromFile (String fileName)\tPolyCode",
-            "contents": "loadCubemapsFromFile (${1: fileName})"
+            "trigger": "loadCubemapsFromFile(String fileName)\tPolyCode",
+            "contents": "loadCubemapsFromFile(${1: fileName})"
         },
         {
-            "trigger": "addMaterial (Material mat)\tPolyCode",
-            "contents": "addMaterial (${1: mat})"
+            "trigger": "addMaterial(Material mat)\tPolyCode",
+            "contents": "addMaterial(${1: mat})"
         },
         {
-            "trigger": "addShader (Shader shader)\tPolyCode",
-            "contents": "addShader (${1: shader})"
+            "trigger": "addShader(Shader shader)\tPolyCode",
+            "contents": "addShader(${1: shader})"
         },
         {
             "trigger": "getNumShaders()\tPolyCode",
             "contents": "getNumShaders()"
         },
         {
-            "trigger": "getShaderByIndex (Number index)\tPolyCode",
-            "contents": "getShaderByIndex (${1: index})"
+            "trigger": "getShaderByIndex(Number index)\tPolyCode",
+            "contents": "getShaderByIndex(${1: index})"
         },
         {
             "trigger": "Matrix4()\tPolyCode",
@@ -2439,32 +2439,32 @@
             "contents": "identity()"
         },
         {
-            "trigger": "rotateVector (Vector3 v)\tPolyCode",
-            "contents": "rotateVector (${1: v})"
+            "trigger": "rotateVector(Vector3 v)\tPolyCode",
+            "contents": "rotateVector(${1: v})"
         },
         {
             "trigger": "getPosition()\tPolyCode",
             "contents": "getPosition()"
         },
         {
-            "trigger": "multiplyWithPerspective (Vector3 v)\tPolyCode",
-            "contents": "multiplyWithPerspective (${1: v})"
+            "trigger": "multiplyWithPerspective(Vector3 v)\tPolyCode",
+            "contents": "multiplyWithPerspective(${1: v})"
         },
         {
-            "trigger": "multVector (Vector3 v)\tPolyCode",
-            "contents": "multVector (${1: v})"
+            "trigger": "multVector(Vector3 v)\tPolyCode",
+            "contents": "multVector(${1: v})"
         },
         {
-            "trigger": "setPosition (Number x, Number y, Number z)\tPolyCode",
-            "contents": "setPosition (${1: x}, ${2: y}, ${3: z})"
+            "trigger": "setPosition(Number x, Number y, Number z)\tPolyCode",
+            "contents": "setPosition(${1: x}, ${2: y}, ${3: z})"
         },
         {
-            "trigger": "setScale (Vector3 scale)\tPolyCode",
-            "contents": "setScale (${1: scale})"
+            "trigger": "setScale(Vector3 scale)\tPolyCode",
+            "contents": "setScale(${1: scale})"
         },
         {
-            "trigger": "getEulerAngles (Number ax, Number ay, Number az)\tPolyCode",
-            "contents": "getEulerAngles (${1: ax}, ${2: ay}, ${3: az})"
+            "trigger": "getEulerAngles(Number ax, Number ay, Number az)\tPolyCode",
+            "contents": "getEulerAngles(${1: ax}, ${2: ay}, ${3: az})"
         },
         {
             "trigger": "transpose()\tPolyCode",
@@ -2483,156 +2483,156 @@
             "contents": "determinant()"
         },
         {
-            "trigger": "Mesh (Number Mesh.QUAD_MESH)\tPolyCode",
-            "contents": "Mesh (${1: Mesh.QUAD_MESH})"
+            "trigger": "Mesh(Number Mesh.QUAD_MESH)\tPolyCode",
+            "contents": "Mesh(${1: Mesh.QUAD_MESH})"
         },
         {
-            "trigger": "Mesh (Number Mesh.TRI_MESH)\tPolyCode",
-            "contents": "Mesh (${1: Mesh.TRI_MESH})"
+            "trigger": "Mesh(Number Mesh.TRI_MESH)\tPolyCode",
+            "contents": "Mesh(${1: Mesh.TRI_MESH})"
         },
         {
-            "trigger": "Mesh (Number Mesh.TRIFAN_MESH)\tPolyCode",
-            "contents": "Mesh (${1: Mesh.TRIFAN_MESH})"
+            "trigger": "Mesh(Number Mesh.TRIFAN_MESH)\tPolyCode",
+            "contents": "Mesh(${1: Mesh.TRIFAN_MESH})"
         },
         {
-            "trigger": "Mesh (Number Mesh.TRISTRIP_MESH)\tPolyCode",
-            "contents": "Mesh (${1: Mesh.TRISTRIP_MESH})"
+            "trigger": "Mesh(Number Mesh.TRISTRIP_MESH)\tPolyCode",
+            "contents": "Mesh(${1: Mesh.TRISTRIP_MESH})"
         },
         {
-            "trigger": "Mesh (Number Mesh.LINE_MESH)\tPolyCode",
-            "contents": "Mesh (${1: Mesh.LINE_MESH})"
+            "trigger": "Mesh(Number Mesh.LINE_MESH)\tPolyCode",
+            "contents": "Mesh(${1: Mesh.LINE_MESH})"
         },
         {
-            "trigger": "Mesh (Number Mesh.POINT_MESH)\tPolyCode",
-            "contents": "Mesh (${1: Mesh.POINT_MESH})"
+            "trigger": "Mesh(Number Mesh.POINT_MESH)\tPolyCode",
+            "contents": "Mesh(${1: Mesh.POINT_MESH})"
         },
         {
-            "trigger": "loadMesh (String fileName)\tPolyCode",
-            "contents": "loadMesh (${1: fileName})"
+            "trigger": "loadMesh(String fileName)\tPolyCode",
+            "contents": "loadMesh(${1: fileName})"
         },
         {
             "trigger": "clearMesh()\tPolyCode",
             "contents": "clearMesh()"
         },
         {
-            "trigger": "saveToFile (String fileName, Boolean writeNormals, Boolean writeTangents, Boolean writeColors, Boolean writeBoneWeights, Boolean writeUVs, Boolean writeSecondaryUV)\tPolyCode",
-            "contents": "saveToFile (${1: fileName}, ${2: writeNormals}, ${3: writeTangents}, ${4: writeColors}, ${5: writeBoneWeights}, ${7: writeUVs}, ${8: writeSecondaryUV})"
+            "trigger": "saveToFile(String fileName, Boolean writeNormals, Boolean writeTangents, Boolean writeColors, Boolean writeBoneWeights, Boolean writeUVs, Boolean writeSecondaryUV)\tPolyCode",
+            "contents": "saveToFile(${1: fileName}, ${2: writeNormals}, ${3: writeTangents}, ${4: writeColors}, ${5: writeBoneWeights}, ${7: writeUVs}, ${8: writeSecondaryUV})"
         },
         {
-            "trigger": "loadFromFile (OSFILE inFile)\tPolyCode",
-            "contents": "loadFromFile (${1: inFile})"
+            "trigger": "loadFromFile(OSFILE inFile)\tPolyCode",
+            "contents": "loadFromFile(${1: inFile})"
         },
         {
             "trigger": "getVertexCount()\tPolyCode",
             "contents": "getVertexCount()"
         },
         {
-            "trigger": "createPlane (Number w, Number h, Number tilingValue)\tPolyCode",
-            "contents": "createPlane (${1: w}, ${2: h}, ${3: tilingValue})"
+            "trigger": "createPlane(Number w, Number h, Number tilingValue)\tPolyCode",
+            "contents": "createPlane(${1: w}, ${2: h}, ${3: tilingValue})"
         },
         {
-            "trigger": "createVPlane (Number w, Number h, Number tilingValue)\tPolyCode",
-            "contents": "createVPlane (${1: w}, ${2: h}, ${3: tilingValue})"
+            "trigger": "createVPlane(Number w, Number h, Number tilingValue)\tPolyCode",
+            "contents": "createVPlane(${1: w}, ${2: h}, ${3: tilingValue})"
         },
         {
-            "trigger": "createCircle (Number w, Number h, Number numSegments, Number tilingValue)\tPolyCode",
-            "contents": "createCircle (${1: w}, ${2: h}, ${3: numSegments}, ${4: tilingValue})"
+            "trigger": "createCircle(Number w, Number h, Number numSegments, Number tilingValue)\tPolyCode",
+            "contents": "createCircle(${1: w}, ${2: h}, ${3: numSegments}, ${4: tilingValue})"
         },
         {
-            "trigger": "createLineCircle (Number w, Number h, Number numSegments, Number tilingValue)\tPolyCode",
-            "contents": "createLineCircle (${1: w}, ${2: h}, ${3: numSegments}, ${4: tilingValue})"
+            "trigger": "createLineCircle(Number w, Number h, Number numSegments, Number tilingValue)\tPolyCode",
+            "contents": "createLineCircle(${1: w}, ${2: h}, ${3: numSegments}, ${4: tilingValue})"
         },
         {
-            "trigger": "createTorus (Number radius, Number tubeRadius, Number segmentsW, Number segmentsH, Number tilingValue)\tPolyCode",
-            "contents": "createTorus (${1: radius}, ${2: tubeRadius}, ${3: segmentsW}, ${4: segmentsH}, ${5: tilingValue})"
+            "trigger": "createTorus(Number radius, Number tubeRadius, Number segmentsW, Number segmentsH, Number tilingValue)\tPolyCode",
+            "contents": "createTorus(${1: radius}, ${2: tubeRadius}, ${3: segmentsW}, ${4: segmentsH}, ${5: tilingValue})"
         },
         {
-            "trigger": "createBox (Number w, Number d, Number h, Number tilingValue)\tPolyCode",
-            "contents": "createBox (${1: w}, ${2: d}, ${3: h}, ${4: tilingValue})"
+            "trigger": "createBox(Number w, Number d, Number h, Number tilingValue)\tPolyCode",
+            "contents": "createBox(${1: w}, ${2: d}, ${3: h}, ${4: tilingValue})"
         },
         {
-            "trigger": "createSphere (Number radius, Number numRings, Number numSegments, Number tilingValue)\tPolyCode",
-            "contents": "createSphere (${1: radius}, ${2: numRings}, ${3: numSegments}, ${4: tilingValue})"
+            "trigger": "createSphere(Number radius, Number numRings, Number numSegments, Number tilingValue)\tPolyCode",
+            "contents": "createSphere(${1: radius}, ${2: numRings}, ${3: numSegments}, ${4: tilingValue})"
         },
         {
-            "trigger": "createIcosphere (Number radius, Number subdivisions)\tPolyCode",
-            "contents": "createIcosphere (${1: radius}, ${2: subdivisions})"
+            "trigger": "createIcosphere(Number radius, Number subdivisions)\tPolyCode",
+            "contents": "createIcosphere(${1: radius}, ${2: subdivisions})"
         },
         {
-            "trigger": "createOctosphere (Number radius, Number subdivisions)\tPolyCode",
-            "contents": "createOctosphere (${1: radius}, ${2: subdivisions})"
+            "trigger": "createOctosphere(Number radius, Number subdivisions)\tPolyCode",
+            "contents": "createOctosphere(${1: radius}, ${2: subdivisions})"
         },
         {
-            "trigger": "createCylinder (Number height, Number radius, Number numSegments, Boolean capped, Number tilingValue)\tPolyCode",
-            "contents": "createCylinder (${1: height}, ${2: radius}, ${3: numSegments}, ${4: capped}, ${5: tilingValue})"
+            "trigger": "createCylinder(Number height, Number radius, Number numSegments, Boolean capped, Number tilingValue)\tPolyCode",
+            "contents": "createCylinder(${1: height}, ${2: radius}, ${3: numSegments}, ${4: capped}, ${5: tilingValue})"
         },
         {
-            "trigger": "createCone (Number height, Number radius, Number numSegments, Number tilingValue)\tPolyCode",
-            "contents": "createCone (${1: height}, ${2: radius}, ${3: numSegments}, ${4: tilingValue})"
+            "trigger": "createCone(Number height, Number radius, Number numSegments, Number tilingValue)\tPolyCode",
+            "contents": "createCone(${1: height}, ${2: radius}, ${3: numSegments}, ${4: tilingValue})"
         },
         {
             "trigger": "recenterMesh()\tPolyCode",
             "contents": "recenterMesh()"
         },
         {
-            "trigger": "setVertexAtOffset (Number offset, Number x, Number y, Number z)\tPolyCode",
-            "contents": "setVertexAtOffset (${1: offset}, ${2: x}, ${3: y}, ${4: z})"
+            "trigger": "setVertexAtOffset(Number offset, Number x, Number y, Number z)\tPolyCode",
+            "contents": "setVertexAtOffset(${1: offset}, ${2: x}, ${3: y}, ${4: z})"
         },
         {
-            "trigger": "addVertexWithUVAndNormal (Number x, Number y, Number z, Number u, Number v, Number nx, Number ny, Number nz)\tPolyCode",
-            "contents": "addVertexWithUVAndNormal (${1: x}, ${2: y},${3: z}, ${4: u}, ${5: v}, ${6: nx}, ${7: ny}, ${8: nz})"
+            "trigger": "addVertexWithUVAndNormal(Number x, Number y, Number z, Number u, Number v, Number nx, Number ny, Number nz)\tPolyCode",
+            "contents": "addVertexWithUVAndNormal(${1: x}, ${2: y},${3: z}, ${4: u}, ${5: v}, ${6: nx}, ${7: ny}, ${8: nz})"
         },
         {
-            "trigger": "addTexCoord (Number u, Number v)\tPolyCode",
-            "contents": "addTexCoord (${1: u}, ${2: v})"
+            "trigger": "addTexCoord(Number u, Number v)\tPolyCode",
+            "contents": "addTexCoord(${1: u}, ${2: v})"
         },
         {
-            "trigger": "addTexCoord2 (Number u, Number v)\tPolyCode",
-            "contents": "addTexCoord2 (${1: u}, ${2: v})"
+            "trigger": "addTexCoord2(Number u, Number v)\tPolyCode",
+            "contents": "addTexCoord2(${1: u}, ${2: v})"
         },
         {
-            "trigger": "addTangent (Number x, Number y, Number z)\tPolyCode",
-            "contents": "addTangent (${1: x}, ${2: y}, ${3: z})"
+            "trigger": "addTangent(Number x, Number y, Number z)\tPolyCode",
+            "contents": "addTangent(${1: x}, ${2: y}, ${3: z})"
         },
         {
-            "trigger": "addVertexWithUV (Number x, Number y, Number z, Number u, Number v)\tPolyCode",
-            "contents": "addVertexWithUV (${1: x}, ${2: y}, ${3: z}, ${4: u}, ${5: v})"
+            "trigger": "addVertexWithUV(Number x, Number y, Number z, Number u, Number v)\tPolyCode",
+            "contents": "addVertexWithUV(${1: x}, ${2: y}, ${3: z}, ${4: u}, ${5: v})"
         },
         {
-            "trigger": "addVertex (Number x, Number y, Number z)\tPolyCode",
-            "contents": "addVertex (${1: x}, ${2: y}, ${3: z})"
+            "trigger": "addVertex(Number x, Number y, Number z)\tPolyCode",
+            "contents": "addVertex(${1: x}, ${2: y}, ${3: z})"
         },
         {
-            "trigger": "addNormal (Number nx, Number ny, Number nz)\tPolyCode",
-            "contents": "addNormal (${1: nx}, ${2: ny}, ${3: nz})"
+            "trigger": "addNormal(Number nx, Number ny, Number nz)\tPolyCode",
+            "contents": "addNormal(${1: nx}, ${2: ny}, ${3: nz})"
         },
         {
-            "trigger": "addBoneAssignments (Number b1Weight, Number b1Index, Number b2Weight, Number b2Index, Number b3Weight, Number b3Index, Number b4Weight, Number B4Index )\tPolyCode",
-            "contents": "addBoneAssignments (${1: b1Weight}, ${2: b1Index}, ${3: b2Weight}, ${4: b2Index}, ${5: b3Weight}, ${6: b3Index}, ${7: b4Weight}, ${8: b4Index})"
+            "trigger": "addBoneAssignments(Number b1Weight, Number b1Index, Number b2Weight, Number b2Index, Number b3Weight, Number b3Index, Number b4Weight, Number B4Index )\tPolyCode",
+            "contents": "addBoneAssignments(${1: b1Weight}, ${2: b1Index}, ${3: b2Weight}, ${4: b2Index}, ${5: b3Weight}, ${6: b3Index}, ${7: b4Weight}, ${8: b4Index})"
         },
         {
-            "trigger": "addColor (Number r, Number g, Number b, Number a)\tPolyCode",
-            "contents": "addColor (${1: r}, ${2: g}, ${3: g}, ${4: a})"
+            "trigger": "addColor(Number r, Number g, Number b, Number a)\tPolyCode",
+            "contents": "addColor(${1: r}, ${2: g}, ${3: g}, ${4: a})"
         },
         {
-            "trigger": "getVertexPosition (Number vertexOffset)\tPolyCode",
-            "contents": "getVertexPosition (${1: vertexOffset})"
+            "trigger": "getVertexPosition(Number vertexOffset)\tPolyCode",
+            "contents": "getVertexPosition(${1: vertexOffset})"
         },
         {
-            "trigger": "getVertexPositionAtIndex (Number index)\tPolyCode",
-            "contents": "getVertexPositionAtIndex (${1: index})"
+            "trigger": "getVertexPositionAtIndex(Number index)\tPolyCode",
+            "contents": "getVertexPositionAtIndex(${1: index})"
         },
         {
-            "trigger": "getVertexTexCoord (Number vertexOffset)\tPolyCode",
-            "contents": "getVertexTexCoord (${1: vertexOffset})"
+            "trigger": "getVertexTexCoord(Number vertexOffset)\tPolyCode",
+            "contents": "getVertexTexCoord(${1: vertexOffset})"
         },
         {
-            "trigger": "getVertexTexCoordAtIndex (Number index)\tPolyCode",
-            "contents": "getVertexTexCoordAtIndex (${1: index})"
+            "trigger": "getVertexTexCoordAtIndex(Number index)\tPolyCode",
+            "contents": "getVertexTexCoordAtIndex(${1: index})"
         },
         {
-            "trigger": "setVertexBuffer (VertexBuffer buffer)\tPolyCode",
-            "contents": "setVertexBuffer (${1: buffer})"
+            "trigger": "setVertexBuffer(VertexBuffer buffer)\tPolyCode",
+            "contents": "setVertexBuffer(${1: buffer})"
         },
         {
             "trigger": "getVertexBuffer()\tPolyCode",
@@ -2659,28 +2659,28 @@
             "contents": "getMeshType()"
         },
         {
-            "trigger": "setMeshType (Number Mesh.QUAD_MESH)\tPolyCode",
-            "contents": "setMeshType (${1: Mesh.QUAD_MESH})"
+            "trigger": "setMeshType(Number Mesh.QUAD_MESH)\tPolyCode",
+            "contents": "setMeshType(${1: Mesh.QUAD_MESH})"
         },
         {
-            "trigger": "setMeshType (Number Mesh.TRI_MESH)\tPolyCode",
-            "contents": "setMeshType (${1: Mesh.TRI_MESH})"
+            "trigger": "setMeshType(Number Mesh.TRI_MESH)\tPolyCode",
+            "contents": "setMeshType(${1: Mesh.TRI_MESH})"
         },
         {
-            "trigger": "setMeshType (Number Mesh.TRIFAN_MESH)\tPolyCode",
-            "contents": "setMeshType (${1: Mesh.TRIFAN_MESH})"
+            "trigger": "setMeshType(Number Mesh.TRIFAN_MESH)\tPolyCode",
+            "contents": "setMeshType(${1: Mesh.TRIFAN_MESH})"
         },
         {
-            "trigger": "setMeshType (Number Mesh.TRISTRIP_MESH)\tPolyCode",
-            "contents": "setMeshType (${1: Mesh.TRISTRIP_MESH})"
+            "trigger": "setMeshType(Number Mesh.TRISTRIP_MESH)\tPolyCode",
+            "contents": "setMeshType(${1: Mesh.TRISTRIP_MESH})"
         },
         {
-            "trigger": "setMeshType (Number Mesh.LINE_MESH)\tPolyCode",
-            "contents": "setMeshType (${1: Mesh.LINE_MESH})"
+            "trigger": "setMeshType(Number Mesh.LINE_MESH)\tPolyCode",
+            "contents": "setMeshType(${1: Mesh.LINE_MESH})"
         },
         {
-            "trigger": "setMeshType (Number Mesh.POINT_MESH)\tPolyCode",
-            "contents": "setMeshType (${1: Mesh.POINT_MESH})"
+            "trigger": "setMeshType(Number Mesh.POINT_MESH)\tPolyCode",
+            "contents": "setMeshType(${1: Mesh.POINT_MESH})"
         },
         {
             "trigger": "getIndexGroupSize()\tPolyCode",
@@ -2695,20 +2695,20 @@
             "contents": "hasVertexBuffer()"
         },
         {
-            "trigger": "addIndexedFace (Number i1, Number i2)\tPolyCode",
-            "contents": "addIndexedFace (${1: i1}, ${2: i2})"
+            "trigger": "addIndexedFace(Number i1, Number i2)\tPolyCode",
+            "contents": "addIndexedFace(${1: i1}, ${2: i2})"
         },
         {
-            "trigger": "addIndex (Number index)\tPolyCode",
-            "contents": "addIndex (${1: index})"
+            "trigger": "addIndex(Number index)\tPolyCode",
+            "contents": "addIndex(${1: index})"
         },
         {
-            "trigger": "removeVertexRange (Number beginRemoveVertex, Number vertexRemovalCount)\tPolyCode",
-            "contents": "removeVertexRange (${1: beginRemoveVertex}, ${2: vertexRemovalCount})"
+            "trigger": "removeVertexRange(Number beginRemoveVertex, Number vertexRemovalCount)\tPolyCode",
+            "contents": "removeVertexRange(${1: beginRemoveVertex}, ${2: vertexRemovalCount})"
         },
         {
-            "trigger": "removeFace (Number index)\tPolyCode",
-            "contents": "removeFace (${1: index})"
+            "trigger": "removeFace(Number index)\tPolyCode",
+            "contents": "removeFace(${1: index})"
         },
         {
             "trigger": "removeUnusedVertices()\tPolyCode",
@@ -2719,12 +2719,12 @@
             "contents": "getIndexCount()"
         },
         {
-            "trigger": "subdivideToRadius (Number radius, Number subdivisions)\tPolyCode",
-            "contents": "subdivideToRadius (${1: radius}, ${2: subdivisions})"
+            "trigger": "subdivideToRadius(Number radius, Number subdivisions)\tPolyCode",
+            "contents": "subdivideToRadius(${1: radius}, ${2: subdivisions})"
         },
         {
-            "trigger": "saveAsOBJ (String fileName)\tPolyCode",
-            "contents": "saveAsOBJ (${1: fileName})"
+            "trigger": "saveAsOBJ(String fileName)\tPolyCode",
+            "contents": "saveAsOBJ(${1: fileName})"
         },
         {
             "trigger": "normalizeBoneWeights()\tPolyCode",
@@ -3632,160 +3632,160 @@
             "contents": "getResourcePath()"
         },
         {
-        	"trigger": "ResourcePool (String name, ResourcePool fallbackPool)\tPolyCode",
-        	"contents": "ResourcePool (${1: name}, ${2: fallbackPool})"
+        	"trigger": "ResourcePool(String name, ResourcePool fallbackPool)\tPolyCode",
+        	"contents": "ResourcePool(${1: name}, ${2: fallbackPool})"
         },
         {
-        	"trigger": "setFallbackPool (ResourcePool pool)\tPolyCode",
+        	"trigger": "setFallbackPool(ResourcePool pool)\tPolyCode",
         	"contents": "setFallbackPool(${1:pool})"
         },
         {
-        	"trigger": "addResource (Resource resource)\tPolyCode",
-        	"contents": "addResource (${1: Resource})"
+        	"trigger": "addResource(Resource resource)\tPolyCode",
+        	"contents": "addResource(${1: Resource})"
         },
         {
-        	"trigger": "removeResource (Resource resource)\tPolyCode",
-        	"contents": "removeResource (${1: resource})"
+        	"trigger": "removeResource(Resource resource)\tPolyCode",
+        	"contents": "removeResource(${1: resource})"
         },
         {
-        	"trigger": "hasResource (Resource resource)\tPolyCode",
-        	"contents": "hasResource (${1: resource})"
+        	"trigger": "hasResource(Resource resource)\tPolyCode",
+        	"contents": "hasResource(${1: resource})"
         },
         {
-        	"trigger": "getResource (Integer resourceType, String resourceName)\tPolyCode",
-        	"contents": "getResource (${1: resourceType}, ${2: resourceName})"
+        	"trigger": "getResource(Integer resourceType, String resourceName)\tPolyCode",
+        	"contents": "getResource(${1: resourceType}, ${2: resourceName})"
         },
         {
-        	"trigger": "getName ()\tPolyCode",
-        	"contents": "getName ()"
+        	"trigger": "getName()\tPolyCode",
+        	"contents": "getName()"
         },
         {
-        	"trigger": "setName (Strign name)\tPolyCode",
-        	"contents": "setName (${1: name})"
+        	"trigger": "setName(Strign name)\tPolyCode",
+        	"contents": "setName(${1: name})"
         },
         {
-        	"trigger": "getResourceByPath (String resourcePath)\tPolyCode",
-        	"contents": "getResourceByPath (${1: resourcepath})"
+        	"trigger": "getResourceByPath(String resourcePath)\tPolyCode",
+        	"contents": "getResourceByPath(${1: resourcepath})"
         },
         {
-        	"trigger": "getResources (Integer resourceType)\tPolyCode",
-        	"contents": "getResources (${1: resourceType})"
+        	"trigger": "getResources(Integer resourceType)\tPolyCode",
+        	"contents": "getResources(${1: resourceType})"
         },
         {
-        	"trigger": "checkForChangedFiles ()\tPolyCode",
-        	"contents": "checkForChangedFiles ()"
+        	"trigger": "checkForChangedFiles()\tPolyCode",
+        	"contents": "checkForChangedFiles()"
         },
         {
-        	"trigger": "ResourceManager ()\tPolyCode",
-        	"contents": "ResourceManager ()"
+        	"trigger": "ResourceManager()\tPolyCode",
+        	"contents": "ResourceManager()"
         },
         {
-        	"trigger": "addDirResource (String dir, Boolean recursive)\tPolyCode",
-        	"contents": "addDirResource (${1: dir}, ${2: recursive})"
+        	"trigger": "addDirResource(String dir, Boolean recursive)\tPolyCode",
+        	"contents": "addDirResource(${1: dir}, ${2: recursive})"
         },
         {
-        	"trigger": "addArchive (String path)\tPolyCode",
-        	"contents": "addArchive (${1: dir})"
+        	"trigger": "addArchive(String path)\tPolyCode",
+        	"contents": "addArchive(${1: dir})"
         },
         {
-        	"trigger": "removeArchive (String path)\tPolyCode",
-        	"contents": "removeArchive (${1: path})"
+        	"trigger": "removeArchive(String path)\tPolyCode",
+        	"contents": "removeArchive(${1: path})"
         },
         {
-        	"trigger": "parseTexturesIntoPool (ResourcePool pool, String dirPath, Boolean recursive, String basePath)\tPolyCode",
-        	"contents": "parseTexturesIntoPool (${1: pool}, ${2: dirPath}, ${3: recursive}, ${4: basePath})"
+        	"trigger": "parseTexturesIntoPool(ResourcePool pool, String dirPath, Boolean recursive, String basePath)\tPolyCode",
+        	"contents": "parseTexturesIntoPool(${1: pool}, ${2: dirPath}, ${3: recursive}, ${4: basePath})"
         },
         {
-        	"trigger": "parseMaterialsIntoPool (ResourcePool pool, String dirPath, Boolean recursive)\tPolycode",
-        	"contents": "parseMaterialsIntoPool (${1: pool}, ${2: dirPath}, ${3: recursive})"
+        	"trigger": "parseMaterialsIntoPool(ResourcePool pool, String dirPath, Boolean recursive)\tPolycode",
+        	"contents": "parseMaterialsIntoPool(${1: pool}, ${2: dirPath}, ${3: recursive})"
         },
         {
-        	"trigger": "parseShadersIntoPool (ResourcePool pool, String dirPath, Boolean recursive)\tPolyCode",
-        	"contents": "parseShadersIntoPool (${1: pool}, ${2: dirPath}, ${3: recursive})"
+        	"trigger": "parseShadersIntoPool(ResourcePool pool, String dirPath, Boolean recursive)\tPolyCode",
+        	"contents": "parseShadersIntoPool(${1: pool}, ${2: dirPath}, ${3: recursive})"
         },
         {
-        	"trigger": "parseProgramsIntoPool (ResourcePool pool, String dirPath, Boolean recursive)\tPolyCode",
-        	"contents": "parseProgramsIntoPool (${1: pool}, ${2: dirPath}, ${3: recursive})"
+        	"trigger": "parseProgramsIntoPool(ResourcePool pool, String dirPath, Boolean recursive)\tPolyCode",
+        	"contents": "parseProgramsIntoPool(${1: pool}, ${2: dirPath}, ${3: recursive})"
         },
         {
-        	"trigger": "parseCubemapsIntoPool (ResourcePool pool, String dirPath, Boolean recursive)\tPolyCode",
-        	"contents": "parseCubemapsIntoPool (${1: pool}, ${2: dirPath}, ${3: recursive})"
+        	"trigger": "parseCubemapsIntoPool(ResourcePool pool, String dirPath, Boolean recursive)\tPolyCode",
+        	"contents": "parseCubemapsIntoPool(${1: pool}, ${2: dirPath}, ${3: recursive})"
         },
         {
-        	"trigger": "parseOtherIntoPool (ResourcePool pool, String dirPath, Boolean recursive)\tPolyCode",
-        	"contents": "parseOtherIntoPool (${1: pool}, ${2: dirPath}, ${3: recursive})"
+        	"trigger": "parseOtherIntoPool(ResourcePool pool, String dirPath, Boolean recursive)\tPolyCode",
+        	"contents": "parseOtherIntoPool(${1: pool}, ${2: dirPath}, ${3: recursive})"
         },
         {
-        	"trigger": "getGlobalPool ()\tPolyCode",
-        	"contents": "getGlobalPool ()"
+        	"trigger": "getGlobalPool()\tPolyCode",
+        	"contents": "getGlobalPool()"
         },
         {
-        	"trigger": "getResourcePoolByName (String name)\tPolyCode",
-        	"contents": "getResourcePoolByName (${1: name})"
+        	"trigger": "getResourcePoolByName(String name)\tPolyCode",
+        	"contents": "getResourcePoolByName(${1: name})"
         },
         {
-        	"trigger": "addResourcePool (ResourcePool pool)\tPolyCode",
-        	"contents": "addResourcePool (${1: pool})"
+        	"trigger": "addResourcePool(ResourcePool pool)\tPolyCode",
+        	"contents": "addResourcePool(${1: pool})"
         },
         {
-        	"trigger": "removeResourcePool (ResourcePool pool)\tPolyCode",
-        	"contents": "removeResourcePool (${1: pool})"
+        	"trigger": "removeResourcePool(ResourcePool pool)\tPolyCode",
+        	"contents": "removeResourcePool(${1: pool})"
         },
         {
-        	"trigger": "getResources (Integer resourceType)\tPolyCode",
-        	"contents": "getResources (${1: resourceType})"
+        	"trigger": "getResources(Integer resourceType)\tPolyCode",
+        	"contents": "getResources(${1: resourceType})"
         },
         {
-        	"trigger": "removeResource (Resource resource)\tPolyCode",
-        	"contents": "removeResource (${1: resource})"
+        	"trigger": "removeResource(Resource resource)\tPolyCode",
+        	"contents": "removeResource(${1: resource})"
         },
         {
-        	"trigger": "subscribeToResourcePool (ResourcePool pool)\tPolyCode",
-        	"contents": "subscribeToResourcePool (${1: pool})"
+        	"trigger": "subscribeToResourcePool(ResourcePool pool)\tPolyCode",
+        	"contents": "subscribeToResourcePool(${1: pool})"
         },
         {
-        	"trigger": "unsubscibeFromResourcePool (ResourcePool pool)\tPolyCode",
-        	"contents": "unsubscibeFromResourcePool (${1: pool})"
+        	"trigger": "unsubscibeFromResourcePool(ResourcePool pool)\tPolyCode",
+        	"contents": "unsubscibeFromResourcePool(${1: pool})"
         },
         {
-        	"trigger": "Scene (Integer sceneType, Boolean virtualScene)\tPolyCode",
-        	"contents": "Scene (${1:sceneType}, ${2:virtualScene})"
+        	"trigger": "Scene(Integer sceneType, Boolean virtualScene)\tPolyCode",
+        	"contents": "Scene(${1:sceneType}, ${2:virtualScene})"
         },
         {
-        	"trigger": "addEntity (Entity entitiy)\tPolyCode",
-        	"contents": "addEntity (${1: entity})"
+        	"trigger": "addEntity(Entity entitiy)\tPolyCode",
+        	"contents": "addEntity(${1: entity})"
         },
         {
-        	"trigger": "addChild (Entity entity)\tPolyCode",
-        	"contents": "addChild (${1: entity})"
+        	"trigger": "addChild(Entity entity)\tPolyCode",
+        	"contents": "addChild(${1: entity})"
         },
         {
-        	"trigger": "removeEntity (Entity entity)\tPolyCode",
-        	"contents": "removeEntity (${1: entity})"
+        	"trigger": "removeEntity(Entity entity)\tPolyCode",
+        	"contents": "removeEntity(${1: entity})"
         },
         {
-        	"trigger": "getDefaultCamera ()\tPolyCode",
-        	"contents": "getDefaultCamera ()"
+        	"trigger": "getDefaultCamera()\tPolyCode",
+        	"contents": "getDefaultCamera()"
         },
         {
-        	"trigger": "getActiveCamera ()\tPolyCode",
-        	"contents": "getActiveCamera ()"
+        	"trigger": "getActiveCamera()\tPolyCode",
+        	"contents": "getActiveCamera()"
         },
         {
-        	"trigger": "setActiveCamera (Camera camera)\tPolyCode",
-        	"contents": "setActiveCamera (${1: camera})"
+        	"trigger": "setActiveCamera(Camera camera)\tPolyCode",
+        	"contents": "setActiveCamera(${1: camera})"
         },
         {
-        	"trigger": "enableLighting (Boolean enable)\tPolyCode",
-        	"contents": "enableLighting (${1: enable})"
+        	"trigger": "enableLighting(Boolean enable)\tPolyCode",
+        	"contents": "enableLighting(${1: enable})"
         },
         {
-        	"trigger": "enableFog (Boolean enable)\tPolyCode",
-        	"contents": "enableFog (${1: enable})"
+        	"trigger": "enableFog(Boolean enable)\tPolyCode",
+        	"contents": "enableFog(${1: enable})"
         },
         {
-        	"trigger": "setFogProperties (Integer fogMode, Color color, Number density, Number startDepth, Number endDepth )\tPolyCode",
-        	"contents": "addResourcePool (${1: fogMode}, ${2: color}, ${3: density}, ${4: startDepth}, ${5: endDepth})"
+        	"trigger": "setFogProperties(Integer fogMode, Color color, Number density, Number startDepth, Number endDepth )\tPolyCode",
+        	"contents": "addResourcePool(${1: fogMode}, ${2: color}, ${3: density}, ${4: startDepth}, ${5: endDepth})"
         },
         {
         	"trigger": "setSceneType(Integer newType)\tPolyCode",
@@ -3884,8 +3884,8 @@
         	"contents": "parseObjectIntoCurve(${1: entry}, ${2: curve})"
         },
         {
-        	"trigger": "loadObjectEntryIntoEntity (ObjectEntry entry, Entity targetEntity, Integer entityFileVersion)\tPolyCode",
-        	"contents": "loadObjectEntryIntoEntity (${1:entry}, ${2:targetEntity}, ${3:entityFileVersion})"
+        	"trigger": "loadObjectEntryIntoEntity(ObjectEntry entry, Entity targetEntity, Integer entityFileVersion)\tPolyCode",
+        	"contents": "loadObjectEntryIntoEntity(${1:entry}, ${2:targetEntity}, ${3:entityFileVersion})"
         },
         {
         	"trigger": "loadFromFile(String fileName)\tPolyCode",
